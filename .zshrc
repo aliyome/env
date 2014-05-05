@@ -4,74 +4,74 @@
 # ------------------------------
 # General Settings
 # ------------------------------
-export EDITOR=vim        # ƒGƒfƒBƒ^‚ðvim‚ÉÝ’è
-export LANG=ja_JP.UTF-8  # •¶ŽšƒR[ƒh‚ðUTF-8‚ÉÝ’è
-export KCODE=u           # KCODE‚ÉUTF-8‚ðÝ’è
-export AUTOFEATURE=true  # autotest‚Åfeature‚ð“®‚©‚·
+export EDITOR=vim        # ã‚¨ãƒ‡ã‚£ã‚¿ã‚’vimã«è¨­å®š
+export LANG=ja_JP.UTF-8  # æ–‡å­—ã‚³ãƒ¼ãƒ‰ã‚’UTF-8ã«è¨­å®š
+export KCODE=u           # KCODEã«UTF-8ã‚’è¨­å®š
+export AUTOFEATURE=true  # autotestã§featureã‚’å‹•ã‹ã™
 
-bindkey -v              # ƒL[ƒoƒCƒ“ƒh‚ðviƒ‚[ƒh‚ÉÝ’è
+bindkey -v              # ã‚­ãƒ¼ãƒã‚¤ãƒ³ãƒ‰ã‚’viãƒ¢ãƒ¼ãƒ‰ã«è¨­å®š
 
-setopt auto_pushd        # cdŽž‚ÉƒfƒBƒŒƒNƒgƒŠƒXƒ^ƒbƒN‚Épushd‚·‚é
-#setopt correct           # ƒRƒ}ƒ“ƒh‚ÌƒXƒyƒ‹‚ð’ù³‚·‚é
-setopt prompt_subst      # ƒvƒƒ“ƒvƒg’è‹`“à‚Å•Ï”’uŠ·‚âƒRƒ}ƒ“ƒh’uŠ·‚ðˆµ‚¤
-setopt notify            # ƒoƒbƒNƒOƒ‰ƒEƒ“ƒhƒWƒ‡ƒu‚Ìó‘Ô•Ï‰»‚ð‘¦Žž•ñ‚·‚é
-#setopt equals            # =command‚ð`which command`‚Æ“¯‚¶ˆ—‚É‚·‚é
+setopt auto_pushd        # cdæ™‚ã«ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚¹ã‚¿ãƒƒã‚¯ã«pushdã™ã‚‹
+#setopt correct           # ã‚³ãƒžãƒ³ãƒ‰ã®ã‚¹ãƒšãƒ«ã‚’è¨‚æ­£ã™ã‚‹
+setopt prompt_subst      # ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆå®šç¾©å†…ã§å¤‰æ•°ç½®æ›ã‚„ã‚³ãƒžãƒ³ãƒ‰ç½®æ›ã‚’æ‰±ã†
+setopt notify            # ãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰ã‚¸ãƒ§ãƒ–ã®çŠ¶æ…‹å¤‰åŒ–ã‚’å³æ™‚å ±å‘Šã™ã‚‹
+#setopt equals            # =commandã‚’`which command`ã¨åŒã˜å‡¦ç†ã«ã™ã‚‹
 
 ### Complement ###
-autoload -U compinit; compinit # •âŠ®‹@”\‚ð—LŒø‚É‚·‚é
-setopt auto_list               # •âŠ®Œó•â‚ðˆê——‚Å•\Ž¦‚·‚é(d)
-setopt auto_menu               # •âŠ®ƒL[˜A‘Å‚Å•âŠ®Œó•â‚ð‡‚É•\Ž¦‚·‚é(d)
-setopt list_packed             # •âŠ®Œó•â‚ð‚Å‚«‚é‚¾‚¯‹l‚ß‚Ä•\Ž¦‚·‚é
-setopt list_types              # •âŠ®Œó•â‚Éƒtƒ@ƒCƒ‹‚ÌŽí—Þ‚à•\Ž¦‚·‚é
-bindkey "^[[Z" reverse-menu-complete  # Shift-Tab‚Å•âŠ®Œó•â‚ð‹t‡‚·‚é("\e[Z"‚Å‚à“®ì‚·‚é)
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # •âŠ®Žž‚É‘å•¶Žš¬•¶Žš‚ð‹æ•Ê‚µ‚È‚¢
+autoload -U compinit; compinit # è£œå®Œæ©Ÿèƒ½ã‚’æœ‰åŠ¹ã«ã™ã‚‹
+setopt auto_list               # è£œå®Œå€™è£œã‚’ä¸€è¦§ã§è¡¨ç¤ºã™ã‚‹(d)
+setopt auto_menu               # è£œå®Œã‚­ãƒ¼é€£æ‰“ã§è£œå®Œå€™è£œã‚’é †ã«è¡¨ç¤ºã™ã‚‹(d)
+setopt list_packed             # è£œå®Œå€™è£œã‚’ã§ãã‚‹ã ã‘è©°ã‚ã¦è¡¨ç¤ºã™ã‚‹
+setopt list_types              # è£œå®Œå€™è£œã«ãƒ•ã‚¡ã‚¤ãƒ«ã®ç¨®é¡žã‚‚è¡¨ç¤ºã™ã‚‹
+bindkey "^[[Z" reverse-menu-complete  # Shift-Tabã§è£œå®Œå€™è£œã‚’é€†é †ã™ã‚‹("\e[Z"ã§ã‚‚å‹•ä½œã™ã‚‹)
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # è£œå®Œæ™‚ã«å¤§æ–‡å­—å°æ–‡å­—ã‚’åŒºåˆ¥ã—ãªã„
 
 ### History ###
-HISTFILE=~/.zsh_history   # ƒqƒXƒgƒŠ‚ð•Û‘¶‚·‚éƒtƒ@ƒCƒ‹
-HISTSIZE=10000            # ƒƒ‚ƒŠ‚É•Û‘¶‚³‚ê‚éƒqƒXƒgƒŠ‚ÌŒ”
-SAVEHIST=10000            # •Û‘¶‚³‚ê‚éƒqƒXƒgƒŠ‚ÌŒ”
-setopt bang_hist          # !‚ðŽg‚Á‚½ƒqƒXƒgƒŠ“WŠJ‚ðs‚¤(d)
-setopt extended_history   # ƒqƒXƒgƒŠ‚ÉŽÀsŽžŠÔ‚à•Û‘¶‚·‚é
-setopt hist_ignore_dups   # ’¼‘O‚Æ“¯‚¶ƒRƒ}ƒ“ƒh‚ÍƒqƒXƒgƒŠ‚É’Ç‰Á‚µ‚È‚¢
-setopt share_history      # ‘¼‚ÌƒVƒFƒ‹‚ÌƒqƒXƒgƒŠ‚ðƒŠƒAƒ‹ƒ^ƒCƒ€‚Å‹¤—L‚·‚é
-setopt hist_reduce_blanks # —]•ª‚ÈƒXƒy[ƒX‚ðíœ‚µ‚ÄƒqƒXƒgƒŠ‚É•Û‘¶‚·‚é
+HISTFILE=~/.zsh_history   # ãƒ’ã‚¹ãƒˆãƒªã‚’ä¿å­˜ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«
+HISTSIZE=10000            # ãƒ¡ãƒ¢ãƒªã«ä¿å­˜ã•ã‚Œã‚‹ãƒ’ã‚¹ãƒˆãƒªã®ä»¶æ•°
+SAVEHIST=10000            # ä¿å­˜ã•ã‚Œã‚‹ãƒ’ã‚¹ãƒˆãƒªã®ä»¶æ•°
+setopt bang_hist          # !ã‚’ä½¿ã£ãŸãƒ’ã‚¹ãƒˆãƒªå±•é–‹ã‚’è¡Œã†(d)
+setopt extended_history   # ãƒ’ã‚¹ãƒˆãƒªã«å®Ÿè¡Œæ™‚é–“ã‚‚ä¿å­˜ã™ã‚‹
+setopt hist_ignore_dups   # ç›´å‰ã¨åŒã˜ã‚³ãƒžãƒ³ãƒ‰ã¯ãƒ’ã‚¹ãƒˆãƒªã«è¿½åŠ ã—ãªã„
+setopt share_history      # ä»–ã®ã‚·ã‚§ãƒ«ã®ãƒ’ã‚¹ãƒˆãƒªã‚’ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ã§å…±æœ‰ã™ã‚‹
+setopt hist_reduce_blanks # ä½™åˆ†ãªã‚¹ãƒšãƒ¼ã‚¹ã‚’å‰Šé™¤ã—ã¦ãƒ’ã‚¹ãƒˆãƒªã«ä¿å­˜ã™ã‚‹
 
-# ƒ}ƒbƒ`‚µ‚½ƒRƒ}ƒ“ƒh‚ÌƒqƒXƒgƒŠ‚ð•\Ž¦‚Å‚«‚é‚æ‚¤‚É‚·‚é
+# ãƒžãƒƒãƒã—ãŸã‚³ãƒžãƒ³ãƒ‰ã®ãƒ’ã‚¹ãƒˆãƒªã‚’è¡¨ç¤ºã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
-# ‚·‚×‚Ä‚ÌƒqƒXƒgƒŠ‚ð•\Ž¦‚·‚é
+# ã™ã¹ã¦ã®ãƒ’ã‚¹ãƒˆãƒªã‚’è¡¨ç¤ºã™ã‚‹
 function history-all { history -E 1 }
 
 # ------------------------------
 # Look And Feel Settings
 # ------------------------------
 ### Ls Color ###
-# F‚ÌÝ’è
+# è‰²ã®è¨­å®š
 export LSCOLORS=Exfxcxdxbxegedabagacad
-# •âŠ®Žž‚ÌF‚ÌÝ’è
+# è£œå®Œæ™‚ã®è‰²ã®è¨­å®š
 export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-# ZLS_COLORS‚Æ‚ÍH
+# ZLS_COLORSã¨ã¯ï¼Ÿ
 export ZLS_COLORS=$LS_COLORS
-# lsƒRƒ}ƒ“ƒhŽžAŽ©“®‚ÅF‚ª‚Â‚­(ls -G‚Ì‚æ‚¤‚È‚à‚ÌH)
+# lsã‚³ãƒžãƒ³ãƒ‰æ™‚ã€è‡ªå‹•ã§è‰²ãŒã¤ã(ls -Gã®ã‚ˆã†ãªã‚‚ã®ï¼Ÿ)
 export CLICOLOR=true
-# •âŠ®Œó•â‚ÉF‚ð•t‚¯‚é
+# è£œå®Œå€™è£œã«è‰²ã‚’ä»˜ã‘ã‚‹
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 ### Prompt ###
-# ƒvƒƒ“ƒvƒg‚ÉF‚ð•t‚¯‚é
+# ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã«è‰²ã‚’ä»˜ã‘ã‚‹
 autoload -U colors; colors
-# ˆê”Êƒ†[ƒUŽž
+# ä¸€èˆ¬ãƒ¦ãƒ¼ã‚¶æ™‚
 tmp_prompt="%F{cyan}[%n@%D{%m/%d %T}]%f "
 #tmp_prompt="%{${fg[cyan]}%}%n%# %{${reset_color}%}"
 tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
 tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
 
-# rootƒ†[ƒUŽž(‘¾Žš‚É‚µAƒAƒ“ƒ_[ƒo[‚ð‚Â‚¯‚é)
+# rootãƒ¦ãƒ¼ã‚¶æ™‚(å¤ªå­—ã«ã—ã€ã‚¢ãƒ³ãƒ€ãƒ¼ãƒãƒ¼ã‚’ã¤ã‘ã‚‹)
 if [ ${UID} -eq 0 ]; then
   tmp_prompt="%B%U${tmp_prompt}%u%b"
   tmp_prompt2="%B%U${tmp_prompt2}%u%b"
@@ -79,11 +79,11 @@ if [ ${UID} -eq 0 ]; then
   tmp_sprompt="%B%U${tmp_sprompt}%u%b"
 fi
 
-PROMPT=$tmp_prompt    # ’Êí‚Ìƒvƒƒ“ƒvƒg
-PROMPT2=$tmp_prompt2  # ƒZƒJƒ“ƒ_ƒŠ‚Ìƒvƒƒ“ƒvƒg(ƒRƒ}ƒ“ƒh‚ª2sˆÈã‚ÌŽž‚É•\Ž¦‚³‚ê‚é)
-RPROMPT=$tmp_rprompt  # ‰E‘¤‚Ìƒvƒƒ“ƒvƒg
-SPROMPT=$tmp_sprompt  # ƒXƒyƒ‹’ù³—pƒvƒƒ“ƒvƒg
-# SSHƒƒOƒCƒ“Žž‚Ìƒvƒƒ“ƒvƒg
+PROMPT=$tmp_prompt    # é€šå¸¸ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ
+PROMPT2=$tmp_prompt2  # ã‚»ã‚«ãƒ³ãƒ€ãƒªã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ(ã‚³ãƒžãƒ³ãƒ‰ãŒ2è¡Œä»¥ä¸Šã®æ™‚ã«è¡¨ç¤ºã•ã‚Œã‚‹)
+RPROMPT=$tmp_rprompt  # å³å´ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ
+SPROMPT=$tmp_sprompt  # ã‚¹ãƒšãƒ«è¨‚æ­£ç”¨ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ
+# SSHãƒ­ã‚°ã‚¤ãƒ³æ™‚ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
   PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
 ;
@@ -108,10 +108,10 @@ precmd() {
 # ------------------------------
 
 ### Aliases ###
-#Žž‚ð•\Ž¦‚³‚¹‚é
+#æ™‚åˆ»ã‚’è¡¨ç¤ºã•ã›ã‚‹
 alias history='history -E'
 
-# cdƒRƒ}ƒ“ƒhŽÀsŒãAls‚ðŽÀs‚·‚é
+# cdã‚³ãƒžãƒ³ãƒ‰å®Ÿè¡Œå¾Œã€lsã‚’å®Ÿè¡Œã™ã‚‹
 function cd() {
   builtin cd $@ && ls;
 }
