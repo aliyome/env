@@ -115,3 +115,6 @@ alias history='history -E'
 function cd() {
   builtin cd $@ && ls;
 }
+
+alias ls='ls --color'
+
