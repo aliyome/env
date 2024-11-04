@@ -1,13 +1,7 @@
-# dlang
-set -gx PATH /opt/ldc2-1.27.1-osx-arm64/bin $PATH
+#####################
+# Homebrew
+#####################
 
-# opts
-set -gx PATH /opt/bin $PATH
-
-# .net
-set -gx PATH /Users/aliyome/.dotnet/tools $PATH
-
-# homebrew
 set -gx HOMEBREW_PREFIX "/opt/homebrew";
 set -gx HOMEBREW_CELLAR "/opt/homebrew/Cellar";
 set -gx HOMEBREW_REPOSITORY "/opt/homebrew";
@@ -15,29 +9,59 @@ set -q PATH; or set PATH ''; set -gx PATH "/opt/homebrew/bin" "/opt/homebrew/sbi
 set -q MANPATH; or set MANPATH ''; set -gx MANPATH "/opt/homebrew/share/man" $MANPATH;
 set -q INFOPATH; or set INFOPATH ''; set -gx INFOPATH "/opt/homebrew/share/info" $INFOPATH;
 
-# pyenv
-status --is-interactive; and pyenv init - | source
+# dlang
+# brew install ldc
+alias rdmd=ldmd2
 
-# ruby
-status --is-interactive; and rbenv init - | source
+# golang
+# brew install golang
+set PATH $HOME/go/bin $PATH
+
+# .net
+# brew install dotnet
 
 # rust
-set -gx PATH $HOME/.cargo/bin $PATH
+# brew install rustup && rustup-init
+set PATH $HOME/.cargo/bin $PATH
 
-# js(volta)
+# js
+# TODO: change from volta to other tool
+# brew install volta
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # gcloud
-source /Users/aliyome/google-cloud-sdk/path.fish.inc
+# brew install --cask google-cloud-sdk
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
 
-# capacitor
-set -gx CAPACITOR_ANDROID_STUDIO_PATH "/Users/aliyome/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/211.7628.21.2111.8193401/Android Studio.app"
+# bun
+# brew install oven-sh/bun/bun
+set PATH "$HOME/.bun/bin" $PATH
 
 # deno
-set -gx DENO_INSTALL /Users/aliyome/.deno
-set -gx PATH $DENO_INSTALL/bin $PATH
+# brew install deno
+set PATH -x "$HOME/.deno/bin" $PATH
 
-# fly
-set -gx FLYCTL_INSTALL /Users/aliyome/.fly
-set -gx PATH $FLYCTL_INSTALL/bin $PATH
+# php + laravel herd
+# brew install --cask herd
+# fish_add_path -U "$HOME/Library/Application\ Support/Herd/bin/" # TODO: we might not need this line
+
+# sqlite
+# brew install sqlite
+set PATH -x "/opt/homebrew/opt/sqlite/bin" $PATH
+
+
+#####################
+# Misc
+#####################
+
+set PATH /usr/local/bin $PATH
+set PATH /opt/bin $PATH
+
+
+#####################
+# Alias, Abbreviation
+#####################
+
+abbr -a fixup git commit --fixup
+abbr -a squash git rebase -i --autosquash --autostash
