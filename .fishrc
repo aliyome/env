@@ -27,12 +27,12 @@ set PATH $HOME/.cargo/bin $PATH
 # js
 # TODO: change from volta to other tool
 # brew install volta
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
+# set -gx VOLTA_HOME "$HOME/.volta"
+# set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # gcloud
 # brew install --cask google-cloud-sdk
-source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+# source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
 
 # bun
 # brew install oven-sh/bun/bun
@@ -49,6 +49,16 @@ set PATH -x "$HOME/.deno/bin" $PATH
 # sqlite
 # brew install sqlite
 set PATH -x "/opt/homebrew/opt/sqlite/bin" $PATH
+
+
+# mise
+# brew install mise
+# mise activate fish | source
+if [[ "$TERM_PROGRAM" == "vscode" || "$TERM_PROGRAM" == "cursor" ]]; then
+  mise activate fish --shims
+else
+  mise activate fish
+end
 
 
 #####################
