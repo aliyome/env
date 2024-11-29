@@ -105,4 +105,4 @@ EOF
 # 手動でセットアップが必要
 echo "ScanSnap Home"
 echo "XP-Pen"
-
+echo "Control + space 入力ソースを変更するキーボードショートカットを無効にする"
