@@ -6,7 +6,7 @@ if [[ "$TERM_PROGRAM" == "vscode" || "$TERM_PROGRAM" == "cursor" ]]; then
 	eval "$(mise activate zsh --shims)"
 else
 	eval "$(mise activate zsh)"
-end
+fi
 
 # Misc
 export PATH="/opt/bin":$PATH
