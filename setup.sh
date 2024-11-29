@@ -78,9 +78,9 @@ brew install terraform
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
 
 # 言語系
-brew install rustup
 brew install herd # php + laravel herd
 ## 以下は mise で管理するため不要
+# brew install rustup
 # brew install golang
 # brew install deno
 # brew install node
@@ -88,8 +88,10 @@ brew install herd # php + laravel herd
 # brew install oven-sh/bun/bun
 
 # セットアップ
-# mise use -g node@lts # TODO: ~/.config/mise.toml を作る
-rustup-init
+mise use -g node@lts # TODO: ~/.config/mise.toml を作る
+mise use -g deno
+mise use -g bun
+mise use -g rust
 
 # git
 git config --global user.name "aliyome"
