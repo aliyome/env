@@ -4,13 +4,9 @@
 
 # homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'export HOMEBREW_PREFIX="/opt/homebrew"' >> ~/.zshrc
-echo 'export HOMEBREW_CELLAR="/opt/homebrew/Cellar"' >> ~/.zshrc
-echo 'export HOMEBREW_REPOSITORY="/opt/homebrew"' >> ~/.zshrc
-echo 'export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"' >> ~/.zshrc
-echo 'export MANPATH="/opt/homebrew/share/man:${MANPATH:-}"' >> ~/.zshrc
-echo 'export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"' >> ~/.zshrc
-source ~/.zshrc
+echo >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # mac の softwareupdate を使って rosetta をインストール
 softwareupdate --install-rosetta --agree-to-license
