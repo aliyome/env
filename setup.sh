@@ -87,8 +87,9 @@ brew install herd # php + laravel herd
 # brew install yarn  # 1.x
 # brew install oven-sh/bun/bun
 
-# セットアップ
-mise use -g node@lts # TODO: ~/.config/mise.toml を作る
+# mise のセットアップ
+# TODO: ~/.config/mise.toml のバックアップを取ってファイルを設置するだけで良さそう
+mise use -g node@lts
 mise use -g deno
 mise use -g bun
 mise use -g rust
