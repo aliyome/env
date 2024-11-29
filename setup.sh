@@ -92,6 +92,7 @@ mise use -g node@lts # TODO: ~/.config/mise.toml を作る
 mise use -g deno
 mise use -g bun
 mise use -g rust
+echo 'eval "$(mise activate)"' >> ~/.zshrc
 
 # git
 git config --global user.name "aliyome"
