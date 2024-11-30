@@ -25,6 +25,9 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "<dic
 ## `^⌥スペース` で入力メニューの次のソースを選択
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 61 "<dict><key>enabled</key><false/></dict>"
 
+# キーボード長押し時に特殊文字ポップアップを無効にする（長押しでキーリピートするようにする）
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Dock
 ## 自動的に表示/非表示にする
 defaults write com.apple.dock autohide -bool true
