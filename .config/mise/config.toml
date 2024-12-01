@@ -3,3 +3,8 @@ bun = "latest"
 deno = "latest"
 node = "lts"
 rust = "latest"
+
+"npm:pnpm" = "latest"
+"npm:yarn" = "1.22.22"
+
+"npm:serve" = "latest"
