@@ -54,6 +54,7 @@ brew install iina
 brew install logi-options+
 brew install obs
 brew install vlc
+brew install the-unarchiver
 brew install --cask warp   # --cask を省略できるが warp という名前の Formula が追加されたらつらいので明示的につける
 brew install --cask docker # --cask をつけると docker ランタイムだけでなく Docker Desktop CE がインストールされる
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
@@ -61,7 +62,6 @@ brew install mas # App Store のアプリを CLI で管理できる
 mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
 mas install 1455702185 # ComicViewer 2
-# brew install --cask the-unarchiver # 現代の macOS には不要かも
 
 # 以下は apple silicon 非対応なのでインストールしない
 ## - skitch
