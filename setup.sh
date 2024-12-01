@@ -129,6 +129,12 @@ chmod 600 ~/.ssh/config
 # 	Port 22
 # EOF
 
+# trdsql
+curl -L -O https://github.com/noborus/trdsql/releases/download/v1.1.0/trdsql_v1.1.0_darwin_arm64.zip
+unzip trdsql_v1.1.0_darwin_arm64.zip
+sudo mkdir /opt/bin
+sudo cp trdsql_v1.1.0_darwin_arm64/trdsql /opt/bin/
+
 # 手動でセットアップが必要
 echo "ScanSnap Home"
 echo "XP-Pen"
