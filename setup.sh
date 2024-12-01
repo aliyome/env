@@ -53,6 +53,7 @@ brew install anki
 brew install iina
 brew install logi-options+
 brew install obs
+brew install vlc
 brew install --cask warp   # --cask を省略できるが warp という名前の Formula が追加されたらつらいので明示的につける
 brew install --cask docker # --cask をつけると docker ランタイムだけでなく Docker Desktop CE がインストールされる
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
