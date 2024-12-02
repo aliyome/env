@@ -3,6 +3,7 @@ bun = "latest"
 deno = "latest"
 node = "lts"
 rust = "latest"
+ruby = "3.3"
 
 "npm:pnpm" = "latest"
 "npm:yarn" = "1.22.22"
