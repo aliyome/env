@@ -39,7 +39,7 @@ defaults write com.apple.dock show-recents -bool false
 killall Dock # 反映
 
 # .DS_Store を作らない
-defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool True
 killall Finder # 反映
 
 # 普段利用するアプリ
