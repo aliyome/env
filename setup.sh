@@ -87,6 +87,7 @@ brew install terraform
 
 # 言語系
 brew install herd # php + laravel herd
+brew install libyaml # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
 ## 以下は mise で管理するため不要
 # brew install rustup
 # brew install golang
