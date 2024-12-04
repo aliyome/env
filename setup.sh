@@ -61,7 +61,7 @@ brew install --cask tailscale # --cask をつけると tailscale ランタイム
 brew install mas # App Store のアプリを CLI で管理できる
 mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
-mas install 1455702185 # ComicViewer 2
+mas install 6714467650 # Perplexity (LINEMOで無料の間だけ使う)
 
 # 以下は apple silicon 非対応なのでインストールしない
 ## - skitch
@@ -76,12 +76,12 @@ brew install google-cloud-sdk
 brew install visual-studio-code
 brew install cursor
 brew install android-studio
-brew install xcodes
 brew install webstorm
 brew install sqlite
 brew install figma
 brew install tableplus
 brew install terraform
+mas install 497799835 # Xcodes
 # brew install docker # Docker Desktop CE がインストール済みなので不要
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
 
