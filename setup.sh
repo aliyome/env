@@ -71,7 +71,6 @@ brew install --cask kindle-comic-converter
 
 # お試し
 brew install --cask streamlabs # OBS とは異なるプロファイルで画面収録（例えば会議音声の録音など）したい場合に利用する
-brew install yt-dlp  # python3 を依存でインストールするのが気に食わない
 
 # 以下は apple silicon 非対応なのでインストールしない
 ## - skitch
