@@ -63,6 +63,12 @@ mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
 mas install 6714467650 # Perplexity (LINEMOで無料の間だけ使う)
 
+## for Kindle Comic Converter
+brew install p7zip
+brew install unar
+brew install --cask kindle-previewer
+brew install --cask kindle-comic-converter
+
 # 以下は apple silicon 非対応なのでインストールしない
 ## - skitch
 ## - Google 日本語入力
