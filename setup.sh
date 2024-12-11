@@ -91,6 +91,7 @@ brew install figma
 brew install tableplus
 brew install terraform
 brew install uv
+brew install ffmpeg
 mas install 497799835 # Xcodes
 # brew install docker # Docker Desktop CE がインストール済みなので不要
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
