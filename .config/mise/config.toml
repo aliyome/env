@@ -4,6 +4,7 @@ deno = "latest"
 node = "lts"
 rust = "latest"
 ruby = "3.3"
+python = "3.13"
 
 "npm:pnpm" = "latest"
 "npm:yarn" = "1.22.22"
