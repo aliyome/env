@@ -69,6 +69,9 @@ brew install unar
 brew install --cask kindle-previewer
 brew install --cask kindle-comic-converter
 
+# お試し
+brew install --cask streamlabs # OBS とは異なるプロファイルで画面収録（例えば会議音声の録音など）したい場合に利用する
+
 # 以下は apple silicon 非対応なのでインストールしない
 ## - skitch
 ## - Google 日本語入力
