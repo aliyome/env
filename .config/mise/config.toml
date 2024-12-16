@@ -4,7 +4,7 @@ deno = "latest"
 node = "lts"
 rust = "latest"
 ruby = "3.3"
-
+terraform = "latest"
 "npm:pnpm" = "latest"
 "npm:yarn" = "1.22.22"
 

@@ -89,7 +89,6 @@ brew install webstorm
 brew install sqlite
 brew install figma
 brew install tableplus
-brew install terraform
 brew install uv
 brew install ffmpeg
 brew install cmake # for whisper.cpp
