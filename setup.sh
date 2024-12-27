@@ -63,6 +63,7 @@ brew install mas # App Store のアプリを CLI で管理できる
 mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
 mas install 6714467650 # Perplexity (LINEMOで無料の間だけ使う)
+mas install 1258530160 # Focus To-DO ※お試し
 
 ## for Kindle Comic Converter
 brew install p7zip
