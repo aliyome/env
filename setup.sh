@@ -56,6 +56,7 @@ brew install obs
 brew install vlc
 brew install the-unarchiver
 brew install elgato-stream-deck
+brew install wpsoffice
 brew install --cask warp   # --cask を省略できるが warp という名前の Formula が追加されたらつらいので明示的につける
 brew install --cask docker # --cask をつけると docker ランタイムだけでなく Docker Desktop CE がインストールされる
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
@@ -70,9 +71,6 @@ brew install p7zip
 brew install unar
 brew install --cask kindle-previewer
 brew install --cask kindle-comic-converter
-
-# お試し
-brew install --cask streamlabs # OBS とは異なるプロファイルで画面収録（例えば会議音声の録音など）したい場合に利用する
 
 # 以下は apple silicon 非対応なのでインストールしない
 ## - skitch
