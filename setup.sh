@@ -83,6 +83,7 @@ brew install firebase-cli
 brew install awscli
 brew install gh
 brew install glab
+brew install gitlab-runner
 brew install google-cloud-sdk
 brew install visual-studio-code
 brew install cursor
