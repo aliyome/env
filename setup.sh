@@ -173,3 +173,4 @@ echo "トラックパッドで、「タップでクリック」をオンにす�
 echo "Karabiner-Elements で .config/karabiner を上書きする"
 echo "Raycast で *.rayconfig をインポートする"
 echo "Warp の設定を行う"
+echo "DMMブックスアプリをインストールする<https://book.dmm.com/info_bookviewer.html>"
