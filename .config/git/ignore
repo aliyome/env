@@ -1,0 +1,12 @@
+# git default
+*~
+.DS_Store
+
+# vscode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/extensions.json
+*.code-workspace
+
+# local mise
+mise.local.toml
