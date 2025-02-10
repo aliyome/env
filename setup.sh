@@ -95,6 +95,7 @@ brew install figma
 brew install tableplus
 brew install uv
 brew install ffmpeg
+brew install libpg
 brew install cmake # for whisper.cpp
 mas install 497799835 # Xcodes
 # brew install docker # Docker Desktop CE がインストール済みなので不要
