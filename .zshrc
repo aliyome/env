@@ -14,4 +14,4 @@ export PATH="/opt/bin":$PATH
 # Alias
 alias fixup='git commit --fixup'
 alias squash='git rebase -i --autosquash --autostash'
-
+alias tf='terraform'
