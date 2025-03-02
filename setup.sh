@@ -97,6 +97,8 @@ brew install uv
 brew install ffmpeg
 brew install libpg
 brew install cmake # for whisper.cpp
+brew install sqldef/sqldef/psqldef
+brew install sqldef/sqldef/sqlite3def
 mas install 497799835 # Xcodes
 # brew install docker # Docker Desktop CE がインストール済みなので不要
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
@@ -156,12 +158,6 @@ unzip trdsql_v1.1.0_darwin_arm64.zip
 sudo mv trdsql_v1.1.0_darwin_arm64/trdsql /opt/bin/
 rm -rf trdsql_v1.1.0_darwin_arm64
 rm trdsql_v1.1.0_darwin_arm64.zip
-
-# sqldef
-curl -L -O https://github.com/sqldef/sqldef/releases/download/v0.17.24/sqlite3def_darwin_arm64.zip
-unzip sqlite3def_darwin_arm64.zip
-sudo mv sqlite3def /opt/bin/
-rm sqlite3def_darwin_arm64.zip
 
 # 手動でセットアップが必要
 echo "ScanSnap Home"
