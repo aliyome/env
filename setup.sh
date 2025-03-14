@@ -61,6 +61,7 @@ brew install --cask warp   # --cask を省略できるが warp という名前�
 brew install --cask docker # --cask をつけると docker ランタイムだけでなく Docker Desktop CE がインストールされる
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
 brew install --cask cryptomator
+brew install --cask google-drive
 brew install mas # App Store のアプリを CLI で管理できる
 mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
