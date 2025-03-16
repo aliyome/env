@@ -2,11 +2,7 @@
 export PATH="/opt/homebrew/opt/sqlite/bin":$PATH
 
 # Use mise as default version management tool
-if [[ "$TERM_PROGRAM" == "vscode" || "$TERM_PROGRAM" == "cursor" ]]; then
-	eval "$(mise activate zsh --shims)"
-else
-	eval "$(mise activate zsh)"
-fi
+eval "$(mise activate zsh)"
 
 # Misc
 export PATH="/opt/bin":$PATH
