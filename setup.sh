@@ -98,6 +98,7 @@ brew install tableplus
 brew install uv
 brew install ffmpeg
 brew install libpg
+brew install huggingface-cli
 brew install cmake # for whisper.cpp
 brew install sqldef/sqldef/psqldef
 brew install sqldef/sqldef/sqlite3def
