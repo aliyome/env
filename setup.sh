@@ -95,6 +95,7 @@ brew install phpstorm
 brew install sqlite
 brew install figma
 brew install tableplus
+brew install --cask lm-studio
 brew install uv
 brew install ffmpeg
 brew install libpg
