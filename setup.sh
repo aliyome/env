@@ -100,6 +100,7 @@ brew install uv
 brew install ffmpeg
 brew install libpg
 brew install huggingface-cli
+brew install duckdb
 brew install cmake # for whisper.cpp
 brew install sqldef/sqldef/psqldef
 brew install sqldef/sqldef/sqlite3def
