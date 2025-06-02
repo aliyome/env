@@ -80,6 +80,7 @@ brew install --cask kindle-comic-converter
 
 # 開発環境
 brew install mise
+brew install biome
 brew install ngrok
 brew install firebase-cli
 brew install awscli
