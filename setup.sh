@@ -62,6 +62,8 @@ brew install --cask docker # --cask をつけると docker ランタイムだけ
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
 brew install --cask cryptomator
 brew install --cask google-drive
+brew install --cask postman
+brew install --cask vial
 brew install mas # App Store のアプリを CLI で管理できる
 mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
@@ -105,7 +107,6 @@ brew install duckdb
 brew install cmake # for whisper.cpp
 brew install sqldef/sqldef/psqldef
 brew install sqldef/sqldef/sqlite3def
-brew install --cask postman
 mas install 497799835 # Xcodes
 # brew install docker # Docker Desktop CE がインストール済みなので不要
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
