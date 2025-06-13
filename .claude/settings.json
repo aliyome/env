@@ -1,0 +1,17 @@
+{
+	"permissions": {
+		"allow": [
+			"Bash(find:*)",
+			"Bash(mkdir:*)",
+			"Bash(mv:*)",
+			"Bash(grep:*)",
+			"Bash(bun dev)",
+			"Bash(bun add:*)",
+			"Bash(bun run:*)",
+			"Bash(bun test:*)",
+			"mcp__ide__getDiagnostics"
+		],
+		"deny": [],
+		"includeCoAuthoredBy": false
+	}
+}
