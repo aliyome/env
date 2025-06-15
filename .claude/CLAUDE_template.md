@@ -1,10 +1,6 @@
 CLAUDE.md という名前にすると、実際に読み込まれてしまうので、あえて `_template` をつけています。
 以下はよく使う CLAUDE.md の一部です。 bun + option-t を使うプロジェクトで有効です。
 
-## Basic Rules
-
-- 日本語で会話してください
-
 ## Coding Rules
 
 - Use `bun`.
