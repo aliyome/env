@@ -5,6 +5,7 @@
 			"Bash(mkdir:*)",
 			"Bash(mv:*)",
 			"Bash(grep:*)",
+			"Bash(ls:*)",
 			"Bash(bun dev)",
 			"Bash(bun add:*)",
 			"Bash(bun run:*)",
