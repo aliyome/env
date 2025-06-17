@@ -15,6 +15,9 @@ CLAUDE.md という名前にすると、実際に読み込まれてしまうの�
 - Use early return pattern to improve readability
   - Avoid deep nesting with `else` statements
   - Handle error cases first with early return
+- Do not disable any lint rules without explicit user approval
+- Export a function that matches the filename, and keep everything else as private as possible
+- All functions that can fail should return `Result<T, E>` instead of throwing
 
 ## Single Responsibility and API Minimization
 
