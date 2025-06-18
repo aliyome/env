@@ -10,7 +10,7 @@ Create a new Git worktree for the specified branch and change the current direct
 
 ```bash
 # Add worktree
-git worktree add .git/worktree/{branch name}
+git worktree add .git/worktree/{branch name} -b {branch name}
 
 # Move to the directory
 cd .git/worktree/{branch name}
