@@ -7,7 +7,6 @@
 			"Bash(grep:*)",
 			"Bash(rg:*)",
 			"Bash(ls:*)",
-			"Bash(git add:*)",
 			"Bash(git worktree:*)",
 			"Bash(bun install:*)",
 			"Bash(bun dev:*)",
