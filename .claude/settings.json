@@ -13,6 +13,7 @@
 			"Bash(bun add:*)",
 			"Bash(bun run:*)",
 			"Bash(bun test:*)",
+			"Bash(bun lint:*)",
 			"mcp__ide__getDiagnostics"
 		],
 		"deny": [],
