@@ -5,6 +5,7 @@
 			"Bash(mkdir:*)",
 			"Bash(mv:*)",
 			"Bash(grep:*)",
+			"Bash(sed:*)",
 			"Bash(rg:*)",
 			"Bash(ls:*)",
 			"Bash(say:*)",
