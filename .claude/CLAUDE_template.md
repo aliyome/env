@@ -33,6 +33,37 @@ CLAUDE.md という名前にすると、実際に読み込まれてしまうの�
 - Test case names should generally follow the format: "When [situation], performing [operation] results in [outcome]"
   - テストケースは日本語で書いてください。つまり「｛状況｝の場合に｛操作｝をすると｛結果｝になること」の形式
 
+## TDD TODO リスト（t-wada 流）
+
+### 基本方針
+
+- 🔴 Red: 失敗するテストを書く
+- 🟢 Green: テストを通す最小限の実装
+- 🔵 Refactor: リファクタリング
+- 小さなステップで進める
+- 仮実装（ベタ書き）から始める
+- 三角測量で一般化する
+- 明白な実装が分かる場合は直接実装しても OK
+- テストリストを常に更新する
+- 不安なところからテストを書く
+
+### TDD 実践のコツ
+
+1. **最初のテスト**: まず失敗するテストを書く（コンパイルエラーも OK）
+2. **仮実装**: テストを通すためにベタ書きでも OK（例：`return 42`）
+3. **三角測量**: 2 つ目、3 つ目のテストケースで一般化する
+4. **リファクタリング**: テストが通った後で整理する
+5. **TODO リスト更新**: 実装中に思いついたことはすぐリストに追加
+6. **1 つずつ**: 複数のテストを同時に書かない
+7. **コミット**: テストが通ったらすぐコミット
+
+### コミットルール
+
+- 🔴 テストを書いたら: `test: add failing test for [feature]`
+- 🟢 テストを通したら: `feat: implement [feature] to pass test`
+- 🔵 リファクタリングしたら: `refactor: [description]`
+- 小さくコミットする（1 機能 1 コミット）
+
 ## Git Commit Message Conventions
 
 All workflows follow conventional commit format:
