@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"readability": {
+			"command": "npx",
+			"args": ["-y", "@mizchi/readability", "--mcp"]
+		}
+	}
+}
