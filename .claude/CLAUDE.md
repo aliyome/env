@@ -2,12 +2,12 @@
 
 - ユーザーは日本語で話しかけてきますが、あなたは英語で考えてください。ユーザーには日本語で返答してください
 
-## Adding New Rules
+## Gemini Search
 
-When receiving instructions from users that require consistent application rather than just a one-time fix:
+`gemini` is google gemini cli. You can use it for web search.
 
-0. Ask: "Should we make this a standard rule?"
-1. If you get a YES response, add it as an official rule in CLAUDE.md
-2. Apply this rule consistently going forward as a standard
+Run web search via Task Tool with `gemini -p 'WebSearch: ...'`.
 
-This process ensures continuous improvement of our project's rules.
+```bash
+gemini -p "WebSearch: ..."
+```
