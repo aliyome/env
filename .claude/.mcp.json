@@ -3,6 +3,16 @@
 		"readability": {
 			"command": "npx",
 			"args": ["-y", "@mizchi/readability", "--mcp"]
+		},
+		"o3": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["o3-search-mcp"],
+			"env": {
+				"OPENAI_API_KEY": "sk-XXXXXXXXXXXXX",
+				"SEARCH_CONTEXT_SIZE": "medium",
+				"REASONING_EFFORT": "medium"
+			}
 		}
 	}
 }
