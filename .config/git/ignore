@@ -10,11 +10,21 @@
 !.vscode/tasks.json
 !.vscode/extensions.json
 *.code-workspace
+.rest/*
 
 # local mise
 mise.local.toml
 
-# ai agent
+# cline
 .clinerules
+
+# Cursor
 .cursor
-.cursor/rules/*.local.mdc
+
+# Claude
+.claude
+CLAUDE.md
+**/.claude/settings.local.json
+
+# Gemini
+GEMINI.md
