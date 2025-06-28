@@ -28,3 +28,9 @@ CLAUDE.md という名前にすると、実際に読み込まれてしまうの�
 - 公開 API は最小限に保ち、実装の詳細は隠蔽する
   - 最小限の関数や型のみ export する
 - モジュールの境界と依存関係を最小限に抑える
+
+## Backend Development
+
+- Domain Driven Design
+- ディレクトリ構造は packaging by feature
+- 高階関数による DI
