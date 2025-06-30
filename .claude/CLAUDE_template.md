@@ -7,7 +7,7 @@ CLAUDE.md という名前にすると、実際に読み込まれてしまうの�
 - t-wada が推奨する TDD で開発する
 - 各ステップの最後に lint, test, commit を行う
 - 明示的なユーザーの承認なしに lint ルールを無効にしない
-- コミットメッセージは Conventional Commit 形式に従い、日本語で書きます
+- コミットメッセージは Conventional Commit 形式に従い、日本語で書く
 
 ## Coding Rules
 
