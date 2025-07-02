@@ -16,10 +16,24 @@
 			"Bash(bun run:*)",
 			"Bash(bun test:*)",
 			"Bash(bun lint:*)",
+			"Bash(askrepo:*)",
 			"mcp__ide__getDiagnostics",
 			"mcp__readability__read_url_content_as_markdown"
 		],
 		"deny": [],
 		"includeCoAuthoredBy": false
+	},
+	"hooks": {
+		"Stop": [
+			{
+				"matcher": "",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "~/.claude/hooks/stop-send-notification.js"
+					}
+				]
+			}
+		]
 	}
 }
