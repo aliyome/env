@@ -30,7 +30,7 @@
 				"hooks": [
 					{
 						"type": "command",
-						"command": "~/.claude/hooks/stop-send-notification.js"
+						"command": "~/.claude/hooks/stop-send-notification.mjs"
 					}
 				]
 			}
