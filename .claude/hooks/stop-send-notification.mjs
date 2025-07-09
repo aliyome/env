@@ -57,6 +57,9 @@ try {
 				stdio: "ignore",
 			},
 		);
+		execFileSync("say", [lastMessageContent], {
+			stdio: "ignore",
+		});
 	}
 } catch (error) {
 	console.log("Hook execution failed:", error.message);

@@ -1,4 +1,4 @@
-## Workflow: Change set Review [/review]
+## Workflow: Change set Review [/diff-review]
 
 **Prerequisites:** Target file path specified and file exist
 
