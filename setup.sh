@@ -112,7 +112,7 @@ mas install 497799835 # Xcodes
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
 
 # 言語系
-brew install herd # php + laravel herd
+brew install herd # php + laravel herd だけど、本当は mise で管理したい
 brew install libyaml # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
 
 # 各種設定ファイルをコピーする
