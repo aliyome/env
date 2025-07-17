@@ -161,13 +161,6 @@ chmod 600 ~/.ssh/config
 # Homebrew でインストールできないツールのセットアップ
 sudo mkdir /opt/bin
 
-# trdsql
-curl -L -O https://github.com/noborus/trdsql/releases/download/v1.1.0/trdsql_v1.1.0_darwin_arm64.zip
-unzip trdsql_v1.1.0_darwin_arm64.zip
-sudo mv trdsql_v1.1.0_darwin_arm64/trdsql /opt/bin/
-rm -rf trdsql_v1.1.0_darwin_arm64
-rm trdsql_v1.1.0_darwin_arm64.zip
-
 # 手動でセットアップが必要
 echo "ScanSnap Home"
 echo "XP-Pen"
