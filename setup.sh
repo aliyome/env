@@ -119,20 +119,20 @@ brew install libyaml # mise で ruby をインストールする際に psych の
 mkdir -p ~/.config
 
 mkdir -p ~/.config/git
-ln -s .config/git/ignore ~/.config/git/ignore
+ln -s "$(pwd)/.config/git/ignore" ~/.config/git/ignore
 
 mkdir -p ~/.config/mise
-ln -s .config/mise/config.toml ~/.config/mise/config.toml
+ln -s "$(pwd)/.config/mise/config.toml" ~/.config/mise/config.toml
 
 mkdir -p ~/.config/karabiner
-ln -s .config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+ln -s "$(pwd)/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
 
 mkdir -p ~/.claude
-ln -s .claude/settings.json ~/.claude/settings.json
-ln -s .claude/CLAUDE.md ~/.claude/CLAUDE.md
-ln -s .claude/commands ~/.claude/commands
-ln -s .claude/hooks ~/.claude/hooks
-ln -s .claude/scripts ~/.claude/scripts
+ln -s "$(pwd)/.claude/settings.json" ~/.claude/settings.json
+ln -s "$(pwd)/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
+ln -s "$(pwd)/.claude/commands" ~/.claude/commands
+ln -s "$(pwd)/.claude/hooks" ~/.claude/hooks
+ln -s "$(pwd)/.claude/scripts" ~/.claude/scripts
 
 # mise のセットアップ
 # mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
