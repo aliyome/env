@@ -134,18 +134,6 @@ ssh-add ~/.ssh/id_ed25519
 touch ~/.ssh/config
 chmod 600 ~/.ssh/config
 
-# GitHub には ssh ではなく PAT を使って https でアクセスするため不要
-# cat <<<EOF >> ~/.ssh/config
-# Host github
-# 	HostName github.com
-# 	User aliyome
-# 	PreferredAuthentications publickey
-# 	IdentityFile ~/.ssh/id_ed25519
-# 	UseKeychain yes
-# 	AddKeysToAgent yes
-# 	Port 22
-# EOF
-
 # Homebrew でインストールできないツールのセットアップ
 sudo mkdir /opt/bin
 
