@@ -58,7 +58,7 @@ brew install the-unarchiver
 brew install elgato-stream-deck
 brew install wpsoffice
 brew install --cask warp   # --cask を省略できるが warp という名前の Formula が追加されたらつらいので明示的につける
-brew install --cask docker # --cask をつけると docker ランタイムだけでなく Docker Desktop CE がインストールされる
+brew install --cask docker # --cask をつけると Docker Desktop CE (含む docker コマンド類)がインストールされる
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
 brew install --cask cryptomator
 brew install --cask google-drive
@@ -109,7 +109,6 @@ brew install cmake # for whisper.cpp
 brew install sqldef/sqldef/psqldef
 brew install sqldef/sqldef/sqlite3def
 mas install 497799835 # Xcodes
-# brew install docker # Docker Desktop CE がインストール済みなので不要
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
 
 # 言語系
