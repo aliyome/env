@@ -115,6 +115,25 @@ mas install 497799835 # Xcodes
 brew install herd # php + laravel herd
 brew install libyaml # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
 
+# 各種設定ファイルをコピーする
+mkdir -p ~/.config
+
+mkdir -p ~/.config/git
+ln -s .config/git/ignore ~/.config/git/ignore
+
+mkdir -p ~/.config/mise
+ln -s .config/mise/config.toml ~/.config/mise/config.toml
+
+mkdir -p ~/.config/karabiner
+ln -s .config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+
+mkdir -p ~/.claude
+ln -s .claude/settings.json ~/.claude/settings.json
+ln -s .claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -s .claude/commands ~/.claude/commands
+ln -s .claude/hooks ~/.claude/hooks
+ln -s .claude/scripts ~/.claude/scripts
+
 # mise のセットアップ
 # mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
 echo 'eval "$(mise activate)"' >> ~/.zshrc
@@ -149,3 +168,4 @@ echo "Karabiner-Elements で .config/karabiner を上書きする"
 echo "Raycast で *.rayconfig をインポートする"
 echo "Warp の設定を行う"
 echo "DMMブックスアプリをインストールする<https://book.dmm.com/info_bookviewer.html>"
+echo "VSCode の設定ファイルをコピーする"
