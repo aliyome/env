@@ -115,20 +115,9 @@ mas install 497799835 # Xcodes
 # 言語系
 brew install herd # php + laravel herd
 brew install libyaml # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
-## 以下は mise で管理するため不要
-# brew install rustup
-# brew install golang
-# brew install deno
-# brew install node
-# brew install yarn  # 1.x
-# brew install oven-sh/bun/bun
 
 # mise のセットアップ
-# TODO: ~/.config/mise.toml のバックアップを取ってファイルを設置するだけで良さそう
-mise use -g node@lts
-mise use -g deno
-mise use -g bun
-mise use -g rust
+mise install
 echo 'eval "$(mise activate)"' >> ~/.zshrc
 
 # git
