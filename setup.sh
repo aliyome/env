@@ -116,7 +116,7 @@ brew install herd # php + laravel herd
 brew install libyaml # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
 
 # mise のセットアップ
-mise install
+# mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
 echo 'eval "$(mise activate)"' >> ~/.zshrc
 
 # git
