@@ -57,7 +57,8 @@ try {
 				stdio: "ignore",
 			},
 		);
-		execFileSync("say", [lastMessageContent], {
+		const firstLine = lastMessageContent.split("\n")[0];
+		execFileSync("say", [firstLine], {
 			stdio: "ignore",
 		});
 	}
