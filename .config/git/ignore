@@ -22,8 +22,6 @@ mise.local.toml
 .cursor
 
 # Claude
-.claude
-CLAUDE.md
 **/.claude/settings.local.json
 
 # Gemini
