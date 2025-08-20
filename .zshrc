@@ -6,7 +6,7 @@ eval "$(mise activate zsh)"
 
 # Misc
 export PATH="/opt/bin:$PATH"
-export PATH="~/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Alias
 alias fixup='git commit --fixup'
