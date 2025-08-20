@@ -12,5 +12,5 @@ terraform = "latest"
 "npm:pnpm" = "latest"
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
-"npm:@anthropic-ai/claude-code" = "latest"
+# "npm:@anthropic-ai/claude-code" = "latest" # npmではなくバイナリインストールする
 "npm:@google/gemini-cli" = "latest"
