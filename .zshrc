@@ -5,7 +5,8 @@ export PATH="/opt/homebrew/opt/sqlite/bin":$PATH
 eval "$(mise activate zsh)"
 
 # Misc
-export PATH="/opt/bin":$PATH
+export PATH="/opt/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 
 # Alias
 alias fixup='git commit --fixup'
