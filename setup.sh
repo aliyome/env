@@ -134,6 +134,9 @@ ln -s "$(pwd)/.claude/commands" ~/.claude/commands
 ln -s "$(pwd)/.claude/hooks" ~/.claude/hooks
 ln -s "$(pwd)/.claude/scripts" ~/.claude/scripts
 
+mv ~/.zshrc ~/.zshrc.orig
+ln -s "$(pwd)/.zshrc" ~/.zshrc
+
 # mise のセットアップ
 # mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
 echo 'eval "$(mise activate)"' >> ~/.zshrc
