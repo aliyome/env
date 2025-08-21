@@ -1,44 +1,45 @@
 {
-	"$schema": "https://json.schemastore.org/claude-code-settings.json",
-	"permissions": {
-		"allow": [
-			"Bash(find:*)",
-			"Bash(mkdir:*)",
-			"Bash(mv:*)",
-			"Bash(grep:*)",
-			"Bash(sed:*)",
-			"Bash(rg:*)",
-			"Bash(ls:*)",
-			"Bash(say:*)",
-			"Bash(git worktree:*)",
-			"Bash(bun install:*)",
-			"Bash(bun dev:*)",
-			"Bash(bun add:*)",
-			"Bash(bun run:*)",
-			"Bash(bun test:*)",
-			"Bash(bun lint:*)",
-			"Bash(askrepo:*)",
-			"mcp__ide__getDiagnostics",
-			"mcp__serena:*"
-		],
-		"deny": [],
-		"defaultMode": "bypassPermissions"
-	},
-	"enableAllProjectMcpServers": true,
-	"hooks": {
-		"Stop": [
-			{
-				"matcher": "",
-				"hooks": [
-					{
-						"type": "command",
-						"command": "~/.claude/hooks/stop-send-notification.mjs"
-					}
-				]
-			}
-		]
-	},
-	"feedbackSurveyState": {
-		"lastShownTime": 1754063457516
-	}
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(grep:*)",
+      "Bash(sed:*)",
+      "Bash(rg:*)",
+      "Bash(ls:*)",
+      "Bash(say:*)",
+      "Bash(git worktree:*)",
+      "Bash(bun install:*)",
+      "Bash(bun dev:*)",
+      "Bash(bun add:*)",
+      "Bash(bun run:*)",
+      "Bash(bun test:*)",
+      "Bash(bun lint:*)",
+      "Bash(askrepo:*)",
+      "mcp__ide__getDiagnostics",
+      "mcp__serena"
+    ],
+    "deny": [],
+    "defaultMode": "bypassPermissions"
+  },
+  "model": "opusplan",
+  "enableAllProjectMcpServers": true,
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/stop-send-notification.mjs"
+          }
+        ]
+      }
+    ]
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1754063457516
+  }
 }
