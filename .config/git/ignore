@@ -18,11 +18,5 @@ mise.local.toml
 # cline
 .clinerules
 
-# Cursor
-.cursor
-
 # Claude
 **/.claude/settings.local.json
-
-# Gemini
-GEMINI.md
