@@ -1,0 +1,22 @@
+# このファイルはシンボリックリンクせずにコピペして使う。
+# 実行環境ごとにプロジェクトの信頼設定などが書き込まれるため。
+
+model_reasoning_effort = "high"
+hide_agent_reasoning = true
+network_access = true
+
+notify = ["say", "Codexの作業が完了しました"]
+
+[tools]
+web_search = true
+
+[mcp_servers.serena]
+command = "uvx"
+args = [
+  "--from",
+  "git+https://github.com/oraios/serena",
+  "serena",
+  "start-mcp-server",
+  "--context",
+  "codex",
+]
