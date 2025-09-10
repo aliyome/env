@@ -135,6 +135,9 @@ ln -s "$(pwd)/.claude/commands" ~/.claude/commands
 ln -s "$(pwd)/.claude/hooks" ~/.claude/hooks
 ln -s "$(pwd)/.claude/scripts" ~/.claude/scripts
 
+mkdir -p ~/.codex
+ln -s "$(pwd)/.codex/prompts" ~/.codex/prompts
+
 mv ~/.zshrc ~/.zshrc.orig
 ln -s "$(pwd)/.zshrc" ~/.zshrc
 
