@@ -11,10 +11,12 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Alias
-alias ls='ls --color'
+alias ls='eza'
 alias fixup='git commit --fixup'
 alias squash='git rebase -i --autosquash --autostash'
+alias delete-merged-branches='git branch --merged | grep -v "*" | grep -v "^+" | xargs git branch -d'
 alias tf='terraform'
+alias brew-up='brew upgrade && brew autoremove && brew cleanup -s'
 
 # bun completions
 [ -s "/Users/aliyome/.bun/_bun" ] && source "/Users/aliyome/.bun/_bun"

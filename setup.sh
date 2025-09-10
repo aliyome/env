@@ -99,6 +99,7 @@ brew install sqlite
 brew install figma
 brew install tableplus
 brew install ripgrep
+brew install eza
 brew install --cask lm-studio
 brew install uv
 brew install ffmpeg
