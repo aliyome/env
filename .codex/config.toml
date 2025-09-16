@@ -1,7 +1,7 @@
 # このファイルはシンボリックリンクせずにコピペして使う。
 # 実行環境ごとにプロジェクトの信頼設定などが書き込まれるため。
 
-model_reasoning_effort = "high"
+# model_reasoning_effort = "high" # gpt-5-codex では指定しない方が良い結果になるらしい
 hide_agent_reasoning = true
 network_access = true
 
