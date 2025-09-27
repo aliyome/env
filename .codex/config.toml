@@ -10,6 +10,10 @@ notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 [tools]
 web_search = true
 
+[mcp_servers.shadcn]
+command = "bunx"
+args = ["--bun", "shadcn@latest", "mcp"]
+
 [mcp_servers.serena]
 command = "uvx"
 args = [
