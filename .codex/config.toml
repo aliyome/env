@@ -24,3 +24,7 @@ args = [
   "--context",
   "codex",
 ]
+
+[mcp_servers.chrome-devtools]
+command = "bunx"
+args = ["--bun", "chrome-devtools-mcp@latest"]
