@@ -3,6 +3,7 @@ bun = "latest"
 deno = "latest"
 node = "lts"
 rust = "latest"
+go = "latest"
 ruby = "3.4"
 python = "latest"
 
