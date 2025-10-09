@@ -140,6 +140,7 @@ ln -s "$(pwd)/.codex/prompts" ~/.codex/prompts
 
 mkdir -p ~/.gemini
 ln -s "$(pwd)/.gemini/settings.json" ~/.gemini/settings.json
+ln -s "$(pwd)/.gemini/commands" ~/.gemini/commands
 
 mv ~/.zshrc ~/.zshrc.orig
 ln -s "$(pwd)/.zshrc" ~/.zshrc
