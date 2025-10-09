@@ -1,0 +1,20 @@
+{
+	"ide": {
+		"hasSeenNudge": true,
+		"enabled": true
+	},
+	"security": {
+		"auth": {
+			"selectedType": "oauth-personal"
+		}
+	},
+	"ui": {
+		"theme": "Default"
+	},
+	"mcpServers": {
+		"chrome-devtools": {
+			"command": "bunx",
+			"args": ["--bun", "chrome-devtools-mcp@latest"]
+		}
+	}
+}
