@@ -138,6 +138,9 @@ ln -s "$(pwd)/.claude/scripts" ~/.claude/scripts
 mkdir -p ~/.codex
 ln -s "$(pwd)/.codex/prompts" ~/.codex/prompts
 
+mkdir -p ~/.gemini
+ln -s "$(pwd)/.gemini/settings.json" ~/.gemini/settings.json
+
 mv ~/.zshrc ~/.zshrc.orig
 ln -s "$(pwd)/.zshrc" ~/.zshrc
 
