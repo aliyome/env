@@ -101,6 +101,7 @@ brew install tableplus
 brew install ripgrep
 brew install eza
 brew install --cask lm-studio
+brew install --cask claude-code
 brew install uv
 brew install ffmpeg
 brew install libpg
