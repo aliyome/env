@@ -1,3 +1,7 @@
+---
+description: GitHub リポジトリに対して最適な issue を作成する
+---
+
 # Claude Code Issue Creation Guide
 
 ## 要件

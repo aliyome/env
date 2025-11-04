@@ -1,9 +1,8 @@
 ---
 allowed-tools: Bash(git diff:*), Bash(git status:*), Bash(git log:*), Bash(git show:*), Bash(git remote show:*), Read, Glob, Grep, LS, Task
 description: Complete a security review of the pending changes on the current branch
+copied-from: https://github.com/anthropics/claude-code-security-review/blob/main/.claude/commands/security-review.md
 ---
-
-copied from: <https://github.com/anthropics/claude-code-security-review/blob/main/.claude/commands/security-review.md>
 
 You are a senior security engineer conducting a focused security review of the changes on this branch.
 
