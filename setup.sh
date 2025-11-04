@@ -135,6 +135,7 @@ ln -s "$(pwd)/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
 ln -s "$(pwd)/.claude/commands" ~/.claude/commands
 ln -s "$(pwd)/.claude/hooks" ~/.claude/hooks
 ln -s "$(pwd)/.claude/scripts" ~/.claude/scripts
+ln -s "$(pwd)/.claude/skills" ~/.claude/skills
 
 mkdir -p ~/.codex
 ln -s "$(pwd)/.codex/prompts" ~/.codex/prompts
