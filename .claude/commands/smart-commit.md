@@ -1,6 +1,8 @@
 ---
 description: 変更内容を自動的に分析し、関連する変更ごとにグループ化して適切なコミットを作成
 allowed-tools: Bash, Read
+mode: agent
+model: Claude Haiku 4.5 (copilot)
 ---
 
 # Smart Commit Command

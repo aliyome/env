@@ -1,5 +1,7 @@
 ---
 description: コーディング支援 AI として、人間に確認を取りながら実装を進める役割を担う
+mode: agent
+model: GPT-5 (copilot)
 ---
 
 # ABA Coworker Command

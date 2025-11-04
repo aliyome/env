@@ -144,6 +144,9 @@ mkdir -p ~/.gemini
 ln -s "$(pwd)/.gemini/settings.json" ~/.gemini/settings.json
 ln -s "$(pwd)/.gemini/commands" ~/.gemini/commands
 
+mkdir -p ~/Library/Application\ Support/Code/User/prompts/
+for f in .claude/commands/*.md(N); do ln -sf "$PWD/$f" "$HOME/Library/Application Support/Code/User/prompts/${${f:t}%.md}.prompt.md"; done
+
 mv ~/.zshrc ~/.zshrc.orig
 ln -s "$(pwd)/.zshrc" ~/.zshrc
 

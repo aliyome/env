@@ -1,5 +1,7 @@
 ---
 description: GitHub リポジトリに対して最適な issue を作成する
+mode: agent
+model: GPT-5 (copilot)
 ---
 
 # Claude Code Issue Creation Guide

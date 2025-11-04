@@ -1,6 +1,8 @@
 ---
 description: Create or update PR title and description for a given PR number
 ref: https://www.vibecodingstudio.dev/claude-code/commands/pr-description
+mode: agent
+model: GPT-5 (copilot)
 ---
 
 # PR Description Generator

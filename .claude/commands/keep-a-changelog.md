@@ -1,5 +1,7 @@
 ---
 description: Keep a changelog に従って CHANGELOG.md を更新する。
+mode: agent
+model: GPT-5 (copilot)
 ---
 
 # Keep a Changelog Command
