@@ -13,6 +13,10 @@
 				"SEARCH_CONTEXT_SIZE": "medium",
 				"REASONING_EFFORT": "medium"
 			}
+		},
+		"cloudflare": {
+			"type": "http",
+			"url": "https://docs.mcp.cloudflare.com/mcp"
 		}
 	}
 }
