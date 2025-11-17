@@ -36,6 +36,26 @@
 					}
 				]
 			}
+		],
+		"SessionEnd": [
+			{
+				"hooks": [
+					{
+						"type": "command",
+						"command": "~/.claude/hooks/suggest-claude-md-hook.sh"
+					}
+				]
+			}
+		],
+		"PreCompact": [
+			{
+				"hooks": [
+					{
+						"type": "command",
+						"command": "~/.claude/hooks/suggest-claude-md-hook.sh"
+					}
+				]
+			}
 		]
 	},
 	"statusLine": {
