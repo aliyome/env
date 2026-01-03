@@ -129,6 +129,9 @@ ln -s "$(pwd)/.config/mise/config.toml" ~/.config/mise/config.toml
 mkdir -p ~/.config/karabiner
 ln -s "$(pwd)/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
 
+mkdir -p ~/.config/opencode
+ln -s "$(pwd)/.config/opencode/opencode.json" ~/.config/opencode/opencode.json
+
 mkdir -p ~/.claude
 ln -s "$(pwd)/.claude/settings.json" ~/.claude/settings.json
 ln -s "$(pwd)/.claude/CLAUDE.md" ~/.claude/CLAUDE.md

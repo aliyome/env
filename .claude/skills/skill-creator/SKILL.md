@@ -1,7 +1,7 @@
 ---
 name: claude-skill-creator
 description: Guide for creating effective Claude Code skills with proper YAML frontmatter, directory structure, and best practices. Use when creating new skills, updating existing skills, or learning about skill development.
-ref: [Claude Skillsで簡単にApple風デザインを自動生成！AIっぽいデザインから脱却する方法](https://zenn.dev/tmasuyama1114/articles/apple_design_skills)
+ref: https://zenn.dev/tmasuyama1114/articles/apple_design_skills
 example: >
   claude-skill-creator スキルを使って、Apple風のおしゃれデザインを作成するための新たな Claude Skills である "apple-design" をプロジェクト内に作成してください。
   claude-skill-creator を使って、apple-design Skills をカスタマイズしてください。references フォルダを活用しつつ、よりデザインシステムとして充実させてください。
