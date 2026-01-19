@@ -115,8 +115,12 @@ mas install 497799835 # Xcodes
 # brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
 
 # 言語系
-brew install herd # php + laravel herd だけど、本当は mise で管理したい
-brew install libyaml # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
+# mise で php を管理する際は内部的に asdf-php を利用している
+# asdf-php は以下のパッケージが必要 see: https://github.com/asdf-community/asdf-php/blob/248e9c6e2a7824510788f05e8cee848a62200b65/.github/workflows/workflow.yml#L52
+brew install autoconf automake bison freetype gd gettext icu4c krb5 libedit libiconv libjpeg libpng libxml2 libzip pkg-config re2c zlib
+
+# mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
+brew install libyaml 
 
 # 各種設定ファイルをコピーする
 mkdir -p ~/.config

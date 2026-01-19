@@ -6,6 +6,7 @@ rust = "latest"
 go = "latest"
 ruby = "3.4"
 python = "latest"
+php = "8.5"
 
 uv = "latest"
 terraform = "latest"
