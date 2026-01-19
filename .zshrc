@@ -19,12 +19,14 @@ alias tf='terraform'
 alias brew-up='brew upgrade && brew autoremove && brew cleanup -s'
 
 # tmux
-alias set-title='printf "\033]2;%s\033\\" '
-function list-agents() {
-  tmux list-panes -a -F "Found agent: '#{pane_title}' (ID: #{pane_id})"
+function set-myname() {
+  tmux select-pane -T "$1"
 }
 function get-myname() {
-  tmux display-message -p "#{pane_title}"
+  tmux display-message -p "#{pane_title} (ID: #{pane_id})"
+}
+function list-agents() {
+  tmux list-panes -a -F "Found agent: '#{pane_title}' (ID: #{pane_id})"
 }
 
 # bun completions
