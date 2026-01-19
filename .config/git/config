@@ -1,0 +1,8 @@
+[user]
+	name = aliyome
+	email = aliyome@gmail.com
+[pull]
+  rebase = true
+[core]
+  quotepath = false
+  # autocrlf = input
