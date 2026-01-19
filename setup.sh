@@ -81,6 +81,7 @@ brew install --cask kindle-comic-converter
 ## - Google 日本語入力
 
 # 開発環境
+brew install tmux
 brew install mise
 brew install biome
 brew install ngrok
