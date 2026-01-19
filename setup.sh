@@ -125,6 +125,9 @@ mkdir -p ~/.config/git
 ln -s "$(pwd)/.config/git/ignore" ~/.config/git/ignore
 ln -s "$(pwd)/.config/git/config" ~/.config/git/config
 
+mkdir -p ~/.config/tmux
+ln -s "$(pwd)/.config/tmux/tmux.conf" ~/.config/tmux/tmux.conf
+
 mkdir -p ~/.config/mise
 ln -s "$(pwd)/.config/mise/config.toml" ~/.config/mise/config.toml
 

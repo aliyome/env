@@ -18,6 +18,15 @@ alias delete-merged-branches='git branch --merged | grep -v "*" | grep -v "^+" |
 alias tf='terraform'
 alias brew-up='brew upgrade && brew autoremove && brew cleanup -s'
 
+# tmux
+alias set-title='printf "\033]2;%s\033\\" '
+function list-agents() {
+  tmux list-panes -a -F "Found agent: '#{pane_title}' (ID: #{pane_id})"
+}
+function get-myname() {
+  tmux display-message -p "#{pane_title}"
+}
+
 # bun completions
 [ -s "/Users/aliyome/.bun/_bun" ] && source "/Users/aliyome/.bun/_bun"
 
