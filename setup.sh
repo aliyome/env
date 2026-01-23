@@ -86,6 +86,7 @@ brew install mise
 brew install biome
 brew install ngrok
 brew install firebase-cli
+brew install newrelic-cli
 brew install awscli
 brew install gh
 brew install glab
