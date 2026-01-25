@@ -97,6 +97,7 @@ brew install cursor
 brew install android-studio
 brew install webstorm
 brew install phpstorm
+brew install --cask rubymine
 brew install sqlite
 brew install figma
 brew install tableplus
