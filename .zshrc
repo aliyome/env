@@ -66,3 +66,9 @@ export PATH="/Users/aliyome/.codeium/windsurf/bin:$PATH"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/aliyome/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# Added by Antigravity
+export PATH="/Users/aliyome/.antigravity/antigravity/bin:$PATH"
+
+# Amp CLI
+export PATH="/Users/aliyome/.amp/bin:$PATH"
