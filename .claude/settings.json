@@ -24,44 +24,6 @@
 		"deny": [],
 		"defaultMode": "bypassPermissions"
 	},
-	"enableAllProjectMcpServers": true,
-	"hooks": {
-		"Stop": [
-			{
-				"matcher": "",
-				"hooks": [
-					{
-						"type": "command",
-						"command": "~/.claude/hooks/stop-send-notification.mjs"
-					}
-				]
-			}
-		],
-		"SessionEnd": [
-			{
-				"hooks": [
-					{
-						"type": "command",
-						"command": "~/.claude/hooks/suggest-claude-md-hook.sh"
-					}
-				]
-			}
-		],
-		"PreCompact": [
-			{
-				"hooks": [
-					{
-						"type": "command",
-						"command": "~/.claude/hooks/suggest-claude-md-hook.sh"
-					}
-				]
-			}
-		]
-	},
-	"statusLine": {
-		"type": "command",
-		"command": "~/.claude/scripts/statusline.js"
-	},
 	"feedbackSurveyState": {
 		"lastShownTime": 1754063457516
 	}

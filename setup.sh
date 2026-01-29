@@ -140,27 +140,6 @@ ln -s "$(pwd)/.config/mise/config.toml" ~/.config/mise/config.toml
 mkdir -p ~/.config/karabiner
 ln -s "$(pwd)/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
 
-mkdir -p ~/.config/opencode
-ln -s "$(pwd)/.config/opencode/opencode.json" ~/.config/opencode/opencode.json
-
-mkdir -p ~/.claude
-ln -s "$(pwd)/.claude/settings.json" ~/.claude/settings.json
-ln -s "$(pwd)/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
-ln -s "$(pwd)/.claude/commands" ~/.claude/commands
-ln -s "$(pwd)/.claude/hooks" ~/.claude/hooks
-ln -s "$(pwd)/.claude/scripts" ~/.claude/scripts
-ln -s "$(pwd)/.claude/skills" ~/.claude/skills
-
-mkdir -p ~/.codex
-ln -s "$(pwd)/.codex/prompts" ~/.codex/prompts
-
-mkdir -p ~/.gemini
-ln -s "$(pwd)/.gemini/settings.json" ~/.gemini/settings.json
-ln -s "$(pwd)/.gemini/commands" ~/.gemini/commands
-
-mkdir -p ~/Library/Application\ Support/Code/User/prompts/
-for f in .claude/commands/*.md(N); do ln -sf "$PWD/$f" "$HOME/Library/Application Support/Code/User/prompts/${${f:t}%.md}.prompt.md"; done
-
 mv ~/.zshrc ~/.zshrc.orig
 ln -s "$(pwd)/.zshrc" ~/.zshrc
 

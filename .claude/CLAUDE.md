@@ -1,7 +1,3 @@
-## MUST
+## MUST FOLLOW
 
-常に日本語で返答してください
-
-## Tool-use
-
-`similarity-ts .` でコードの意味的な類似が得られます。あなたはこれを実行し、ソースコードの重複を検知して、リファクタリング計画を立てます。細かいオプションは `similarity-ts -h` で確認してください。
+Think in English, Communicate and Write in Japanese.

@@ -1,1 +1,0 @@
-/Users/aliyome/repos/env/.claude/commands/aba-coworker.md

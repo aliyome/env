@@ -1,3 +1,3 @@
-## MUST
+## MUST FOLLOW
 
-Think in English, Communicate in Japanese.
+Think in English, Communicate and Write in Japanese.
