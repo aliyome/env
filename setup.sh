@@ -58,6 +58,7 @@ brew install the-unarchiver
 brew install elgato-stream-deck
 brew install wpsoffice
 brew install --cask warp   # --cask を省略できるが warp という名前の Formula が追加されたらつらいので明示的につける
+brew install --cask ghostty
 brew install --cask docker # --cask をつけると Docker Desktop CE (含む docker コマンド類)がインストールされる
 brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
 brew install --cask cryptomator
@@ -82,6 +83,7 @@ brew install --cask kindle-comic-converter
 
 # 開発環境
 brew install tmux
+brew install --cask ghostty
 brew install mise
 brew install biome
 brew install ngrok
