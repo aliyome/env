@@ -23,3 +23,7 @@ terraform = "latest"
 "npm:@openai/codex" = "latest"
 "npm:opencode-ai" = "latest"
 "npm:@github/copilot" = "latest"
+# claude-code を npm でインストールするのは非推奨になったので記載しない
+
+[settings]
+python.uv_venv_auto = "create|source"
