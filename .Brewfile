@@ -16,6 +16,8 @@ cask "slack"
 cask "vial" # キーボードのカスタマイズツール
 cask "vlc"
 cask "wpsoffice" # 仕事でたまに使う
+cask "zoom"
+# cask "betterdisplay"  # 母艦のみ
 # cask "the-unarchiver" # 現代では rar の展開にしか使わないから不要かも
 # cask "elgato-stream-deck" # 意外と使わないのでコメントアウト
 
@@ -30,7 +32,7 @@ brew "ripgrep"
 brew "sqlite"
 brew "tmux"
 cask "docker-desktop"
-cask "tailscale"
+cask "tailscale-app"
 cask "warp"
 
 # Cloud Platform
@@ -56,6 +58,9 @@ cask "webstorm"
 
 # JavaScript/TypeScript
 brew "biome"
+
+# PHP
+cask "herd" # PHP は mise で管理が難しいので、herd で管理することにした
 
 # Other Tools
 brew "cmake" # for whisper.cpp
