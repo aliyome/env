@@ -7,6 +7,8 @@
 echo >> ~/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+ln -s "$(pwd)/.Brewfile" ~/.Brewfile
+brew bundle --global
 
 # mac の softwareupdate を使って rosetta をインストール
 softwareupdate --install-rosetta --agree-to-license
@@ -42,90 +44,11 @@ killall Dock # 反映
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool True
 killall Finder # 反映
 
-# 普段利用するアプリ
-brew install google-chrome
-brew install google-chrome@beta
-brew install raycast
-brew install slack
-brew install discord
-brew install karabiner-elements
-brew install anki
-brew install iina
-brew install logi-options+
-brew install obs
-brew install vlc
-brew install the-unarchiver
-brew install elgato-stream-deck
-brew install wpsoffice
-brew install --cask warp   # --cask を省略できるが warp という名前の Formula が追加されたらつらいので明示的につける
-brew install --cask ghostty
-brew install --cask docker # --cask をつけると Docker Desktop CE (含む docker コマンド類)がインストールされる
-brew install --cask tailscale # --cask をつけると tailscale ランタイムだけでなく App がインストールされる
-brew install --cask cryptomator
-brew install --cask google-drive
-brew install --cask postman
-brew install --cask vial
-brew install mas # App Store のアプリを CLI で管理できる
+# Homebrew でインストールできないアプリを mas でインストールする
+mas install 497799835 # Xcodes
 mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
-mas install 6714467650 # Perplexity (LINEMOで無料の間だけ使う)
-mas install 1258530160 # Focus To-DO ※お試し
-
-## for Kindle Comic Converter
-brew install p7zip
-brew install unar
-brew install --cask kindle-previewer
-brew install --cask kindle-comic-converter
-
-# 以下は apple silicon 非対応なのでインストールしない
-## - skitch
-## - Google 日本語入力
-
-# 開発環境
-brew install tmux
-brew install --cask ghostty
-brew install mise
-brew install biome
-brew install ngrok
-brew install firebase-cli
-brew install newrelic-cli
-brew install awscli
-brew install gh
-brew install glab
-brew install gitlab-runner
-brew install google-cloud-sdk
-brew install visual-studio-code
-brew install cursor
-brew install android-studio
-brew install webstorm
-brew install phpstorm
-brew install --cask rubymine
-brew install sqlite
-brew install figma
-brew install tableplus
-brew install ripgrep
-brew install eza
-brew install fd
-brew install --cask lm-studio
-brew install --cask claude-code
-brew install uv
-brew install ffmpeg
-brew install libpg
-brew install huggingface-cli
-brew install duckdb
-brew install cmake # for whisper.cpp
-brew install sqldef/sqldef/psqldef
-brew install sqldef/sqldef/sqlite3def
-mas install 497799835 # Xcodes
-# brew install sublime-text # 軽いエディタが使いたい時にあると便利かも。もはや無くてもいいかも？
-
-# 言語系
-# mise で php を管理する際は内部的に asdf-php を利用している
-# asdf-php は以下のパッケージが必要 see: https://github.com/asdf-community/asdf-php/blob/248e9c6e2a7824510788f05e8cee848a62200b65/.github/workflows/workflow.yml#L52
-brew install autoconf automake bison freetype gd gettext icu4c krb5 libedit libiconv libjpeg libpng libxml2 libzip pkg-config re2c zlib
-
-# mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
-brew install libyaml 
+mas install 1258530160 # Focus To-DO
 
 # 各種設定ファイルをコピーする
 mkdir -p ~/.config
