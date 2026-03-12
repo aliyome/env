@@ -23,6 +23,7 @@ terraform = "latest"
 "npm:@openai/codex" = "latest"
 "npm:opencode-ai" = "latest"
 "npm:@github/copilot" = "latest"
+"npm:@playwright/cli" = "latest"
 # claude-code を npm でインストールするのは非推奨になったので記載しない
 
 [settings]
