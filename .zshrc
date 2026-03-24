@@ -4,6 +4,9 @@ export PATH="/opt/homebrew/opt/sqlite/bin":$PATH
 # Use mise as default version management tool
 eval "$(mise activate zsh)"
 
+# Use zoxide for cd
+eval "$(zoxide init zsh)"
+
 # Misc
 export PATH="/opt/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
@@ -11,6 +14,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Alias
+alias cd='z' # zoxide を cd の代わりに使う
 alias ls='eza'
 alias fixup='git commit --fixup'
 alias squash='git rebase -i --autosquash --autostash'

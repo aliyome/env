@@ -27,6 +27,8 @@ cask "zoom"
 # Essentials
 brew "eza"
 brew "fd"
+brew "fzf"
+brew "zoxide"
 brew "mise"
 brew "ripgrep"
 brew "sqlite"
