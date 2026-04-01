@@ -73,6 +73,7 @@ ln -s "$(pwd)/.bunfig.toml" ~/.bunfig.toml
 
 # 各種設定
 echo "min-release-age=7  # 7日" >> ~/.npmrc
+echo "ignore-scripts=true" >> ~/.npmrc
 
 # mise のセットアップ
 # mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
