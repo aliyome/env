@@ -69,6 +69,11 @@ ln -s "$(pwd)/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.js
 mv ~/.zshrc ~/.zshrc.orig
 ln -s "$(pwd)/.zshrc" ~/.zshrc
 
+ln -s "$(pwd)/.bunfig.toml" ~/.bunfig.toml
+
+# 各種設定
+echo "min-release-age=7  # 7日" >> ~/.npmrc
+
 # mise のセットアップ
 # mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
 echo 'eval "$(mise activate)"' >> ~/.zshrc
