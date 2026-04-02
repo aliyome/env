@@ -1,2 +1,2 @@
 [install]
-minimumReleaseAge = 604800 # 7日
+minimumReleaseAge = 86400 # 1日
