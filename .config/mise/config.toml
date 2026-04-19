@@ -19,12 +19,10 @@ terraform = "latest"
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
 "npm:@biomejs/biome" = "latest"
-"npm:@google/gemini-cli" = "latest"
-"npm:@openai/codex" = "latest"
-"npm:opencode-ai" = "latest"
 "npm:@github/copilot" = "latest"
 "npm:@playwright/cli" = "latest"
-# claude-code を npm でインストールするのは非推奨になったので記載しない
+
+"github:pocketbase/pocketbase" = "v0.37.1"
 
 [settings]
 python.uv_venv_auto = "create|source"
