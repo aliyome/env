@@ -69,6 +69,7 @@ brew "cmake" # for whisper.cpp
 brew "duckdb"
 brew "ffmpeg"
 brew "act" # nektos/act
+brew "ast-grep"
 cask "claude-code"
 cask "cryptomator"
 cask "cursor"
