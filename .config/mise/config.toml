@@ -4,7 +4,7 @@ deno = "latest"
 node = "lts"
 rust = "latest"
 go = "latest"
-ruby = "3.4"
+ruby = "4.0"
 python = "latest"
 
 # 以下のコマンドでインストールする必要がある。
@@ -20,9 +20,10 @@ terraform = "latest"
 "npm:serve" = "latest"
 "npm:@biomejs/biome" = "latest"
 "npm:@github/copilot" = "latest"
+"npm:@google/gemini-cli" = "latest"
 "npm:@playwright/cli" = "latest"
 
-"github:pocketbase/pocketbase" = "v0.37.1"
+"github:pocketbase/pocketbase" = "v0.37.3"
 
 [settings]
 python.uv_venv_auto = "create|source"
