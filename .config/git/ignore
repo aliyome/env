@@ -16,8 +16,9 @@
 mise.local.toml
 .mise.local.toml
 
-# cline
-.clinerules
+# Rulesync
+.rulesync/skills/.curated/
+.rulesync/rules/*.local.md
+rulesync.local.jsonc
+AGENTS.local.md
 
-# Claude
-**/.claude/settings.local.json
