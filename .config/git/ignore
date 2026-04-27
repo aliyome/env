@@ -16,9 +16,11 @@
 mise.local.toml
 .mise.local.toml
 
-# Rulesync
-.rulesync/skills/.curated/
-.rulesync/rules/*.local.md
-rulesync.local.jsonc
-AGENTS.local.md
-
+# Agents
+.agent
+.agents
+.github/agents
+.github/hooks
+.github/instructions
+.copilot
+.claude
