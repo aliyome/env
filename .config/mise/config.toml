@@ -23,7 +23,7 @@ terraform = "latest"
 "npm:@google/gemini-cli" = "latest"
 "npm:@playwright/cli" = "latest"
 
-"github:pocketbase/pocketbase" = "v0.37.3"
+"github:pocketbase/pocketbase" = "latest"
 
 [settings]
-python.uv_venv_auto = "create|source"
+python.uv_venv_auto = "create|source" # .venv がなければ作成して有効化
