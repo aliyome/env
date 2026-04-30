@@ -24,3 +24,5 @@ mise.local.toml
 .github/instructions
 .copilot
 .claude
+.opencode
+opencode.json?

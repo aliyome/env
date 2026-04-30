@@ -70,6 +70,7 @@ brew "duckdb"
 brew "ffmpeg"
 brew "act" # nektos/act
 brew "ast-grep"
+brew "anomalyco/tap/opencode"
 cask "claude-code"
 cask "cryptomator"
 cask "cursor"
