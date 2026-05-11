@@ -25,6 +25,11 @@ alias qlaude='ANTHROPIC_MODEL="qwen/qwen3.6-27b" \
   ANTHROPIC_SMALL_FAST_MODEL="qwen/qwen3.6-27b" \
   ANTHROPIC_BASE_URL="http://localhost:1234" \
   claude'
+alias opilot='COPILOT_PROVIDER_TYPE=openai \
+  COPILOT_PROVIDER_BASE_URL=https://opencode.ai/zen/go/v1 \
+  COPILOT_PROVIDER_API_KEY=$OPENCODE_GO_KEY \
+  COPILOT_MODEL=$OPENCODE_COPILOT_MODEL \
+  copilot'
 
 # tmux
 function set-myname() {
