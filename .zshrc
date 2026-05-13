@@ -20,7 +20,7 @@ alias fixup='git commit --fixup'
 alias squash='git rebase -i --autosquash --autostash'
 alias delete-merged-branches='git branch --merged | grep -v "*" | grep -v "^+" | xargs git branch -d'
 alias tf='terraform'
-alias brew-up='brew upgrade && brew autoremove && brew cleanup -s'
+alias brewup='brew upgrade && brew autoremove && brew cleanup -s'
 alias qlaude='ANTHROPIC_MODEL="qwen/qwen3.6-27b" \
   ANTHROPIC_SMALL_FAST_MODEL="qwen/qwen3.6-27b" \
   ANTHROPIC_BASE_URL="http://localhost:1234" \
@@ -30,6 +30,8 @@ alias opilot='COPILOT_PROVIDER_TYPE=openai \
   COPILOT_PROVIDER_API_KEY=$OPENCODE_GO_KEY \
   COPILOT_MODEL=$OPENCODE_COPILOT_MODEL \
   copilot'
+alias sleepon='sudo pmset -a disablesleep 1'
+alias sleepoff='sudo pmset -a disablesleep 0'
 
 # tmux
 function set-myname() {
