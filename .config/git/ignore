@@ -26,3 +26,4 @@ mise.local.toml
 .claude
 .opencode
 opencode.json?
+.worktrees # for git worktree
