@@ -71,6 +71,9 @@ ln -s "$(pwd)/.zshrc" ~/.zshrc
 
 ln -s "$(pwd)/.bunfig.toml" ~/.bunfig.toml
 
+mkdir -p ~/.config/opencode/plugins
+ln -s "$(pwd)/.config/opencode/opencode.jsonc" ~/.config/opencode/opencode.jsonc
+
 # 各種設定
 echo "min-release-age=1  # 1日" >> ~/.npmrc
 echo "ignore-scripts=true" >> ~/.npmrc
