@@ -78,7 +78,6 @@ cask "figma"
 cask "lm-studio"
 cask "postman"
 cask "tableplus"
-cask "cmux"
 
 # Other Libs
 brew "libpg"
