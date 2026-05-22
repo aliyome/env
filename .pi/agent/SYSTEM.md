@@ -44,12 +44,16 @@
   agy -p "search_web <search-query>"
   ```
 
+Since Web Fetch/Web Search can take time, set the timeout parameter of the bash tool to 300000 (5 minutes) and execute it.
+
 ## Creative Tools
 
 - For generating images from text prompts or editing existing images, use Antigravity CLI:
   ```bash
   agy -p "generate_image <image-prompt>"
   ```
+
+Since Creative Tools can take time, set the timeout parameter of the bash tool to 300000 (5 minutes) and execute it.
 
 ## Long-running Tasks and Development Servers
 
