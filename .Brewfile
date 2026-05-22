@@ -71,6 +71,7 @@ brew "ffmpeg"
 brew "act" # nektos/act
 brew "ast-grep"
 brew "anomalyco/tap/opencode"
+brew "pueue"
 cask "claude-code"
 cask "cryptomator"
 cask "cursor"

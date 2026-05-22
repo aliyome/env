@@ -33,6 +33,11 @@ alias opilot='COPILOT_PROVIDER_TYPE=openai \
 alias sleepon='sudo pmset -a disablesleep 1'
 alias sleepoff='sudo pmset -a disablesleep 0'
 
+# pueued - Use pueued for managing long-running tasks in the background
+if ! pgrep -x "pueued" > /dev/null; then
+  pueued -d
+fi
+
 # bun completions
 [ -s "/Users/aliyome/.bun/_bun" ] && source "/Users/aliyome/.bun/_bun"
 
