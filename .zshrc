@@ -33,17 +33,6 @@ alias opilot='COPILOT_PROVIDER_TYPE=openai \
 alias sleepon='sudo pmset -a disablesleep 1'
 alias sleepoff='sudo pmset -a disablesleep 0'
 
-# tmux
-function set-myname() {
-  tmux select-pane -T "$1"
-}
-function get-myname() {
-  tmux display-message -p "#{pane_title} (ID: #{pane_id})"
-}
-function list-agents() {
-  tmux list-panes -a -F "Found agent: '#{pane_title}' (ID: #{pane_id})"
-}
-
 # bun completions
 [ -s "/Users/aliyome/.bun/_bun" ] && source "/Users/aliyome/.bun/_bun"
 
