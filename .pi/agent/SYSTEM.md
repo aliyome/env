@@ -9,13 +9,18 @@
 - AGENTS.md assumes progressive disclosure: it contains only the minimum information needed, while task-specific knowledge and guidelines live elsewhere.
 - Select and load the necessary skills as needed for each task.
 
+## Sandbox
+
+- Use `srt` sandbox for executing any commands to avoid security issues and unintended consequences.
+  - When executing commands, use `srt <command>` to run them in the sandbox.
+
 ## Agent Delegation
 
 - To keep context clean and preserve accuracy, speed, and cost efficiency, proactively delegate yak shaving and work outside the current focus to an appropriate model agent.
   - Good example: When asked to implement something, delegate design, review, or behavior verification to other agents.
   - Bad example: When encountering a deep-rooted error, trying to solve it yourself without launching a debugging agent.
-- How to call an agent: `pi --model <provider/model:effort> --fallback-models <provider/model:effort>,... -p '<instructions>'` (left-priority fallback)
-  - When a delegated task needs a specific skill, specify it in the prompt: `pi ... -p '/skill:<skill-name> <instructions>'`
+- How to call an agent: `srt pi --model <provider/model:effort> --fallback-models <provider/model:effort>,... -p '<instructions>'` (left-priority fallback)
+  - When a delegated task needs a specific skill, specify it in the prompt: `srt pi ... -p '/skill:<skill-name> <instructions>'`
 - Model selection:
   - Difficulty: high
     - Option: `--model 'opencode-go/kimi-k2.6:high' --fallback-models 'opencode-go/deepseek-v4-pro:high'`

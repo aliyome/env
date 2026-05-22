@@ -81,6 +81,8 @@ ln -s "$(pwd)/.config/opencode/opencode.jsonc" ~/.config/opencode/opencode.jsonc
 mkdir -p ~/.pi/agent
 ln -s "$(pwd)/.pi/agent/SYSTEM.md" ~/.pi/agent/SYSTEM.md
 
+ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
+
 # 各種設定
 echo "min-release-age=1  # 1日" >> ~/.npmrc
 echo "ignore-scripts=true" >> ~/.npmrc
