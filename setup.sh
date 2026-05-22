@@ -50,6 +50,10 @@ mas install 302584613 # Kindle
 mas install 1289583905 # Pixelmator Pro
 mas install 1258530160 # Focus To-DO
 
+# antigravity-cli を公式のインストールスクリプトでインストールする
+# TODO: Homebrew などでインストールできるようになったら修正する
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+
 # 各種設定ファイルをコピーする
 mkdir -p ~/.config
 

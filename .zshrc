@@ -85,6 +85,9 @@ export PATH="$PATH:/Users/aliyome/.lmstudio/bin"
 # Added by Antigravity
 export PATH="/Users/aliyome/.antigravity/antigravity/bin:$PATH"
 
+# Added by Antigravity CLI installer
+export PATH="/Users/aliyome/.local/bin:$PATH"
+
 # Amp CLI
 export PATH="/Users/aliyome/.amp/bin:$PATH"
 
