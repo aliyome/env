@@ -22,6 +22,7 @@ mise.local.toml
 .github/agents
 .github/hooks
 .github/instructions
+.antigravitycli
 .copilot
 .claude
 .opencode
