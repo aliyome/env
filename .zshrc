@@ -32,6 +32,7 @@ alias opilot='COPILOT_PROVIDER_TYPE=openai \
   copilot'
 alias sleepon='sudo pmset -a disablesleep 1'
 alias sleepoff='sudo pmset -a disablesleep 0'
+alias tmuxmain='tmux new-session -A -s main'
 
 # pueued - Use pueued for managing long-running tasks in the background
 if ! pgrep -x "pueued" > /dev/null; then
