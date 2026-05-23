@@ -19,17 +19,17 @@
 - To keep context clean and preserve accuracy, speed, and cost efficiency, proactively delegate yak shaving and work outside the current focus to an appropriate model agent.
   - Good example: When asked to implement something, delegate design, review, or behavior verification to other agents.
   - Bad example: When encountering a deep-rooted error, trying to solve it yourself without launching a debugging agent.
-- How to call an agent: `srt pi --model <provider/model:effort> --fallback-models <provider/model:effort>,... -p '<instructions>'` (left-priority fallback)
+- How to call an agent: `srt pi --model <provider/model:effort> -p '<instructions>' < /dev/null`
   - When a delegated task needs a specific skill, specify it in the prompt: `srt pi ... -p '/skill:<skill-name> <instructions>'`
 - Model selection:
   - Difficulty: high
-    - Option: `--model 'opencode-go/kimi-k2.6:high' --fallback-models 'opencode-go/deepseek-v4-pro:high'`
+    - Option: `--model 'opencode-go/kimi-k2.6:high' < /dev/null`
     - Use for highly abstract problems such as design, difficult deep troubleshooting, or code reviews that require careful reasoning and high confidence.
   - Difficulty: medium
-    - Option: `--model 'opencode-go/deepseek-v4-pro:high' --fallback-models 'opencode-go/kimi-k2.6:medium'`
+    - Option: `--model 'opencode-go/deepseek-v4-pro:high' < /dev/null`
     - Use for low-difficulty or low-abstraction tasks, such as coding from an existing design.
   - Difficulty: low
-    - Option: `--model 'opencode-go/deepseek-v4-flash:off' --fallback-models 'opencode-go/qwen3.6-plus:off'`
+    - Option: `--model 'opencode-go/deepseek-v4-flash:off' < /dev/null`
     - Generally not recommended. Use for summarizing or extracting data that is too voluminous to handle in a main session with high/medium models.
 - When calling an agent, clearly communicate the background, goal, expected output, and what not to do.
 
@@ -61,7 +61,7 @@ Since Creative Tools can take time, set the timeout parameter of the bash tool t
 - Start them with `pueue add -- <command>`, and use `pueue status` / `pueue log` / `pueue follow` / `pueue kill` / `pueue remove` to check status or manage them.
 - For parallel agent delegation, queue tasks via pueue:
   ```bash
-  pueue add -i --print-task-id -- "pi ... -p '<instruction>' < /dev/null"
+  pueue add -i --print-task-id -- 'pi ... -p "<instruction>" < /dev/null'
   ```
   ```bash
   pueue status

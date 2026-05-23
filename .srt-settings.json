@@ -12,7 +12,9 @@
       "anthropic.com",
       "*.anthropic.com",
       "opencode.ai",
-      "*.opencode.ai"
+      "*.opencode.ai",
+      "api.newrelic.com",
+      "*.newrelic.com"
     ],
     "deniedDomains": [],
     "allowUnixSockets": ["/var/run/docker.sock"],
@@ -20,7 +22,7 @@
     "allowLocalBinding": false
   },
   "filesystem": {
-    "denyRead": ["~/.ssh", "**/*.env"],
+    "denyRead": ["~/.ssh", "**/*.env", "**/.aliyome"],
     "allowRead": [],
     "allowWrite": [
       ".",
