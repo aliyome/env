@@ -79,7 +79,7 @@ mkdir -p ~/.config/opencode/plugins
 ln -s "$(pwd)/.config/opencode/opencode.jsonc" ~/.config/opencode/opencode.jsonc
 
 mkdir -p ~/.pi/agent
-ln -s "$(pwd)/.pi/agent/AGENTS.md" ~/.pi/agent/AGENTS.md
+ln -s "$(pwd)/.pi/agent/APPEND_SYSTEM.md" ~/.pi/agent/APPEND_SYSTEM.md
 
 ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
 
