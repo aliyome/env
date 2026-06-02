@@ -80,8 +80,11 @@ ln -s "$(pwd)/.config/opencode/opencode.jsonc" ~/.config/opencode/opencode.jsonc
 
 mkdir -p ~/.pi/agent
 ln -s "$(pwd)/.pi/agent/APPEND_SYSTEM.md" ~/.pi/agent/APPEND_SYSTEM.md
-
 ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
+
+mkdir -p ~/.config/ghostty
+ln -s "$(pwd)/.config/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
+
 
 # 各種設定
 echo "min-release-age=1  # 1日" >> ~/.npmrc

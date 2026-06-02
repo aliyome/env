@@ -1,0 +1,6 @@
+# フォントサイズを指定する（デフォルトから小さくする）
+font-size = 13
+font-thicken = true
+
+# 非アクティブペインを暗く
+unfocused-split-opacity = 0.5
