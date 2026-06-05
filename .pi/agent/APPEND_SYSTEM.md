@@ -32,7 +32,7 @@
 
 - For fetching article/page summaries, use Antigravity CLI:
   ```bash
-  agy --model "Gemini 3.5 Flash (Low)" -p "read_url_content https://example.com/article"
+  agy --model "Gemini 3.5 Flash (Low)" -p "read_url_content https://example.com/article markdown 形式で出力して"
   ```
 - For quick web search, use Antigravity CLI:
   ```bash
