@@ -32,11 +32,11 @@
 
 - For fetching article/page summaries, use Antigravity CLI:
   ```bash
-  agy -p "read_url_content https://example.com/article"
+  agy --model "Gemini 3.5 Flash (Low)" -p "read_url_content https://example.com/article"
   ```
 - For quick web search, use Antigravity CLI:
   ```bash
-  agy -p "search_web <search-query>"
+  agy --model "Gemini 3.5 Flash (Low)" -p "search_web <search-query>"
   ```
 
 Since Web Fetch/Web Search can take time, set the timeout parameter of the bash tool to 300000 (5 minutes) and execute it.
