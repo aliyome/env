@@ -1,0 +1,66 @@
+{
+  // Basics
+  "cli_default_open_behavior": "new_window",
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  // UI
+  "project_panel": {
+    "dock": "left",
+  },
+  // UI - font
+  "ui_font_size": 16.0,
+  "buffer_font_size": 13.0,
+  "terminal": {
+    "font_size": 13.0,
+  },
+  // 言語別
+  "languages": {
+    "JSON": {
+      "formatter": "language_server",
+    },
+  },
+  // AI
+  "agent_servers": {
+    "opencode": {
+      "default_config_options": {
+        "model": "opencode-go/deepseek-v4-flash",
+      },
+      "favorite_config_option_values": {
+        "model": [
+          "opencode-go/deepseek-v4-pro",
+          "opencode-go/kimi-k2.6",
+          "opencode-go/deepseek-v4-flash",
+        ],
+      },
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "favorite_config_option_values": {
+        "model": ["gpt-5.4-mini", "gpt-5-mini"],
+      },
+      "default_config_options": {
+        "model": "gpt-5-mini",
+      },
+      "type": "registry",
+    },
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.4-mini",
+      "enable_thinking": false,
+      //   "provider": "opencode",
+      //   "model": "go/deepseek-v4-flash",
+    },
+  },
+  "language_models": {
+    "opencode": {
+      "show_zen_models": false,
+      "show_go_models": true,
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "show_edit_predictions": true,
+}

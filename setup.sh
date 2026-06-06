@@ -85,6 +85,9 @@ ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
 mkdir -p ~/.config/ghostty
 ln -s "$(pwd)/.config/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
 
+mkdir -p ~/.config/zed
+ln -s "$(pwd)/.config/zed/settings.json" ~/.config/zed/settings.json
+ln -s "$(pwd)/.config/zed/keymap.json" ~/.config/zed/keymap.json
 
 # 各種設定
 echo "min-release-age=1  # 1日" >> ~/.npmrc

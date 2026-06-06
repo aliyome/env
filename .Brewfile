@@ -57,6 +57,7 @@ cask "rubymine"
 cask "sublime-text" # 軽いエディタが使いたい時にあると便利。zedより好き
 cask "visual-studio-code"
 cask "webstorm"
+cask "zed"
 
 # JavaScript/TypeScript
 brew "biome"
