@@ -23,7 +23,8 @@
   "agent_servers": {
     "opencode": {
       "default_config_options": {
-        "model": "opencode-go/deepseek-v4-flash",
+        "effort": "high",
+        "model": "opencode-go/deepseek-v4-pro",
       },
       "favorite_config_option_values": {
         "model": [
