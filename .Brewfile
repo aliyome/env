@@ -72,6 +72,7 @@ brew "act" # nektos/act
 brew "ast-grep"
 brew "anomalyco/tap/opencode"
 brew "pueue"
+brew "fx"
 cask "cryptomator"
 cask "cursor"
 cask "figma"
