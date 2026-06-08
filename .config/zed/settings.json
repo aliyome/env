@@ -3,8 +3,17 @@
   "cli_default_open_behavior": "new_window",
   "vim_mode": true,
   "base_keymap": "VSCode",
-  // UI
+  // UI - panel
   "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
     "dock": "left",
   },
   // UI - font
@@ -46,12 +55,17 @@
     },
   },
   "agent": {
+    "dock": "right",
     "default_model": {
+      "effort": "high",
+      "provider": "opencode",
+      "model": "go/deepseek-v4-pro",
+      "enable_thinking": true,
+    },
+    "commit_message_model": {
       "provider": "copilot_chat",
       "model": "gpt-5.4-mini",
       "enable_thinking": false,
-      //   "provider": "opencode",
-      //   "model": "go/deepseek-v4-flash",
     },
   },
   "language_models": {
