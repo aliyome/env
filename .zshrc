@@ -39,6 +39,19 @@ alias devsh='devcontainer exec bash'
 if ! pgrep -x "pueued" > /dev/null; then
   pueued -d
 fi
+# Define a function to add commands to pueued to avoid escaping issues with special characters
+#
+# Example usage:
+# padd --group download << 'EOF'
+# wget -O "movie.mp4" "https://example.com/video with spaces.mp4"
+# EOF
+function padd() {
+    local cmd
+    cmd=$(cat) # 標準入力をすべて結合して変数に格納
+    if [ -n "$cmd" ]; then
+        pueue add "$@" -- "$cmd" # 関数の引数（"$@"）をそのままオプションとして流し込む
+    fi
+}
 
 # bun completions
 [ -s "/Users/aliyome/.bun/_bun" ] && source "/Users/aliyome/.bun/_bun"

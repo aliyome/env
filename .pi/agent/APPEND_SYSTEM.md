@@ -63,3 +63,9 @@ Since Creative Tools can take time, set the timeout parameter of the bash tool t
   pueue wait <task-id> # blocks when there is no other parallel work
   pueue log <task-id> # check results/status
   ```
+- If `padd` is available, you should use `padd` instead of `pueue add` for better integration with pi:
+  ```bash
+  pueue add -i --print-task-id << 'EOF'
+  pi ... -p "<instruction>" < /dev/null
+  EOF
+  ```
