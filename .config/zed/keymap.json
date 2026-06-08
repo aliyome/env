@@ -24,4 +24,16 @@
       "ctrl-@": "terminal_panel::Toggle",
     },
   },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ctrl-e": "editor::MoveToEndOfLine",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-e": "editor::MoveToEndOfLine",
+    },
+  },
 ]
