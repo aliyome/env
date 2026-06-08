@@ -65,7 +65,7 @@ Since Creative Tools can take time, set the timeout parameter of the bash tool t
   ```
 - If `padd` is available, you should use `padd` instead of `pueue add` for better integration with pi:
   ```bash
-  pueue add -i --print-task-id << 'EOF'
+  padd -i --print-task-id << 'EOF'
   pi ... -p "<instruction>" < /dev/null
   EOF
   ```
