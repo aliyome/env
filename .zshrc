@@ -84,9 +84,6 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/aliyome/Library/Application Support/Herd
 
 # Others ---------------------------------------
 
-# Added by Windsurf
-export PATH="/Users/aliyome/.codeium/windsurf/bin:$PATH"
-
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/aliyome/.lmstudio/bin"
 # End of LM Studio CLI section
