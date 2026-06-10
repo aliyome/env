@@ -1,22 +1,26 @@
 [tools]
+# languages
 bun = "latest"
 node = "lts"
+rust = "latest"
+python = "latest"
 # あまり利用していないのでコメントアウトする
 # 必要になったらば、コメントアウトを外してインストールする。
 # deno = "latest"
-# rust = "latest"
 # go = "latest"
 # ruby = "4.0"
-# python = "latest"
 
-# 以下のコマンドでインストールする必要がある。
+# PHP 以下のコマンドでインストールする必要があるが、それでもトラブるから mise で管理しない
 # HP_CONFIGURE_OPTIONS="--with-openssl=$(brew --prefix openssl) --with-iconv=$(brew --prefix libiconv)" mise install
 # see: https://github.com/asdf-community/asdf-php/issues/163#issuecomment-2518719651
 # php = "8.5"
 
-# uv = "latest"
+# tools
+uv = "latest"
 terraform = "latest"
+# "github:pocketbase/pocketbase" = "latest"
 
+# packages
 "npm:pnpm" = "latest"
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
@@ -25,8 +29,6 @@ terraform = "latest"
 "npm:@playwright/cli" = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
-
-"github:pocketbase/pocketbase" = "latest"
 
 [settings]
 python.uv_venv_auto = "create|source" # .venv がなければ作成して有効化
