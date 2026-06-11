@@ -33,6 +33,7 @@ brew "mise"
 brew "ripgrep"
 brew "sqlite"
 brew "tmux"
+brew "container"
 cask "docker-desktop"
 cask "tailscale-app"
 cask "warp"
@@ -48,7 +49,7 @@ brew "gitlab-runner"
 brew "glab"
 brew "huggingface-cli"
 brew "newrelic-cli"
-cask "ngrok"
+cask "ngrok", trusted: true
 
 # IDE/Editor
 cask "android-studio"
