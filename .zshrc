@@ -20,7 +20,7 @@ alias fixup='git commit --fixup'
 alias squash='git rebase -i --autosquash --autostash'
 alias delete-merged-branches='git branch --merged | grep -v "*" | grep -v "^+" | xargs git branch -d'
 alias tf='terraform'
-alias brewup='brew upgrade && brew autoremove && brew cleanup -s'
+alias brewup='brew upgrade -y && brew autoremove && brew cleanup -s'
 alias qlaude='ANTHROPIC_MODEL="qwen/qwen3.6-27b" \
   ANTHROPIC_SMALL_FAST_MODEL="qwen/qwen3.6-27b" \
   ANTHROPIC_BASE_URL="http://localhost:1234" \
