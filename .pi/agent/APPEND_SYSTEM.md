@@ -18,7 +18,7 @@
   - When a delegated task needs a specific skill, specify it in the prompt: `pi ... -p '/skill:<skill-name> <instructions>'`
 - Model selection:
   - Difficulty: high
-    - Option: `--model 'opencode-go/kimi-k2.6:high'`
+    - Option: `--model 'opencode-go/kimi-k2.7-code:high'`
     - Use for highly abstract problems such as design, difficult deep troubleshooting, or code reviews that require careful reasoning and high confidence.
   - Difficulty: medium
     - Option: `--model 'opencode-go/deepseek-v4-pro:high'`
