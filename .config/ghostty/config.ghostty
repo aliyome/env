@@ -5,5 +5,12 @@ font-thicken = true
 # 非アクティブペインを暗く
 unfocused-split-opacity = 0.5
 
-# グローバルクイックターミナル
+# クイックターミナル
 keybind = global:cmd+_=toggle_quick_terminal
+quick-terminal-size = 60%
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0.1
+
+# SSH接続時にリモートへ自動でterminfoを送り込み、必要に応じてフォールバックさせる
+# 'missing or unsuitable terminal: xterm-ghostty' エラーを回避するために必要
+shell-integration-features = ssh-terminfo,ssh-env
