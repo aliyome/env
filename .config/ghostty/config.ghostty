@@ -4,3 +4,6 @@ font-thicken = true
 
 # 非アクティブペインを暗く
 unfocused-split-opacity = 0.5
+
+# グローバルクイックターミナル
+keybind = global:cmd+_=toggle_quick_terminal
