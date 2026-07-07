@@ -30,6 +30,9 @@ terraform = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
 
+[settings]
+lockfile=true
+
 [settings.python]
 uv_venv_auto = "create|source" # .venv がなければ作成して有効化
 
