@@ -54,7 +54,6 @@ cask "ngrok", trusted: true
 
 # IDE/Editor
 cask "android-studio"
-cask "phpstorm"
 cask "rubymine"
 cask "sublime-text" # 軽いエディタが使いたい時にあると便利。zedより好き
 cask "visual-studio-code"
