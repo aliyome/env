@@ -77,6 +77,7 @@ ln -s "$(pwd)/.bunfig.toml" ~/.bunfig.toml
 
 mkdir -p ~/.config/opencode/plugins
 ln -s "$(pwd)/.config/opencode/opencode.jsonc" ~/.config/opencode/opencode.jsonc
+ln -s "$(pwd)/.config/opencode/AGENTS.md" ~/.config/opencode/AGENTS.md
 
 mkdir -p ~/.pi/agent
 ln -s "$(pwd)/.pi/agent/APPEND_SYSTEM.md" ~/.pi/agent/APPEND_SYSTEM.md
