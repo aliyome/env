@@ -35,6 +35,13 @@ alias sleepoff='sudo pmset -a disablesleep 0'
 alias tmuxmain='tmux new-session -A -s main'
 alias devsh='devcontainer exec bash'
 
+# Prompt ブランチ名とフルパス
+autoload -Uz vcs_info
+precmd() { vcs_info }
+setopt prompt_subst
+PROMPT='%n@%m %~ ${vcs_info_msg_0_}%# '
+zstyle ':vcs_info:git:*' formats '(%b)'
+
 # pueued - Use pueued for managing long-running tasks in the background
 if ! pgrep -x "pueued" > /dev/null; then
   pueued -d
