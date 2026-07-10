@@ -29,6 +29,7 @@ terraform = "latest"
 "npm:@playwright/cli" = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
+"github:yusukebe/ax" = "latest"
 
 [settings]
 lockfile=true
