@@ -1,3 +1,5 @@
+# TODO: dotfiles.root を設定して [dotfiles] で dotfiles を管理するようにする。setup.sh をスリム化する
+
 [tools]
 # languages
 bun = "latest"
