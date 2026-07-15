@@ -16,6 +16,7 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # Alias
 alias cd='z' # zoxide を cd の代わりに使う
 alias ls='eza'
+alias gitlog='git log --graph --oneline --decorate --all'
 alias fixup='git commit --fixup'
 alias squash='git rebase -i --autosquash --autostash'
 alias delete-merged-branches='git branch --merged | grep -v "*" | grep -v "^+" | xargs git branch -d'
