@@ -15,7 +15,7 @@ cask "raycast"
 cask "slack"
 cask "vial" # キーボードのカスタマイズツール
 cask "vlc"
-cask "wpsoffice" # 仕事でたまに使う
+cask "onlyoffice" # 仕事でたまに使う
 cask "zoom"
 # cask "betterdisplay"  # 母艦のみ
 # cask "the-unarchiver" # 現代では rar の展開にしか使わないから不要かも
