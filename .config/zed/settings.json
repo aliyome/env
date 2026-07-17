@@ -1,5 +1,6 @@
 {
   // Basics
+  "format_on_save": "on",
   "cli_default_open_behavior": "new_window",
   "vim_mode": true,
   "base_keymap": "VSCode",
@@ -57,14 +58,13 @@
   "agent": {
     "dock": "right",
     "default_model": {
-      "effort": "high",
       "provider": "opencode",
-      "model": "go/deepseek-v4-pro",
-      "enable_thinking": true,
+      "model": "go/deepseek-v4-flash",
+      "enable_thinking": false,
     },
     "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5.4-mini",
+      "provider": "opencode",
+      "model": "go/deepseek-v4-flash",
       "enable_thinking": false,
     },
   },
