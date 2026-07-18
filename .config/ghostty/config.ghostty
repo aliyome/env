@@ -14,3 +14,6 @@ quick-terminal-animation-duration = 0.1
 # SSH接続時にリモートへ自動でterminfoを送り込み、必要に応じてフォールバックさせる
 # 'missing or unsuitable terminal: xterm-ghostty' エラーを回避するために必要
 shell-integration-features = ssh-terminfo,ssh-env
+
+# Ghostty.app起動時に一度だけ各種ツールを最新化する
+initial-command = /bin/zsh -c "set -xeo pipefail && brew upgrade -y && brew autoremove && brew cleanup -s && mise up"
