@@ -83,6 +83,11 @@ mkdir -p ~/.pi/agent
 ln -s "$(pwd)/.pi/agent/APPEND_SYSTEM.md" ~/.pi/agent/APPEND_SYSTEM.md
 ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
 
+mkdir -p ~/.agents/skills/japanese-tech-writing
+mkdir -p ~/.agents/skills/cognitive-rhythm-writing
+ln -s "$(pwd)/.agents/skills/japanese-tech-writing/SKILL.md" ~/.agents/skills/japanese-tech-writing/SKILL.md
+ln -s "$(pwd)/.agents/skills/cognitive-rhythm-writing/SKILL.md" ~/.agents/skills/cognitive-rhythm-writing/SKILL.md
+
 mkdir -p ~/.config/ghostty
 ln -s "$(pwd)/.config/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
 
