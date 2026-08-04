@@ -50,7 +50,6 @@ brew "gitlab-runner"
 brew "glab"
 brew "huggingface-cli"
 brew "newrelic-cli"
-cask "ngrok", trusted: true
 
 # IDE/Editor
 cask "android-studio"
@@ -79,18 +78,11 @@ cask "cryptomator"
 cask "cursor"
 cask "figma"
 cask "lm-studio"
-cask "postman"
 cask "tableplus"
 
 # Other Libs
 brew "libpg"
 brew "libyaml" # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
-
-## for Kindle Comic Converter
-brew "p7zip"
-brew "unar"
-cask "kindle-previewer"
-cask "kindle-comic-converter"
 
 ## mise で php を管理する際は内部的に asdf-php を利用している
 ## asdf-php は以下のパッケージが必要 see: https://github.com/asdf-community/asdf-php/blob/248e9c6e2a7824510788f05e8cee848a62200b65/.github/workflows/workflow.yml#L52
