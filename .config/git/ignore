@@ -14,7 +14,9 @@
 
 # local mise
 mise.local.toml
+mise.local.lock
 .mise.local.toml
+.mise.local.lock
 
 # Agents
 .agent
