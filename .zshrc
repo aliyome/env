@@ -31,8 +31,8 @@ alias opilot='COPILOT_PROVIDER_TYPE=openai \
   COPILOT_PROVIDER_API_KEY=$OPENCODE_GO_KEY \
   COPILOT_MODEL=$OPENCODE_COPILOT_MODEL \
   copilot'
-alias sleepon='sudo pmset -a disablesleep 1'
-alias sleepoff='sudo pmset -a disablesleep 0'
+alias sleepoff='sudo pmset -a disablesleep 1'
+alias sleepon='sudo pmset -a disablesleep 0'
 alias tmuxmain='tmux new-session -A -s main'
 alias devsh='devcontainer exec bash'
 
