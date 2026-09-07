@@ -36,6 +36,8 @@ alias sleepon='sudo pmset -a disablesleep 0'
 alias tmuxmain='tmux new-session -A -s main'
 alias devsh='devcontainer exec bash'
 
+alias opencode='opencode2' # for now
+
 # Prompt ブランチ名とフルパス
 autoload -Uz vcs_info
 precmd() { vcs_info }
