@@ -17,6 +17,7 @@ cask "vial" # キーボードのカスタマイズツール
 cask "vlc"
 cask "onlyoffice" # 仕事でたまに使う
 cask "zoom"
+cask "handy" # ASR
 # cask "betterdisplay"  # 母艦のみ
 # cask "the-unarchiver" # 現代では rar の展開にしか使わないから不要かも
 # cask "elgato-stream-deck" # 意外と使わないのでコメントアウト
@@ -83,23 +84,3 @@ cask "tableplus"
 # Other Libs
 brew "libpg"
 brew "libyaml" # mise で ruby をインストールする際に psych のコンパイルでエラーにならないようにするため
-
-## mise で php を管理する際は内部的に asdf-php を利用している
-## asdf-php は以下のパッケージが必要 see: https://github.com/asdf-community/asdf-php/blob/248e9c6e2a7824510788f05e8cee848a62200b65/.github/workflows/workflow.yml#L52
-# brew "autoconf"
-# brew "automake"
-# brew "bison"
-# brew "freetype"
-# brew "gd"
-# brew "gettext"
-# brew "icu4c"
-# brew "krb5"
-# brew "libedit"
-# brew "libiconv"
-# brew "libjpeg"
-# brew "libpng"
-# brew "libxml2"
-# brew "libzip"
-# brew "pkg-config"
-# brew "re2c"
-# brew "zlib"
