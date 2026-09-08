@@ -86,8 +86,10 @@ ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
 
 mkdir -p ~/.agents/skills/japanese-tech-writing
 mkdir -p ~/.agents/skills/cognitive-rhythm-writing
+mkdir -p ~/.agents/skills/herdr
 ln -s "$(pwd)/.agents/skills/japanese-tech-writing/SKILL.md" ~/.agents/skills/japanese-tech-writing/SKILL.md
 ln -s "$(pwd)/.agents/skills/cognitive-rhythm-writing/SKILL.md" ~/.agents/skills/cognitive-rhythm-writing/SKILL.md
+ln -s "$(pwd)/.agents/skills/herdr/SKILL.md" ~/.agents/skills/herdr/SKILL.md
 
 mkdir -p ~/.config/ghostty
 ln -s "$(pwd)/.config/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
