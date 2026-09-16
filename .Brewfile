@@ -18,6 +18,7 @@ cask "vlc"
 cask "onlyoffice" # 仕事でたまに使う
 cask "zoom"
 cask "handy" # ASR
+cask "agentsview" # 横断的なエージェントログの検索
 # cask "betterdisplay"  # 母艦のみ
 # cask "the-unarchiver" # 現代では rar の展開にしか使わないから不要かも
 # cask "elgato-stream-deck" # 意外と使わないのでコメントアウト
