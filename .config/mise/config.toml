@@ -23,7 +23,7 @@ terraform = "latest"
 # "github:pocketbase/pocketbase" = "latest"
 
 # packages
-"npm:pnpm" = "latest"
+"npm:pnpm" = { version = "latest", allow_builds = true }
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
 "npm:@biomejs/biome" = "latest"
