@@ -23,7 +23,7 @@ terraform = "latest"
 # "github:pocketbase/pocketbase" = "latest"
 
 # packages
-"npm:pnpm" = { version = "latest", allow_builds = true }
+"npm:pnpm" = "12"
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
 "npm:@biomejs/biome" = "latest"
@@ -31,7 +31,7 @@ terraform = "latest"
 "npm:@playwright/cli" = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
-"npm:@opencode-ai/cli" = { version = "beta", allow_builds = true } # postinstall が必要なので allow_builds しているが、サプライチェーン攻撃のリスクがあるので注意すること　
+"npm:@opencode/cli" = "latest"
 "github:yusukebe/ax" = "latest"
 
 [settings]
