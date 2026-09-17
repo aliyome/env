@@ -40,6 +40,8 @@ brew "container"
 cask "docker-desktop"
 cask "tailscale-app"
 cask "warp"
+tap "docker/tap", trusted: true
+cask "docker/tap/sbx", trusted: true
 
 # Cloud Platform
 brew "awscli"
