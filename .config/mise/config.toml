@@ -31,7 +31,7 @@ terraform = "latest"
 "npm:@playwright/cli" = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
-"npm:@opencode/cli" = "latest"
+"npm:@opencode/cli" = { version = "latest", allow_builds = true }
 "github:yusukebe/ax" = "latest"
 
 [settings]
