@@ -103,6 +103,9 @@ echo "min-release-age=1  # 1日" >> ~/.npmrc
 echo "ignore-scripts=true" >> ~/.npmrc
 echo "audit=true" >> ~/.npmrc
 
+# atuin
+echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
+
 # mise のセットアップ
 # mise install # ~/.config/mise/config.toml をコピーしてから mise install を実行する
 echo 'eval "$(mise activate)"' >> ~/.zshrc
@@ -138,3 +141,4 @@ echo "Raycast で *.rayconfig をインポートする"
 echo "Warp のログインを行う"
 echo "DMMブックスアプリをインストールする<https://book.dmm.com/info_bookviewer.html>"
 echo "VSCode の設定ファイルをコピーする"
+echo "brew services start atuin"

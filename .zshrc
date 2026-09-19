@@ -83,3 +83,4 @@ export PATH="/Users/aliyome/.antigravity/antigravity/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/Users/aliyome/.local/bin:$PATH"
+eval "$(atuin init zsh)"
