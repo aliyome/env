@@ -13,6 +13,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
+# atuin (↑キーで履歴検索は邪魔なので無効化する。履歴検索は Ctrl+R)
+eval "$(atuin init zsh)"
+bindkey '^[[A' up-line-or-history
+bindkey '^[OA' up-line-or-history
+
 # Alias
 alias cd='z' # zoxide を cd の代わりに使う
 alias ls='eza'
@@ -83,4 +88,3 @@ export PATH="/Users/aliyome/.antigravity/antigravity/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/Users/aliyome/.local/bin:$PATH"
-eval "$(atuin init zsh)"
