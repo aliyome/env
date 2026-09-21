@@ -1,0 +1,119 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "mattpocock/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-09-21T09:27:07.790Z",
+      "skills": {
+        "ask-matt": {
+          "integrity": "sha256-0261a2abbd43cc5bb391878106cda2eb7c4eabdde9ba5701b51d831f6e98f658"
+        },
+        "code-review": {
+          "integrity": "sha256-12daafb9c4f77deb3c3303dc2e6f8a3c2a0ff7928fc004af959ba18b8bd38068"
+        },
+        "codebase-design": {
+          "integrity": "sha256-9f457cc65ef2d70eb5b8a44a4dae2b139840078b6596a67ee8c4e95f5a0e6f5c"
+        },
+        "diagnosing-bugs": {
+          "integrity": "sha256-bcdaec9e1033901c396437fcb102161d8ad3cd87632007aaf270b19e03e70117"
+        },
+        "domain-modeling": {
+          "integrity": "sha256-2bc3bb0a64ea9c6f5c3bcf78fc17f0fcdc7c062edc547ef006441de0b576d248"
+        },
+        "grill-with-docs": {
+          "integrity": "sha256-6b1292031c4f38a11309b9dad9be1141c1921c6edf86d1ae6da8b048fa71a349"
+        },
+        "implement": {
+          "integrity": "sha256-b49a049477c7eec7f8dd90745dbc3f27bf75617b832d5b5f33c55aab7638a12e"
+        },
+        "improve-codebase-architecture": {
+          "integrity": "sha256-86f5e0413fa5b42b8e954858a09ce5a73187c61169f1b3b199bc79416fd78086"
+        },
+        "prototype": {
+          "integrity": "sha256-492e4433fcd9cf88c0854aba063829ee248b208849e5827a45da8424199fd10f"
+        },
+        "research": {
+          "integrity": "sha256-75b7f9bbd7ccff6755a006f8b25d319a46ecbf6bd4b4c3323965ed9cb65e78ff"
+        },
+        "resolving-merge-conflicts": {
+          "integrity": "sha256-310fa72a34cddd1dd1a9790f9ebc17bf2c83caeae5cdf87e2485be8b1abec90e"
+        },
+        "setup-matt-pocock-skills": {
+          "integrity": "sha256-80cd6b5be4f67913f1b10f5acd97fccaeb6401682ae7ff3a971460cb73d86cbe"
+        },
+        "tdd": {
+          "integrity": "sha256-28b5e430968370f51b03b88b4b4a046286192733d2f45bd5b8049e16f45fd234"
+        },
+        "to-spec": {
+          "integrity": "sha256-f8041146ec1678c32304f46c9de99b73a4b5dadf664e35a8124be47c4cfe3196"
+        },
+        "to-tickets": {
+          "integrity": "sha256-597a1a0af4f7391ab459a02a3f33576109b6bc61ecdc5e7e05149336858b4f29"
+        },
+        "triage": {
+          "integrity": "sha256-461668611d1bd0eeb0533f347c11690a556c966a75938363a171914dcc42481a"
+        },
+        "wayfinder": {
+          "integrity": "sha256-93d2a866764b048ad641e82e27e7a1940fc370e7933470bffeb937fa1fb3922b"
+        },
+        "wizard": {
+          "integrity": "sha256-518a4d148ef366cde28bd3b5f3eefc54ac7ddeeb670cd96eaff07cf4d2ce30f0"
+        }
+      },
+      "skillSelection": [
+        "ask-matt",
+        "code-review",
+        "codebase-design",
+        "diagnosing-bugs",
+        "domain-modeling",
+        "grill-with-docs",
+        "implement",
+        "improve-codebase-architecture",
+        "prototype",
+        "research",
+        "resolving-merge-conflicts",
+        "setup-matt-pocock-skills",
+        "tdd",
+        "to-spec",
+        "to-tickets",
+        "triage",
+        "wayfinder",
+        "wizard"
+      ]
+    },
+    "aliyome/mattpocock-skills": {
+      "requestedRef": "main",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-09-21T09:27:14.662Z",
+      "skills": {
+        "grill-me": {
+          "integrity": "sha256-5a13e157f85835632b132390a162d234822658b6a544f31cc2578280062bd044"
+        },
+        "grilling": {
+          "integrity": "sha256-0ca4cfe5105d79c6ef6755491492e056c43e88b82666376d8ecd7fac695d96e6"
+        },
+        "handoff": {
+          "integrity": "sha256-e5a44fccc710f5402deee06beaf5178397885765773375f186aefd179565f23f"
+        },
+        "to-questionnaire": {
+          "integrity": "sha256-915ac22f1133fd4a7899ac6536e704cae57f1104d45745b32193d1572332868f"
+        },
+        "wait-what": {
+          "integrity": "sha256-3f2e7e2ce8820380c08df1d6f2d8dc6aaefe5c2857d00a7190990c62d4039316"
+        },
+        "writing-for-agents": {
+          "integrity": "sha256-0071124a923559493bc8924a90fb87bceb048d31ad2ce785fa4281d7c506bfa7"
+        }
+      },
+      "skillSelection": [
+        "grill-me",
+        "grilling",
+        "handoff",
+        "to-questionnaire",
+        "wait-what",
+        "writing-for-agents"
+      ]
+    }
+  }
+}

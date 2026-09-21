@@ -1,0 +1,53 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
+  "targets": ["agentsskills"],
+  "features": ["skills"],
+  "outputRoots": ["."],
+  "delete": false,
+  "verbose": true,
+  "silent": false,
+  "global": true,
+  "simulateCommands": false,
+  "simulateSubagents": false,
+  "simulateSkills": false,
+  "sources": [
+    {
+      "source": "mattpocock/skills",
+      "path": "skills/engineering",
+      "skills": [
+        "ask-matt",
+        "code-review",
+        "codebase-design",
+        "diagnosing-bugs",
+        "domain-modeling",
+        "grill-with-docs",
+        "implement",
+        "improve-codebase-architecture",
+        "prototype",
+        "research",
+        "resolving-merge-conflicts",
+        "setup-matt-pocock-skills",
+        "tdd",
+        "to-spec",
+        "to-tickets",
+        "triage",
+        "wayfinder",
+        "wizard",
+      ],
+    },
+    // mattpocock/skills/engineering と mattpocock/skills/productivity を同時に定義したい
+    // 同時に定義すると rulesync install 時に片方が削除されてしまうのでフォークしたリポジトリを作成してそちらを参照する
+    {
+      "source": "aliyome/mattpocock-skills",
+      "path": "skills/productivity",
+      "skills": [
+        "grill-me",
+        "grilling",
+        "handoff",
+        "to-questionnaire",
+        "wait-what",
+        "writing-for-agents",
+      ],
+    },
+  ],
+}
