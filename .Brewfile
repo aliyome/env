@@ -13,7 +13,6 @@ cask "mas" # App Store のアプリを CLI で管理できる
 cask "obs"
 cask "raycast"
 cask "slack"
-cask "vial" # キーボードのカスタマイズツール
 cask "vlc"
 cask "onlyoffice" # 仕事でたまに使う
 cask "zoom"
