@@ -88,3 +88,9 @@ export PATH="/Users/aliyome/.antigravity/antigravity/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/Users/aliyome/.local/bin:$PATH"
+
+# Added by Antigravity IDE
+export PATH="/Users/aliyome/.antigravity-ide/antigravity-ide/bin:$PATH"
+
+# opencode
+export PATH=/Users/aliyome/.opencode/bin:$PATH
