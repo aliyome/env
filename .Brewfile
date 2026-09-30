@@ -73,9 +73,7 @@ cask "herd" # PHP は mise で管理が難しいので、herd で管理するこ
 brew "cmake" # for whisper.cpp
 brew "duckdb"
 brew "ffmpeg"
-brew "act" # nektos/act
 brew "ast-grep"
-brew "pueue"
 brew "fx"
 cask "cryptomator"
 cask "cursor"
