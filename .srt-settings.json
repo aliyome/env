@@ -17,27 +17,43 @@
       "*.newrelic.com"
     ],
     "deniedDomains": [],
-    "allowUnixSockets": ["/var/run/docker.sock"],
+    "allowUnixSockets": [
+      "/var/run/docker.sock"
+    ],
     "allowAllUnixSockets": true,
     "allowLocalBinding": false
   },
   "filesystem": {
-    "denyRead": ["~/.ssh", "**/*.env", "**/.aliyome"],
-    "allowRead": [],
+    "denyRead": [
+      "/Users"
+    ],
+    "allowRead": [
+      ".",
+      "~/.local/share/mise",
+      "~/.local/share/claude",
+      "~/.local/share/opencode",
+      "~/.local/share/uv",
+      "~/.cache",
+      "~/.gemini",
+      "~/.pi",
+      "~/.opencode"
+    ],
     "allowWrite": [
       ".",
       "/tmp",
       "/tmp/**/*",
-      "~/.pi/agent/settings.json.lock",
-      "~/.pi/agent/sessions/**/*.jsonl"
+      "~/.local/share/mise",
+      "~/.local/share/claude",
+      "~/.local/share/opencode",
+      "~/.local/share/uv",
+      "~/.cache",
+      "~/.gemini",
+      "~/.pi",
+      "~/.opencode"
     ],
-    "denyWrite": [".env"]
+    "denyWrite": []
   },
-  "ignoreViolations": {
-    "*": ["/usr/bin", "/System", "~/.local/share/mise"],
-    "git push": ["/usr/bin/nc"],
-    "npm": ["/private/tmp"]
-  },
+  "ignoreViolations": {},
   "enableWeakerNestedSandbox": false,
   "enableWeakerNetworkIsolation": false
 }
