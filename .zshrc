@@ -12,6 +12,7 @@ export PATH="/opt/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # atuin (↑キーで履歴検索は邪魔なので無効化する。履歴検索は Ctrl+R)
 eval "$(atuin init zsh)"
