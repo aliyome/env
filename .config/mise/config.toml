@@ -24,10 +24,10 @@ terraform = "latest"
 
 # packages
 "pnpm" = "latest"
-"yarn" = "1.22.22"
 "biome" = "latest"
 "playwright" = "latest"
 "pi" = "latest"
+"npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
 
