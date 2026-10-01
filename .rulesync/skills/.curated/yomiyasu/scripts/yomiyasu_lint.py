@@ -317,7 +317,7 @@ def lint_text(text: str) -> Dict[str, Any]:
                     "rule": "slop_vocabulary",
                     "line": line_no,
                     "severity": "warn",
-                    "message": f"AI頻出語彙「{word}」が含まれています。文脈上必要のない比喩や大げさな装飾であれば、具体的な客観表現に置き換えてください。",
+                    "message": f"AI頻出語彙「{word}」が含まれています。文脈上必要のない比喩や大げさな装飾であれば、ふだん使う自然な表現に置き換えてください。ただし、文字どおりの意味や必要な文脈を担っている場合は残してかまいません。",
                     "snippet": line.strip()
                 })
 
@@ -328,7 +328,7 @@ def lint_text(text: str) -> Dict[str, Any]:
                     "rule": "metaphor_verb",
                     "line": line_no,
                     "severity": "warn",
-                    "message": f"{desc}が検出されました。具体的な操作や状態変化に書き直してください。",
+                    "message": f"{desc}が検出されました。不自然な比喩動詞であれば、ふだん使う動詞や客観的な表現に書き直してください。ただし、文字どおりの動作や状態変化を表している場合は無理に言い換える必要はありません。",
                     "snippet": line.strip()
                 })
 
@@ -339,7 +339,7 @@ def lint_text(text: str) -> Dict[str, Any]:
                     "rule": "meta_filler",
                     "line": line_no,
                     "severity": "warn",
-                    "message": f"{desc}が検出されました。前置きや定型文を削り、本題から直接書いてください。",
+                    "message": f"{desc}が検出されました。単なる前置きや不要な飾りであれば削り、本題から書いてください。ただし、「何が大事か」という評価や主張そのものを担っている場合は、述語に移すなどして意味を残してください。",
                     "snippet": line.strip()
                 })
 
@@ -350,7 +350,7 @@ def lint_text(text: str) -> Dict[str, Any]:
                     "rule": "negative_parallelism",
                     "line": line_no,
                     "severity": "info",
-                    "message": "「AではなくB」構文が検出されました。肯定文（単に「Bである」）で直接書けないか検討してください。",
+                    "message": "「AではなくB」構文が検出されました。否定を外しても主張が変わらない場合は肯定文を検討してください。ただし、誤解の訂正や見方の切り替えなど意味・比重を担っている否定なら、無理に肯定化せずそのまま残してください。",
                     "snippet": line.strip()
                 })
 

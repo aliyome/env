@@ -1,6 +1,6 @@
 {
   "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
-  "targets": ["agentsskills"],
+  "targets": ["agentsskills", "antigravity-cli"],
   "features": ["skills"],
   "outputRoots": ["."],
   "delete": false,
@@ -13,6 +13,7 @@
   "sources": [
     {
       "source": "mattpocock/skills",
+      "ref": "main",
       "path": "skills/engineering",
       "skills": [
         "ask-matt",
@@ -41,6 +42,7 @@
     // 同時に定義すると rulesync install 時に片方が削除されてしまうのでフォークしたリポジトリを作成してそちらを参照する
     {
       "source": "aliyome/mattpocock-skills",
+      "ref": "main",
       "path": "skills/productivity",
       "skills": [
         "grill-me",
@@ -53,8 +55,15 @@
     },
     {
       "source": "nanaism/yomiyasu",
+      "ref": "main",
       "path": "skills",
       "skills": ["yomiyasu"],
+    },
+    {
+      "source": "herdrdev/herdr",
+      "ref": "master",
+      "path": "skills",
+      "skills": ["herdr"],
     },
   ],
 }
