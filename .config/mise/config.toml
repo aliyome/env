@@ -20,13 +20,13 @@ python = "latest"
 # tools
 uv = "latest"
 terraform = "latest"
-# "github:pocketbase/pocketbase" = "latest"
-
-# packages
 "pnpm" = "latest"
 "biome" = "latest"
 "playwright" = "latest"
 "pi" = "latest"
+# "github:pocketbase/pocketbase" = "latest"
+
+# packages
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
