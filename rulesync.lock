@@ -3,11 +3,11 @@
   "sources": {
     "mattpocock/skills": {
       "requestedRef": "main",
-      "resolvedRef": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
-      "resolvedAt": "2026-10-01T10:38:19.235Z",
+      "resolvedRef": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "resolvedAt": "2026-10-04T23:25:41.958Z",
       "skills": {
         "ask-matt": {
-          "integrity": "sha256-c3b9959850e331689fe87f88b8b1369c7d61fb3c8f96662fa2ba2dfcc977316e"
+          "integrity": "sha256-f51b8d890773efeeb087d2e7b0902b070bd279f2297e06f45abbeeca3730e105"
         },
         "code-review": {
           "integrity": "sha256-12daafb9c4f77deb3c3303dc2e6f8a3c2a0ff7928fc004af959ba18b8bd38068"
@@ -93,7 +93,7 @@
     "aliyome/mattpocock-skills": {
       "requestedRef": "main",
       "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
-      "resolvedAt": "2026-10-01T10:38:25.965Z",
+      "resolvedAt": "2026-10-04T23:25:49.045Z",
       "skills": {
         "grill-me": {
           "integrity": "sha256-5a13e157f85835632b132390a162d234822658b6a544f31cc2578280062bd044"
@@ -125,11 +125,11 @@
     },
     "nanaism/yomiyasu": {
       "requestedRef": "main",
-      "resolvedRef": "7b61b2f0283265ce1986d76c67929622a775844d",
-      "resolvedAt": "2026-10-01T10:38:29.704Z",
+      "resolvedRef": "4075fc34fb0333ca1fe42d32cd619338f4a138ba",
+      "resolvedAt": "2026-10-04T23:25:54.058Z",
       "skills": {
         "yomiyasu": {
-          "integrity": "sha256-612412ebeb0cd9460f1504b07a4098ed436bac11cc1e75089a2dec40007448e1"
+          "integrity": "sha256-ef206e7538e119b5d16d1d2107df250fda4ea0d79733a28514bb5f3e0a5cdec6"
         }
       },
       "skillSelection": [
@@ -138,8 +138,8 @@
     },
     "herdrdev/herdr": {
       "requestedRef": "master",
-      "resolvedRef": "d6b40d4edd550ccea081f089605a64314f8c8b27",
-      "resolvedAt": "2026-10-01T10:38:30.684Z",
+      "resolvedRef": "e35f3937b0efe40ec0dab675709c68e1d8e8c9e6",
+      "resolvedAt": "2026-10-04T23:25:55.161Z",
       "skills": {
         "herdr": {
           "integrity": "sha256-edea041990ac79c133a54d16eb4a2ec0b00abcc78e66ea30ecd9d61d3f2dff93"
