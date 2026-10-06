@@ -3,48 +3,48 @@
 lockfile_version = 2
 
 [[tools."github:dyoshikawa/rulesync"]]
-version = "25.0.0"
+version = "27.0.0"
 backend = "github:dyoshikawa/rulesync"
 specifiers = ["latest"]
 
 [tools."github:dyoshikawa/rulesync"."platforms.linux-arm64"]
-checksum = "sha256:769fff7c8f1f7d2f8d05b5f186ccb52c5a7e08832474cf3dd30cc947186ac5ae"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-linux-arm64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089471"
+checksum = "sha256:cad6b20ece2c31f6b8d91ad4f44990a32942c84cb054ee07c7a8aba83c00ac9e"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-linux-arm64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431782"
 provenance = "github-attestations"
 
 [tools."github:dyoshikawa/rulesync"."platforms.linux-arm64-musl"]
-checksum = "sha256:769fff7c8f1f7d2f8d05b5f186ccb52c5a7e08832474cf3dd30cc947186ac5ae"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-linux-arm64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089471"
+checksum = "sha256:cad6b20ece2c31f6b8d91ad4f44990a32942c84cb054ee07c7a8aba83c00ac9e"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-linux-arm64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431782"
 provenance = "github-attestations"
 
 [tools."github:dyoshikawa/rulesync"."platforms.linux-x64"]
-checksum = "sha256:4c2c92da0d42bd131212b8b038976f8e784bfd5c92fff8fb59bfae86de9e4daf"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-linux-x64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089475"
+checksum = "sha256:807e2cd46abbf99e7a053ac23ac8f662b508a44d87453efe9a7e9cd2c84fc05f"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-linux-x64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431775"
 provenance = "github-attestations"
 
 [tools."github:dyoshikawa/rulesync"."platforms.linux-x64-musl"]
-checksum = "sha256:4c2c92da0d42bd131212b8b038976f8e784bfd5c92fff8fb59bfae86de9e4daf"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-linux-x64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089475"
+checksum = "sha256:807e2cd46abbf99e7a053ac23ac8f662b508a44d87453efe9a7e9cd2c84fc05f"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-linux-x64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431775"
 provenance = "github-attestations"
 
 [tools."github:dyoshikawa/rulesync"."platforms.macos-arm64"]
-checksum = "sha256:a976d3d4f96c9bf5f3a1c0032676f0c256d58e25d94067d08a127ed1e29b94ff"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-darwin-arm64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089473"
+checksum = "sha256:749aea21528333243d1cd619262a2d47d3dd8a74a985db2ced4e950a5157429c"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-darwin-arm64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431785"
 provenance = "github-attestations"
 
 [tools."github:dyoshikawa/rulesync"."platforms.macos-x64"]
-checksum = "sha256:aa7c1e828c2f13f1351b34952d7e723d4742501af5bebe0c4c3deb8c9ed50317"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-darwin-x64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089476"
+checksum = "sha256:02af78bb7dca14b64fbd3bf3781d1e7591fd656913270c3791547773a567e426"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-darwin-x64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431786"
 provenance = "github-attestations"
 
 [tools."github:dyoshikawa/rulesync"."platforms.windows-x64"]
-checksum = "sha256:1db9af361178cc68ac9c18eeb8a12dc1a2edd31e2a9f2611c6f0a60e23415754"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v25.0.0/rulesync-windows-x64.exe"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/604089470"
+checksum = "sha256:5473f99af4fcf09c3f9471e05aafaef7f4255046be24d3eee3cd72b518d69294"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v27.0.0/rulesync-windows-x64.exe"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/611431779"
 provenance = "github-attestations"
