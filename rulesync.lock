@@ -148,6 +148,127 @@
       "skillSelection": [
         "herdr"
       ]
+    },
+    "cursor/plugins": {
+      "requestedRef": "main",
+      "resolvedRef": "df581122cde17e6e27686b5a448bde23e4ad4318",
+      "resolvedAt": "2026-10-06T07:02:54.896Z",
+      "skills": {
+        "architect": {
+          "integrity": "sha256-a51dd59904372349957e101054f7f591793a33755a4367368057c42e8992f91b"
+        },
+        "arena": {
+          "integrity": "sha256-eb95b61ac868c984d6b635b60e170c22f021ab3974ff72f17c50adfa2668bbda"
+        },
+        "benchmark-checklist": {
+          "integrity": "sha256-be11df2214b4d566e4c0193253a2a37567fc5fe2d69a99f2781ac11fb291b925"
+        },
+        "principle-attack-the-premise": {
+          "integrity": "sha256-4d7616448ba38512be9a05bba2b2a5eb9ae5497d89f3d1454c46a33b0ad99f2d"
+        },
+        "principle-boundary-discipline": {
+          "integrity": "sha256-55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44"
+        },
+        "principle-build-the-lever": {
+          "integrity": "sha256-048f9a2ce932b49f1f644b0ba9f67b4aa058b57c20769ea27339c33b7c8c70ee"
+        },
+        "principle-encode-lessons-in-structure": {
+          "integrity": "sha256-1ea3c30cfdd72ead5d6607d49e2b940dfe2451298b3be501acbf6cf0821b347f"
+        },
+        "principle-exhaust-the-design-space": {
+          "integrity": "sha256-f88881a656aedc92579b3ccad3f6c0e5420be480ab6838e59a4a33e89a69b2e2"
+        },
+        "principle-experience-first": {
+          "integrity": "sha256-3755ab3288a053dd3bf42f4851a605f8ab4a734ca37ac8345148bdff67fba511"
+        },
+        "principle-explain-the-number": {
+          "integrity": "sha256-f50b8fd5d0f8952eb7019872acc3a7dddf921c67036a77e91fb556cb8aec7b24"
+        },
+        "principle-fix-root-causes": {
+          "integrity": "sha256-7751feaf5ee319bd3f2fce39d08cb10bde88dc00bce3f6fbd7665726ace4085f"
+        },
+        "principle-foundational-thinking": {
+          "integrity": "sha256-1d23c9a69f71d4b49a77cff4f3460faf589a0822a44f163ddabbe70fc3815a79"
+        },
+        "principle-guard-the-context-window": {
+          "integrity": "sha256-4821d7945b748058c3a9bd474052b6dcfe96f4a41fc10807947c842cc37352ff"
+        },
+        "principle-laziness-protocol": {
+          "integrity": "sha256-c564e2925269cb40dc6a76bd6d1ef9b9b5fa595c4b4e3ca63a5918f692e722e4"
+        },
+        "principle-make-operations-idempotent": {
+          "integrity": "sha256-ef75b4d6320cb41d71a53052bc76e3154d1d26dc2be61728cfd2db2fadd56d89"
+        },
+        "principle-migrate-callers-then-delete-legacy-apis": {
+          "integrity": "sha256-d7f71a042febde66835f46e8359276008745ac9e4273c24e1c05c15a2de08527"
+        },
+        "principle-minimize-reader-load": {
+          "integrity": "sha256-dfdb3518545f5d7010155de12a64c4100bf2e14b1628f2a277d9b60764e0b4c6"
+        },
+        "principle-model-the-domain": {
+          "integrity": "sha256-b9bfe568c32df5df198e34a70e856f8874bca072409bb3baa435e532181be469"
+        },
+        "principle-never-block-on-the-human": {
+          "integrity": "sha256-f966763e1f4d7aea663e7107166da8bee17d9ab6513a23e484ad99f776c5dbc6"
+        },
+        "principle-outcome-oriented-execution": {
+          "integrity": "sha256-234c15fa31f1184c078936e45b3097f5b917882eb877201de62003638626c571"
+        },
+        "principle-prove-it-works": {
+          "integrity": "sha256-e411e390703f8dfa987dc8a19ecde9b4dc14a623b5543d76f65b6c4a94bde1e1"
+        },
+        "principle-redesign-from-first-principles": {
+          "integrity": "sha256-52aede457a6aecc5a1a4c9672f189875f3e74daaf6b5c5622bcc1767d8b25007"
+        },
+        "principle-separate-before-serializing-shared-state": {
+          "integrity": "sha256-d44b58f1b770b1855326864a5502ce8e627de278ac2f65edabea5aa1d14b5ba9"
+        },
+        "principle-sequence-verifiable-units": {
+          "integrity": "sha256-d1719c7e3d8b4b9a2fd0a8561ca36a5d7c708f8d248b8b02dca664b59bfc74c4"
+        },
+        "principle-subtract-before-you-add": {
+          "integrity": "sha256-67dd6dacc9b3b6e21e34528e556f4111f91b2e6ed6065350ce7c6fbbf03e9e15"
+        },
+        "principle-test-behavior-not-implementation": {
+          "integrity": "sha256-074f151f5a7374d87139a310b0f35cde7a999e285d5a0ee30b9af665a396fa73"
+        },
+        "principle-type-system-discipline": {
+          "integrity": "sha256-d05e0de14c21842995167a7bac675073c14fd9b10ae2aff874d87c1b66f52bfc"
+        },
+        "typescript-best-practices": {
+          "integrity": "sha256-e435471e769225a144d22a60d0578383fdcf14bba264ed54a3f858189663fc8e"
+        }
+      },
+      "skillSelection": [
+        "architect",
+        "arena",
+        "benchmark-checklist",
+        "principle-attack-the-premise",
+        "principle-boundary-discipline",
+        "principle-build-the-lever",
+        "principle-encode-lessons-in-structure",
+        "principle-exhaust-the-design-space",
+        "principle-experience-first",
+        "principle-explain-the-number",
+        "principle-fix-root-causes",
+        "principle-foundational-thinking",
+        "principle-guard-the-context-window",
+        "principle-laziness-protocol",
+        "principle-make-operations-idempotent",
+        "principle-migrate-callers-then-delete-legacy-apis",
+        "principle-minimize-reader-load",
+        "principle-model-the-domain",
+        "principle-never-block-on-the-human",
+        "principle-outcome-oriented-execution",
+        "principle-prove-it-works",
+        "principle-redesign-from-first-principles",
+        "principle-separate-before-serializing-shared-state",
+        "principle-sequence-verifiable-units",
+        "principle-subtract-before-you-add",
+        "principle-test-behavior-not-implementation",
+        "principle-type-system-discipline",
+        "typescript-best-practices"
+      ]
     }
   }
 }

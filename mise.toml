@@ -9,4 +9,7 @@ run = [
     "mise install",
     "GH_TOKEN=$(gh auth token) rulesync install",
     "rulesync generate",
+    # pstack でハーネスごとにモデルの参照箇所を書き換える
+    "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.gemini/antigravity-cli/skills/pstack-mod/SKILL.md@g' ~/.gemini/antigravity-cli/skills/arena/SKILL.md",
+    "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.agents/skills/pstack-mod/SKILL.md@g' ~/.agents/skills/arena/SKILL.md"
 ]
