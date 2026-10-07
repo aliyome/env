@@ -106,5 +106,11 @@
       "path": "skills",
       "skills": ["explainer"],
     },
+    {
+      "source": "ast-grep/agent-skill",
+      "ref": "main",
+      "path": "ast-grep/skills",
+      "skills": ["ast-grep", "outline"],
+    },
   ],
 }

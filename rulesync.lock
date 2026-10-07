@@ -282,6 +282,23 @@
       "skillSelection": [
         "explainer"
       ]
+    },
+    "ast-grep/agent-skill": {
+      "requestedRef": "main",
+      "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
+      "resolvedAt": "2026-10-07T03:14:22.398Z",
+      "skills": {
+        "ast-grep": {
+          "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
+        },
+        "outline": {
+          "integrity": "sha256-1b62b2aafe78bc658f2aeb31d1d051dd25b1d62e84a8685ec1301679bf20f0fe"
+        }
+      },
+      "skillSelection": [
+        "ast-grep",
+        "outline"
+      ]
     }
   }
 }
