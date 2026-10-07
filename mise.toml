@@ -8,8 +8,17 @@ enter = "mise tasks run setup"
 run = [
     "mise install",
     "GH_TOKEN=$(gh auth token) rulesync install",
+    # yomiyasu の SKILL.md はリポジトリルートにあるので取得して配置する
+    "gh api 'repos/nanaism/yomiyasu/contents/SKILL.md?ref=main' -H 'Accept: application/vnd.github.raw' > .rulesync/skills/.curated/yomiyasu/SKILL.md",
     "rulesync generate",
     # pstack でハーネスごとにモデルの参照箇所を書き換える
     "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.gemini/antigravity-cli/skills/pstack-mod/SKILL.md@g' ~/.gemini/antigravity-cli/skills/arena/SKILL.md",
-    "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.agents/skills/pstack-mod/SKILL.md@g' ~/.agents/skills/arena/SKILL.md"
+    "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.agents/skills/pstack-mod/SKILL.md@g' ~/.agents/skills/arena/SKILL.md",
+]
+
+[tasks.update-skills]
+run = [
+    "GH_TOKEN=$(gh auth token) rulesync install --update",
+    # yomiyasu の SKILL.md はリポジトリルートにあるので取得して配置する
+    "gh api 'repos/nanaism/yomiyasu/contents/SKILL.md?ref=main' -H 'Accept: application/vnd.github.raw' > .rulesync/skills/.curated/yomiyasu/SKILL.md"
 ]
