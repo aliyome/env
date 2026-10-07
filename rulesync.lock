@@ -269,6 +269,19 @@
         "principle-type-system-discipline",
         "typescript-best-practices"
       ]
+    },
+    "mizchi/explainer": {
+      "requestedRef": "main",
+      "resolvedRef": "578defba7249fde5366689424ed6017f76b5598b",
+      "resolvedAt": "2026-10-07T01:50:21.923Z",
+      "skills": {
+        "explainer": {
+          "integrity": "sha256-5a2c9b144e9867de7c10b6ededf76f53d2c7d1d509142bdae2731a88015457a5"
+        }
+      },
+      "skillSelection": [
+        "explainer"
+      ]
     }
   }
 }

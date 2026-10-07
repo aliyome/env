@@ -100,5 +100,11 @@
       "path": "skills",
       "skills": ["herdr"],
     },
+    {
+      "source": "mizchi/explainer",
+      "ref": "main",
+      "path": "skills",
+      "skills": ["explainer"],
+    },
   ],
 }
