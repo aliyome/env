@@ -3,20 +3,20 @@
   "sources": {
     "mattpocock/skills": {
       "requestedRef": "main",
-      "resolvedRef": "6fd947921b935b7e1e69293a200400f0fdd5c15f",
-      "resolvedAt": "2026-10-07T02:56:25.692Z",
+      "resolvedRef": "f3fc5632f401156837ee3872f14fe33ccf1024ea",
+      "resolvedAt": "2026-10-08T02:32:10.514Z",
       "skills": {
         "ask-matt": {
-          "integrity": "sha256-f51b8d890773efeeb087d2e7b0902b070bd279f2297e06f45abbeeca3730e105"
+          "integrity": "sha256-e940edda9eb590b33014332686ce20e88c3db319a92d7548164850288002457c"
         },
         "code-review": {
-          "integrity": "sha256-12daafb9c4f77deb3c3303dc2e6f8a3c2a0ff7928fc004af959ba18b8bd38068"
+          "integrity": "sha256-c14f1dfcfdb61979aab0e481a2caddc7471820c280bcffabe2287699eba5527e"
         },
         "codebase-design": {
           "integrity": "sha256-7383fac1ae3869fe7c6e195c9f3e1ea61039be47e8e10b70702fb90ee076d913"
         },
         "diagnosing-bugs": {
-          "integrity": "sha256-797393d3767d1fcfa35472cf0d6c99b475e2e0726829f402a2e0a62f940d9ea4"
+          "integrity": "sha256-bccb1855753ec4d07a1c0df85476a383b5a89d33d7726e9bb5d8014121307874"
         },
         "domain-modeling": {
           "integrity": "sha256-a94465b3818001677bed9e51205fcbea48b35b1938215ab2f42459029e805f51"
@@ -28,7 +28,7 @@
           "integrity": "sha256-cf8e1a5cc76d042e3ada41826352b35e523c49261e319d0b85a00ca701d1b189"
         },
         "implement": {
-          "integrity": "sha256-30cf5b4c9c7d0a436a9846311fc0b264b88dea060d32ffdd43104d54a5657c2c"
+          "integrity": "sha256-6d558f3f35fb0f1db27d937b1c5025683fe1e307c2c12bc93cd349b91d7f824c"
         },
         "improve-codebase-architecture": {
           "integrity": "sha256-e0f420699a632579a989b6c5e4a674f78126669608e4d5eea5f2f6294238557a"
@@ -46,10 +46,10 @@
           "integrity": "sha256-33e50d2e1b6da392645e0dee2f5ac3b1ca03b3d1c3aa39e9d25269656b4d4714"
         },
         "setup-matt-pocock-skills": {
-          "integrity": "sha256-22a02df768875dd555ce41cdba28229de6d1339d3bb5d21508d90b6e93b5ab6c"
+          "integrity": "sha256-cfe1c248b168d791d40203cb2832a4d1cf6e17b3d619cc43223899f1bfca5740"
         },
         "tdd": {
-          "integrity": "sha256-dc17f0fd4eb735cef8810d1a9e025cb3cd291f8f6551cf0adec1c93b5ea1ebd2"
+          "integrity": "sha256-b86dc370fd2ff43ba9c21e54fba9b1f4927f838177ff314a9528fc7243eb624c"
         },
         "to-spec": {
           "integrity": "sha256-f8041146ec1678c32304f46c9de99b73a4b5dadf664e35a8124be47c4cfe3196"
@@ -61,10 +61,10 @@
           "integrity": "sha256-1ec33672b2ac2ca02c906f204b3bfb819c7f37bfe1df033871bffaaf222fb1f6"
         },
         "wayfinder": {
-          "integrity": "sha256-93d2a866764b048ad641e82e27e7a1940fc370e7933470bffeb937fa1fb3922b"
+          "integrity": "sha256-466905909ab20ce5b4844763018551d2062b4e7356f9b1ad769cd57b636a4ebe"
         },
         "wizard": {
-          "integrity": "sha256-518a4d148ef366cde28bd3b5f3eefc54ac7ddeeb670cd96eaff07cf4d2ce30f0"
+          "integrity": "sha256-235f24ee6b7ebc1a061ad58db8a47e5fe18ac410454555116dd11bb4b3879c2d"
         }
       },
       "skillSelection": [
@@ -93,7 +93,7 @@
     "aliyome/mattpocock-skills": {
       "requestedRef": "main",
       "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
-      "resolvedAt": "2026-10-07T02:56:31.870Z",
+      "resolvedAt": "2026-10-08T02:32:17.214Z",
       "skills": {
         "grill-me": {
           "integrity": "sha256-5a13e157f85835632b132390a162d234822658b6a544f31cc2578280062bd044"
@@ -125,8 +125,8 @@
     },
     "cursor/plugins": {
       "requestedRef": "main",
-      "resolvedRef": "9f451cf875ad1239912762f67741e8e5ba6ac0f1",
-      "resolvedAt": "2026-10-07T02:56:48.597Z",
+      "resolvedRef": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "resolvedAt": "2026-10-08T02:32:33.789Z",
       "skills": {
         "architect": {
           "integrity": "sha256-a51dd59904372349957e101054f7f591793a33755a4367368057c42e8992f91b"
@@ -246,11 +246,11 @@
     },
     "nanaism/yomiyasu": {
       "requestedRef": "main",
-      "resolvedRef": "8f77b7aa8f19c3f718b511e71a3eee5d06eb3013",
-      "resolvedAt": "2026-10-07T02:56:53.198Z",
+      "resolvedRef": "0df47749139dfd64ad3d55e7d53d3839e5874848",
+      "resolvedAt": "2026-10-08T02:32:38.999Z",
       "skills": {
         "yomiyasu": {
-          "integrity": "sha256-ed6b69e03e3a4041a097f8309ce2041528b90e4b1e9ed2487bd629dfd9ec9dca"
+          "integrity": "sha256-8a3c2f5e3972a8cde9716ef03144c2fb72bc6359a5cb034efe0866a2d9522d85"
         }
       },
       "skillSelection": [
@@ -259,8 +259,8 @@
     },
     "herdrdev/herdr": {
       "requestedRef": "master",
-      "resolvedRef": "a124eed73c1f911ddf89a6ac5b2f7ab70d76f5c2",
-      "resolvedAt": "2026-10-07T02:56:54.496Z",
+      "resolvedRef": "4dc23bb15d4a2fd2c093abfb509f903c3015bf56",
+      "resolvedAt": "2026-10-08T02:32:40.105Z",
       "skills": {
         "herdr": {
           "integrity": "sha256-edea041990ac79c133a54d16eb4a2ec0b00abcc78e66ea30ecd9d61d3f2dff93"
@@ -273,7 +273,7 @@
     "mizchi/explainer": {
       "requestedRef": "main",
       "resolvedRef": "578defba7249fde5366689424ed6017f76b5598b",
-      "resolvedAt": "2026-10-07T02:56:58.317Z",
+      "resolvedAt": "2026-10-08T02:32:43.979Z",
       "skills": {
         "explainer": {
           "integrity": "sha256-5a2c9b144e9867de7c10b6ededf76f53d2c7d1d509142bdae2731a88015457a5"
@@ -286,7 +286,7 @@
     "ast-grep/agent-skill": {
       "requestedRef": "main",
       "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
-      "resolvedAt": "2026-10-07T03:14:22.398Z",
+      "resolvedAt": "2026-10-08T02:32:46.060Z",
       "skills": {
         "ast-grep": {
           "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
@@ -298,6 +298,19 @@
       "skillSelection": [
         "ast-grep",
         "outline"
+      ]
+    },
+    "tt-a1i/archify": {
+      "requestedRef": "main",
+      "resolvedRef": "73aaa0696e8f72c232ea710e6fa94fd953f3e773",
+      "resolvedAt": "2026-10-08T02:34:08.891Z",
+      "skills": {
+        "archify": {
+          "integrity": "sha256-86a5d8279223d165787d5d0df478310a2a3b4adc0e5aae382e0581e0b9eb517c"
+        }
+      },
+      "skillSelection": [
+        "archify"
       ]
     }
   }

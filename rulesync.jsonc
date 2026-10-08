@@ -112,5 +112,11 @@
       "path": "ast-grep/skills",
       "skills": ["ast-grep", "outline"],
     },
+    {
+      "source": "tt-a1i/archify",
+      "ref": "main",
+      "path": ".",
+      "skills": ["archify"],
+    },
   ],
 }
