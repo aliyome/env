@@ -1,18 +1,17 @@
 # Use homebrew sqlite3 instead of built-in sqlite3 because built-in one is old, so we can't use json operators.
 export PATH="/opt/homebrew/opt/sqlite/bin":$PATH
 
-# Use mise as default version management tool
-eval "$(mise activate zsh)"
+# PATH settings
+export PATH="/opt/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # Use zoxide for cd
 eval "$(zoxide init zsh)"
 
-# Misc
-export PATH="/opt/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+# Use mise as default version management tool
+eval "$(mise activate zsh)"
 
 # atuin (↑キーで履歴検索は邪魔なので無効化する。履歴検索は Ctrl+R)
 eval "$(atuin init zsh)"
