@@ -6,6 +6,7 @@ enter = "mise tasks run setup"
 
 [tasks.setup]
 run = [
+    "git pull",
     "mise install",
     "GH_TOKEN=$(gh auth token) rulesync install",
     "rulesync generate",
