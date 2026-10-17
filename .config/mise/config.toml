@@ -34,6 +34,7 @@ terraform = "latest"
 
 [settings]
 lockfile=true
+pipx.uvx = true
 
 [settings.python]
 uv_venv_auto = "create|source" # .venv がなければ作成して有効化
