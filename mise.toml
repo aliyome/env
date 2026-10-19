@@ -19,6 +19,9 @@ run = [
     # pstack でハーネスごとにモデルの参照箇所を書き換える
     "sed -i '' -E 's@(~/.cursor/rules/)?pstack-models\\.mdc@~/.gemini/antigravity-cli/skills/pstack-mod-agy/SKILL.md@g' ~/.gemini/antigravity-cli/skills/*/SKILL.md",
     "sed -i '' -E 's@(~/.cursor/rules/)?pstack-models\\.mdc@~/.agents/skills/pstack-mod-opencode/SKILL.md@g' ~/.agents/skills/*/SKILL.md",
+    # pstack のエージェントが参照するスキルのパスを書き換える
+    "sed -i '' -E 's@~/.cursor/plugins/@~/.agents/skills/@g' ~/.gemini/config/agents/poteto-agent.md",
+    "sed -i '' -E 's@~/.cursor/plugins/@~/.agents/skills/@g' ~/.config/opencode/agents/poteto-agent.md",
 ]
 
 [tasks.update-skills]
