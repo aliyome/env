@@ -12,6 +12,8 @@ run = [
     # スキル名とフォルダ名が一致するようにフォルダ名を書き換える
     "rm -rf .rulesync/skills/.curated/ast-grep-outline",
     "mv .rulesync/skills/.curated/outline .rulesync/skills/.curated/ast-grep-outline",
+    # pstack のエージェントを取得する
+    "mise tasks run update-subagents",
     "rulesync generate",
     # pstack でハーネスごとにモデルの参照箇所を書き換える
     "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.gemini/antigravity-cli/skills/pstack-mod/SKILL.md@g' ~/.gemini/antigravity-cli/skills/arena/SKILL.md",
@@ -22,3 +24,26 @@ run = [
 run = [
     "GH_TOKEN=$(gh auth token) rulesync install --update",
 ]
+
+[tasks.update-subagents]
+alias = ["update-agents", "fetch-subagents", "fetch-agents"]
+description = "Fetch agents from cursor/plugins pstack/agents into .rulesync/subagents"
+run = """
+tmpdir=$(mktemp -d)
+trap 'rm -rf "$tmpdir"' EXIT
+chmod 755 "$tmpdir"
+
+gh api repos/cursor/plugins/contents/pstack/agents --jq '.[] | select(.type == "file") | .download_url' | while IFS= read -r url; do
+    curl -sSfL "$url" -o "$tmpdir/${url##*/}"
+done
+
+if [ -n "$(ls -A "$tmpdir")" ]; then
+    rm -rf .rulesync/subagents
+    mkdir -p .rulesync
+    mv "$tmpdir" .rulesync/subagents
+    trap - EXIT
+else
+    echo "No agent files downloaded." >&2
+    exit 1
+fi
+"""

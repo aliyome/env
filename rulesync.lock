@@ -1,183 +1,10 @@
 {
   "lockfileVersion": 1,
   "sources": {
-    "cursor/plugins": {
-      "requestedRef": "main",
-      "resolvedRef": "1dcc2bacde73ddd284803b7af28164d0436198fc",
-      "resolvedAt": "2026-10-13T04:39:50.878Z",
-      "skills": {
-        "architect": {
-          "integrity": "sha256-6f92ca9acc05420e21f56bef9aba9398bd8cbbf3a5db930abb140eb4c6ed006d"
-        },
-        "arena": {
-          "integrity": "sha256-653f0f9e7539e4b7d058b3c483f28efc1ba6238c84a094b89191ee7ef4e1bd54"
-        },
-        "benchmark-checklist": {
-          "integrity": "sha256-77f6adce1b8785c7e26d762992365b466d3e7d09d61edbd670f2bceccf649146"
-        },
-        "principle-attack-the-premise": {
-          "integrity": "sha256-4d7616448ba38512be9a05bba2b2a5eb9ae5497d89f3d1454c46a33b0ad99f2d"
-        },
-        "principle-boundary-discipline": {
-          "integrity": "sha256-55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44"
-        },
-        "principle-build-the-lever": {
-          "integrity": "sha256-fb9a78644ecef92490324b805db63a6813509d19991dbd1bfa2f794a95cfd262"
-        },
-        "principle-encode-lessons-in-structure": {
-          "integrity": "sha256-39456efdd2bfc042495115c4b226eb11da09bdb5ca6ffc5edd40d527ad8e53ce"
-        },
-        "principle-exhaust-the-design-space": {
-          "integrity": "sha256-eeb910839e9847405f32a6c751d20370934c681a895958c105d079873bd35013"
-        },
-        "principle-experience-first": {
-          "integrity": "sha256-3755ab3288a053dd3bf42f4851a605f8ab4a734ca37ac8345148bdff67fba511"
-        },
-        "principle-explain-the-number": {
-          "integrity": "sha256-3a252854b9a892be189262cb7fac5dde2058445e78fc818a9e26198e47e5f1b7"
-        },
-        "principle-fix-root-causes": {
-          "integrity": "sha256-7751feaf5ee319bd3f2fce39d08cb10bde88dc00bce3f6fbd7665726ace4085f"
-        },
-        "principle-foundational-thinking": {
-          "integrity": "sha256-1d23c9a69f71d4b49a77cff4f3460faf589a0822a44f163ddabbe70fc3815a79"
-        },
-        "principle-guard-the-context-window": {
-          "integrity": "sha256-6d3f22c0677acf3a5dd6b0dd7b9d61a0fbf5e52e21e75e1970f7990fd86c9afa"
-        },
-        "principle-laziness-protocol": {
-          "integrity": "sha256-9c35100a4c9a1c36b9b9d69c4abcbef2bbb783132799b8fc1e5831c7b0bc7313"
-        },
-        "principle-make-operations-idempotent": {
-          "integrity": "sha256-ef75b4d6320cb41d71a53052bc76e3154d1d26dc2be61728cfd2db2fadd56d89"
-        },
-        "principle-migrate-callers-then-delete-legacy-apis": {
-          "integrity": "sha256-d7f71a042febde66835f46e8359276008745ac9e4273c24e1c05c15a2de08527"
-        },
-        "principle-minimize-reader-load": {
-          "integrity": "sha256-b0b560e53f6a4b44a125437925dbe1202a000a20703cff3b8280e438b5cf95ac"
-        },
-        "principle-model-the-domain": {
-          "integrity": "sha256-c55ec4d5f4a15bfcef681feec8e924d4afcc91caf6cd2d83acc56e9cb43e71c1"
-        },
-        "principle-never-block-on-the-human": {
-          "integrity": "sha256-7c81b7559df6cbe1594a6bac2433e063105b1ffa58676fae7c912a41a35852e1"
-        },
-        "principle-outcome-oriented-execution": {
-          "integrity": "sha256-234c15fa31f1184c078936e45b3097f5b917882eb877201de62003638626c571"
-        },
-        "principle-prove-it-works": {
-          "integrity": "sha256-e411e390703f8dfa987dc8a19ecde9b4dc14a623b5543d76f65b6c4a94bde1e1"
-        },
-        "principle-redesign-from-first-principles": {
-          "integrity": "sha256-94567cfdc4cf35c3fb0eca0cbf4eb998eb6236b041d266a336768e79a757d2cd"
-        },
-        "principle-separate-before-serializing-shared-state": {
-          "integrity": "sha256-d44b58f1b770b1855326864a5502ce8e627de278ac2f65edabea5aa1d14b5ba9"
-        },
-        "principle-sequence-verifiable-units": {
-          "integrity": "sha256-d1719c7e3d8b4b9a2fd0a8561ca36a5d7c708f8d248b8b02dca664b59bfc74c4"
-        },
-        "principle-subtract-before-you-add": {
-          "integrity": "sha256-420ad76d27b8f376125bbc7827d69524ca79b6f98c709d40fed952590efddad8"
-        },
-        "principle-test-behavior-not-implementation": {
-          "integrity": "sha256-50e8355d796a24da2a692a9ccd4bcd507fa98a588e74e089b8dabfedf45d37b9"
-        },
-        "principle-type-system-discipline": {
-          "integrity": "sha256-40d943560373418c490053978f9bfa113cbd518caaa1a03e981ea3536f16b176"
-        },
-        "typescript-best-practices": {
-          "integrity": "sha256-e435471e769225a144d22a60d0578383fdcf14bba264ed54a3f858189663fc8e"
-        }
-      },
-      "skillSelection": [
-        "architect",
-        "arena",
-        "benchmark-checklist",
-        "principle-attack-the-premise",
-        "principle-boundary-discipline",
-        "principle-build-the-lever",
-        "principle-encode-lessons-in-structure",
-        "principle-exhaust-the-design-space",
-        "principle-experience-first",
-        "principle-explain-the-number",
-        "principle-fix-root-causes",
-        "principle-foundational-thinking",
-        "principle-guard-the-context-window",
-        "principle-laziness-protocol",
-        "principle-make-operations-idempotent",
-        "principle-migrate-callers-then-delete-legacy-apis",
-        "principle-minimize-reader-load",
-        "principle-model-the-domain",
-        "principle-never-block-on-the-human",
-        "principle-outcome-oriented-execution",
-        "principle-prove-it-works",
-        "principle-redesign-from-first-principles",
-        "principle-separate-before-serializing-shared-state",
-        "principle-sequence-verifiable-units",
-        "principle-subtract-before-you-add",
-        "principle-test-behavior-not-implementation",
-        "principle-type-system-discipline",
-        "typescript-best-practices"
-      ]
-    },
-    "nanaism/yomiyasu": {
-      "requestedRef": "main",
-      "resolvedRef": "60bf877acebc86651e0b67d70112a66245f87758",
-      "resolvedAt": "2026-10-13T04:39:57.657Z",
-      "skills": {
-        "yomiyasu": {
-          "integrity": "sha256-de72fea9de397ae4087d4f321475308d7340a0951b1d2a35c640ecdaa29bf4bb"
-        }
-      },
-      "skillSelection": [
-        "yomiyasu"
-      ]
-    },
-    "herdrdev/herdr": {
-      "requestedRef": "master",
-      "resolvedRef": "241b99cd397bb642eaabcfee1647bcecffb26be1",
-      "resolvedAt": "2026-10-13T04:39:58.916Z",
-      "skills": {
-        "herdr": {
-          "integrity": "sha256-edea041990ac79c133a54d16eb4a2ec0b00abcc78e66ea30ecd9d61d3f2dff93"
-        }
-      },
-      "skillSelection": [
-        "herdr"
-      ]
-    },
-    "mizchi/explainer": {
-      "requestedRef": "main",
-      "resolvedRef": "ccdd7bacfb47451e38506d837af8a629504960b2",
-      "resolvedAt": "2026-10-13T04:40:03.220Z",
-      "skills": {
-        "explainer": {
-          "integrity": "sha256-7beac9b35b841e4124d50943dd4ef89b04e9229cb9139d0213cd2907a933a616"
-        }
-      },
-      "skillSelection": [
-        "explainer"
-      ]
-    },
-    "tt-a1i/archify": {
-      "requestedRef": "main",
-      "resolvedRef": "58ab0b98d2d0def8e49dced705c7b566936723ec",
-      "resolvedAt": "2026-10-13T04:41:48.155Z",
-      "skills": {
-        "archify": {
-          "integrity": "sha256-d2fb1c8e12558096c34575463e1fe6c25332fb42ad9ac67712bbb8c28798d10d"
-        }
-      },
-      "skillSelection": [
-        "archify"
-      ]
-    },
     "mattpocock/skills": {
       "requestedRef": "main",
       "resolvedRef": "49dd158d1076134a641b33efb035946536778336",
-      "resolvedAt": "2026-10-14T05:14:25.698Z",
+      "resolvedAt": "2026-10-19T03:09:50.539Z",
       "skills": {
         "research": {
           "integrity": "sha256-75b7f9bbd7ccff6755a006f8b25d319a46ecbf6bd4b4c3323965ed9cb65e78ff"
@@ -247,7 +74,7 @@
     "mattpocock/skills@main:.": {
       "requestedRef": "main",
       "resolvedRef": "49dd158d1076134a641b33efb035946536778336",
-      "resolvedAt": "2026-10-14T05:16:38.700Z",
+      "resolvedAt": "2026-10-19T03:10:00.368Z",
       "skills": {
         "grill-me": {
           "integrity": "sha256-5a13e157f85835632b132390a162d234822658b6a544f31cc2578280062bd044"
@@ -275,10 +102,218 @@
         "*"
       ]
     },
+    "cursor/plugins": {
+      "requestedRef": "main",
+      "resolvedRef": "6b78e9f4e46c75d1697d837e51f07c2692e60b24",
+      "resolvedAt": "2026-10-19T03:10:04.196Z",
+      "skills": {
+        "figure-it-out": {
+          "integrity": "sha256-e0b8daee7524f146866616d66eb82e3321595a083a06ce809d86f28faec66934"
+        },
+        "bro": {
+          "integrity": "sha256-a333dd2281770dcc9fb2317b066bd0dbefd780aa9abfd6b19f7d31db3ad3f007"
+        },
+        "interrogate": {
+          "integrity": "sha256-89bfe179b021a1b1f3316faafdda249294182f2d424f6fae54e1ba119fb46e11"
+        },
+        "benchmark-checklist": {
+          "integrity": "sha256-77f6adce1b8785c7e26d762992365b466d3e7d09d61edbd670f2bceccf649146"
+        },
+        "principle-boundary-discipline": {
+          "integrity": "sha256-55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44"
+        },
+        "setup-pstack": {
+          "integrity": "sha256-fa495bf23128d09515628819c43e8bff84e312eea3d5e411c9a745308f82d89e"
+        },
+        "swarm": {
+          "integrity": "sha256-1992c17c6190dbfc02a8e747abab8084c48d92958fde0e4f6d503a420aebc6d7"
+        },
+        "principle-model-the-domain": {
+          "integrity": "sha256-c55ec4d5f4a15bfcef681feec8e924d4afcc91caf6cd2d83acc56e9cb43e71c1"
+        },
+        "correct": {
+          "integrity": "sha256-e86f41b862349cc7019815c374a21074e3e2087618cf0fe8f2f869059f4d9937"
+        },
+        "technical-writing": {
+          "integrity": "sha256-f726f6d06c9969cecafc57c7bda1cd189f10947c54807089f7d134fd10fda378"
+        },
+        "principle-fix-root-causes": {
+          "integrity": "sha256-86388a2a6a21e4834da03d9d0bb483465f40124f3b164b6070380d5e85f55957"
+        },
+        "why": {
+          "integrity": "sha256-34bf673db054b3e1c2c5592b7a12ce686c2a262b48c4d4ca73af609686f6236a"
+        },
+        "in-your-own-words": {
+          "integrity": "sha256-49d983cb552ece1cc4b6a8e16f48dc90611f3c1a2d834507ec48fa80f30fa044"
+        },
+        "principle-encode-lessons-in-structure": {
+          "integrity": "sha256-39456efdd2bfc042495115c4b226eb11da09bdb5ca6ffc5edd40d527ad8e53ce"
+        },
+        "how": {
+          "integrity": "sha256-c70234285fdd0901c49f4ea89dadb5a60d67d9c9f5e95f0ac3d131f6f74b13d7"
+        },
+        "sharpen": {
+          "integrity": "sha256-3f375f890acbb24ec4459ab338afe771cdd052df3811d7c1fd90260039edf7ca"
+        },
+        "blast-radius": {
+          "integrity": "sha256-b7a89ce84164a9900d6f6a52e82cc5eb070bb08e0648bdb16d967a130c19e167"
+        },
+        "principle-guard-the-context-window": {
+          "integrity": "sha256-6d3f22c0677acf3a5dd6b0dd7b9d61a0fbf5e52e21e75e1970f7990fd86c9afa"
+        },
+        "principle-subtract-before-you-add": {
+          "integrity": "sha256-420ad76d27b8f376125bbc7827d69524ca79b6f98c709d40fed952590efddad8"
+        },
+        "create-formal-verification-skill": {
+          "integrity": "sha256-c687f4b20ae6c3caa176ed9408326fa2fce375830d6a50ae247ad4294c849126"
+        },
+        "reflect": {
+          "integrity": "sha256-fbc5839df4a3975d9769244bc6d560858998a0f2cecf83c723fb912d76081516"
+        },
+        "principle-foundational-thinking": {
+          "integrity": "sha256-1d23c9a69f71d4b49a77cff4f3460faf589a0822a44f163ddabbe70fc3815a79"
+        },
+        "show-me-your-work": {
+          "integrity": "sha256-ba517aeb238e7a3d4018cb6d21a40c5afe6a280ef8aaf2b103847d7bcb7c335f"
+        },
+        "principle-build-the-lever": {
+          "integrity": "sha256-fb9a78644ecef92490324b805db63a6813509d19991dbd1bfa2f794a95cfd262"
+        },
+        "poteto-mode": {
+          "integrity": "sha256-dd3a0b757a0c9530dada574fc1db094176c9e1e32e5ec7e8bbb92f709d044c21"
+        },
+        "principle-make-operations-idempotent": {
+          "integrity": "sha256-47c79e3166f30c4d3bf26125c8ea529b127fc468ecf94809ab5aba1ebe79aed0"
+        },
+        "recall": {
+          "integrity": "sha256-55c04f4c4b6612fa792a35d292bcb1ab2668a2eed5159318190d2cd7a12dd84b"
+        },
+        "ketchup": {
+          "integrity": "sha256-db3c52396100cae768660706cdcf1cf0d4a92f2aa5db582834fcab3e068ad5c9"
+        },
+        "principle-sequence-verifiable-units": {
+          "integrity": "sha256-d1719c7e3d8b4b9a2fd0a8561ca36a5d7c708f8d248b8b02dca664b59bfc74c4"
+        },
+        "principle-test-behavior-not-implementation": {
+          "integrity": "sha256-c8b25ca3336056109d6eaf5a973e676945b389ab3d03a12ae8c8ba360869ee21"
+        },
+        "principle-explain-the-number": {
+          "integrity": "sha256-3a252854b9a892be189262cb7fac5dde2058445e78fc818a9e26198e47e5f1b7"
+        },
+        "make-bot-ui": {
+          "integrity": "sha256-32020fd5b3f968d997aa3c4f7b979ae7bc41ba01958ccb93c9a386cf45c7499c"
+        },
+        "maintain-verification-skill": {
+          "integrity": "sha256-0d58a5b503197681a39404d0cbac0ae3b9969123e32028e7e5cb43298f94e5f5"
+        },
+        "principle-outcome-oriented-execution": {
+          "integrity": "sha256-234c15fa31f1184c078936e45b3097f5b917882eb877201de62003638626c571"
+        },
+        "typescript-best-practices": {
+          "integrity": "sha256-06bff9e87ccb45ed1b843b5b428a94ed3699193709b241e91d891f43dfd77edc"
+        },
+        "poteto-help": {
+          "integrity": "sha256-c4fbbdcedf3f2d9beb1b82eed45cc5ba314904ae6c41916c25bdffed1ba91ec5"
+        },
+        "architect": {
+          "integrity": "sha256-6f92ca9acc05420e21f56bef9aba9398bd8cbbf3a5db930abb140eb4c6ed006d"
+        },
+        "principle-never-block-on-the-human": {
+          "integrity": "sha256-7c81b7559df6cbe1594a6bac2433e063105b1ffa58676fae7c912a41a35852e1"
+        },
+        "principle-redesign-from-first-principles": {
+          "integrity": "sha256-94567cfdc4cf35c3fb0eca0cbf4eb998eb6236b041d266a336768e79a757d2cd"
+        },
+        "principle-minimize-reader-load": {
+          "integrity": "sha256-b0b560e53f6a4b44a125437925dbe1202a000a20703cff3b8280e438b5cf95ac"
+        },
+        "principle-exhaust-the-design-space": {
+          "integrity": "sha256-eeb910839e9847405f32a6c751d20370934c681a895958c105d079873bd35013"
+        },
+        "principle-migrate-callers-then-delete-legacy-apis": {
+          "integrity": "sha256-b38b42c5a972a39c64795afb8eea1be5f7715f023f93cdf444b5f88af8f7f2fe"
+        },
+        "automate-me": {
+          "integrity": "sha256-093e06a092c5535ff783965831498587ff0ccc2d753c43c1fb7c5057f2e5e09f"
+        },
+        "arena": {
+          "integrity": "sha256-955c44fd7adadcb9d997a045f9b0eea582d9abac32e39fa0f35839d34173e924"
+        },
+        "principle-attack-the-premise": {
+          "integrity": "sha256-c61a6fabdec7954f4c5565056e659f8947d4a1f6ea29161f973e5d95c2359b0a"
+        },
+        "create-verification-skill": {
+          "integrity": "sha256-c65dc833fc03c78a124ae7ba70b41b7378d6af725c6502823e4ae56497b332dc"
+        },
+        "no-comments": {
+          "integrity": "sha256-dcb4d99708b4080976746ea6dcdc4f34569954f015b583651617aae9ba081835"
+        },
+        "principle-laziness-protocol": {
+          "integrity": "sha256-9c35100a4c9a1c36b9b9d69c4abcbef2bbb783132799b8fc1e5831c7b0bc7313"
+        },
+        "principle-experience-first": {
+          "integrity": "sha256-3755ab3288a053dd3bf42f4851a605f8ab4a734ca37ac8345148bdff67fba511"
+        },
+        "unslop": {
+          "integrity": "sha256-e7713c9212c094596766638b2faf63036b26cfa2fb485802eb9e954ffacde372"
+        },
+        "principle-prove-it-works": {
+          "integrity": "sha256-e411e390703f8dfa987dc8a19ecde9b4dc14a623b5543d76f65b6c4a94bde1e1"
+        },
+        "principle-separate-before-serializing-shared-state": {
+          "integrity": "sha256-d44b58f1b770b1855326864a5502ce8e627de278ac2f65edabea5aa1d14b5ba9"
+        },
+        "principle-type-system-discipline": {
+          "integrity": "sha256-098982c080f2fcdaf857ef2946a37eefe0ba01c4b7959d42b3910d611643d58f"
+        }
+      },
+      "skillSelection": [
+        "*"
+      ]
+    },
+    "nanaism/yomiyasu": {
+      "requestedRef": "main",
+      "resolvedRef": "79d15a621751cb7ad3bea556832209e9112e575f",
+      "resolvedAt": "2026-10-19T03:10:19.933Z",
+      "skills": {
+        "yomiyasu": {
+          "integrity": "sha256-b1b7dba7ccd22e396ae8214028dd2850ef673d1f92e9b04cf867e39974e8421b"
+        }
+      },
+      "skillSelection": [
+        "yomiyasu"
+      ]
+    },
+    "herdrdev/herdr": {
+      "requestedRef": "master",
+      "resolvedRef": "143bf5fd4781d164260c63fe28e7dc08054ad32f",
+      "resolvedAt": "2026-10-19T03:10:21.315Z",
+      "skills": {
+        "herdr": {
+          "integrity": "sha256-07c8c14a16855d083c6cfc23b6658a544f751935fb836e1a007dc5f9a28a1ae2"
+        }
+      },
+      "skillSelection": [
+        "herdr"
+      ]
+    },
+    "mizchi/explainer": {
+      "requestedRef": "main",
+      "resolvedRef": "ccdd7bacfb47451e38506d837af8a629504960b2",
+      "resolvedAt": "2026-10-19T03:10:26.384Z",
+      "skills": {
+        "explainer": {
+          "integrity": "sha256-7beac9b35b841e4124d50943dd4ef89b04e9229cb9139d0213cd2907a933a616"
+        }
+      },
+      "skillSelection": [
+        "explainer"
+      ]
+    },
     "ast-grep/agent-skill": {
       "requestedRef": "main",
       "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
-      "resolvedAt": "2026-10-19T01:16:07.993Z",
+      "resolvedAt": "2026-10-19T03:10:29.009Z",
       "skills": {
         "ast-grep": {
           "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
@@ -290,6 +325,19 @@
       "skillSelection": [
         "ast-grep",
         "outline"
+      ]
+    },
+    "tt-a1i/archify": {
+      "requestedRef": "main",
+      "resolvedRef": "654da74e084e5a1faf708779c23d6172766be9c1",
+      "resolvedAt": "2026-10-19T03:11:40.198Z",
+      "skills": {
+        "archify": {
+          "integrity": "sha256-21c0682aaad1b155c5f0660ac3e2eb66b5bfe66f976ee52d1037647b72c88c5e"
+        }
+      },
+      "skillSelection": [
+        "archify"
       ]
     }
   }
