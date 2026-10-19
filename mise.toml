@@ -9,6 +9,9 @@ run = [
     "git pull",
     "mise install",
     "GH_TOKEN=$(gh auth token) rulesync install",
+    # スキル名とフォルダ名が一致するようにフォルダ名を書き換える
+    "rm -rf .rulesync/skills/.curated/ast-grep-outline",
+    "mv .rulesync/skills/.curated/outline .rulesync/skills/.curated/ast-grep-outline",
     "rulesync generate",
     # pstack でハーネスごとにモデルの参照箇所を書き換える
     "sed -i '' 's@~/.cursor/rules/pstack-models.mdc@~/.gemini/antigravity-cli/skills/pstack-mod/SKILL.md@g' ~/.gemini/antigravity-cli/skills/arena/SKILL.md",
