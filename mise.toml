@@ -15,6 +15,7 @@ run = [
     # pstack のエージェントを取得する
     "mise tasks run update-subagents",
     "rulesync generate",
+    "rulesync generate --targets antigravity-cli,opencode --features subagents",
     # pstack でハーネスごとにモデルの参照箇所を書き換える
     "sed -i '' -E 's@(~/.cursor/rules/)?pstack-models\\.mdc@~/.gemini/antigravity-cli/skills/pstack-mod-agy/SKILL.md@g' ~/.gemini/antigravity-cli/skills/*/SKILL.md",
     "sed -i '' -E 's@(~/.cursor/rules/)?pstack-models\\.mdc@~/.agents/skills/pstack-mod-opencode/SKILL.md@g' ~/.agents/skills/*/SKILL.md",
