@@ -326,7 +326,7 @@
     "ast-grep/agent-skill": {
       "requestedRef": "main",
       "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
-      "resolvedAt": "2026-10-19T04:01:26.724Z",
+      "resolvedAt": "2026-10-21T04:00:06.088Z",
       "skills": {
         "ast-grep": {
           "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
@@ -338,6 +338,19 @@
       "skillSelection": [
         "ast-grep",
         "outline"
+      ]
+    },
+    "pbakaus/impeccable": {
+      "requestedRef": "main",
+      "resolvedRef": "dad8dbb3aac21ad1fa236c110315ef4abece23e8",
+      "resolvedAt": "2026-10-21T04:00:50.410Z",
+      "skills": {
+        "impeccable": {
+          "integrity": "sha256-6a246b330aa854abcbbb8c6f616f583b442794ddc22a66bd713a30ec8bd5bf4a"
+        }
+      },
+      "skillSelection": [
+        "impeccable"
       ]
     }
   }
