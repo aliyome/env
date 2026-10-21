@@ -3,8 +3,8 @@
   "sources": {
     "mattpocock/skills": {
       "requestedRef": "main",
-      "resolvedRef": "49dd158d1076134a641b33efb035946536778336",
-      "resolvedAt": "2026-10-19T03:09:50.539Z",
+      "resolvedRef": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "resolvedAt": "2026-10-21T04:02:39.499Z",
       "skills": {
         "research": {
           "integrity": "sha256-75b7f9bbd7ccff6755a006f8b25d319a46ecbf6bd4b4c3323965ed9cb65e78ff"
@@ -73,8 +73,8 @@
     },
     "mattpocock/skills@main:.": {
       "requestedRef": "main",
-      "resolvedRef": "49dd158d1076134a641b33efb035946536778336",
-      "resolvedAt": "2026-10-19T03:10:00.368Z",
+      "resolvedRef": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "resolvedAt": "2026-10-21T04:02:47.616Z",
       "skills": {
         "grill-me": {
           "integrity": "sha256-5a13e157f85835632b132390a162d234822658b6a544f31cc2578280062bd044"
@@ -104,8 +104,8 @@
     },
     "cursor/plugins": {
       "requestedRef": "main",
-      "resolvedRef": "6b78e9f4e46c75d1697d837e51f07c2692e60b24",
-      "resolvedAt": "2026-10-19T03:10:04.196Z",
+      "resolvedRef": "190d28736eff128ec94f502a22c7fe0c4b56cd37",
+      "resolvedAt": "2026-10-21T04:02:50.220Z",
       "skills": {
         "figure-it-out": {
           "integrity": "sha256-e0b8daee7524f146866616d66eb82e3321595a083a06ce809d86f28faec66934"
@@ -153,10 +153,13 @@
           "integrity": "sha256-c70234285fdd0901c49f4ea89dadb5a60d67d9c9f5e95f0ac3d131f6f74b13d7"
         },
         "sharpen": {
-          "integrity": "sha256-3f375f890acbb24ec4459ab338afe771cdd052df3811d7c1fd90260039edf7ca"
+          "integrity": "sha256-06d7cc1950d1a9ac9a04405bc08a1e06bdaa6d415b1540a80ddf47e34cef8b28"
         },
         "blast-radius": {
           "integrity": "sha256-b7a89ce84164a9900d6f6a52e82cc5eb070bb08e0648bdb16d967a130c19e167"
+        },
+        "maintain-formal-verification-skill": {
+          "integrity": "sha256-935e55c6161e3b7988e3e49ecf4f17248e124f595cc7d626b398577317a6a8ed"
         },
         "principle-guard-the-context-window": {
           "integrity": "sha256-6d3f22c0677acf3a5dd6b0dd7b9d61a0fbf5e52e21e75e1970f7990fd86c9afa"
@@ -165,7 +168,7 @@
           "integrity": "sha256-420ad76d27b8f376125bbc7827d69524ca79b6f98c709d40fed952590efddad8"
         },
         "create-formal-verification-skill": {
-          "integrity": "sha256-c687f4b20ae6c3caa176ed9408326fa2fce375830d6a50ae247ad4294c849126"
+          "integrity": "sha256-b17713fd24be763e40c969f44553895eb94810cdcf08e6e64e0b61614fb13a12"
         },
         "reflect": {
           "integrity": "sha256-fbc5839df4a3975d9769244bc6d560858998a0f2cecf83c723fb912d76081516"
@@ -213,7 +216,7 @@
           "integrity": "sha256-06bff9e87ccb45ed1b843b5b428a94ed3699193709b241e91d891f43dfd77edc"
         },
         "poteto-help": {
-          "integrity": "sha256-c4fbbdcedf3f2d9beb1b82eed45cc5ba314904ae6c41916c25bdffed1ba91ec5"
+          "integrity": "sha256-0130ed440b9f1156b513a2f09823e6d9f93ab6b1a5fa158de43c992cb2141680"
         },
         "architect": {
           "integrity": "sha256-6f92ca9acc05420e21f56bef9aba9398bd8cbbf3a5db930abb140eb4c6ed006d"
@@ -273,11 +276,11 @@
     },
     "nanaism/yomiyasu": {
       "requestedRef": "main",
-      "resolvedRef": "79d15a621751cb7ad3bea556832209e9112e575f",
-      "resolvedAt": "2026-10-19T03:10:19.933Z",
+      "resolvedRef": "fbe02c93877d697cc53d9377b7a45dd8a1dd99b3",
+      "resolvedAt": "2026-10-21T04:03:02.309Z",
       "skills": {
         "yomiyasu": {
-          "integrity": "sha256-b1b7dba7ccd22e396ae8214028dd2850ef673d1f92e9b04cf867e39974e8421b"
+          "integrity": "sha256-5baa92e5c26cd3590bc53c00aaa96195bc9ce57f727bc2c42bb5f9897327f775"
         }
       },
       "skillSelection": [
@@ -287,7 +290,7 @@
     "herdrdev/herdr": {
       "requestedRef": "master",
       "resolvedRef": "143bf5fd4781d164260c63fe28e7dc08054ad32f",
-      "resolvedAt": "2026-10-19T03:10:21.315Z",
+      "resolvedAt": "2026-10-21T04:03:03.354Z",
       "skills": {
         "herdr": {
           "integrity": "sha256-07c8c14a16855d083c6cfc23b6658a544f751935fb836e1a007dc5f9a28a1ae2"
@@ -300,7 +303,7 @@
     "mizchi/explainer": {
       "requestedRef": "main",
       "resolvedRef": "ccdd7bacfb47451e38506d837af8a629504960b2",
-      "resolvedAt": "2026-10-19T03:10:26.384Z",
+      "resolvedAt": "2026-10-21T04:03:07.629Z",
       "skills": {
         "explainer": {
           "integrity": "sha256-7beac9b35b841e4124d50943dd4ef89b04e9229cb9139d0213cd2907a933a616"
@@ -310,23 +313,10 @@
         "explainer"
       ]
     },
-    "tt-a1i/archify": {
-      "requestedRef": "main",
-      "resolvedRef": "654da74e084e5a1faf708779c23d6172766be9c1",
-      "resolvedAt": "2026-10-19T03:11:40.198Z",
-      "skills": {
-        "archify": {
-          "integrity": "sha256-21c0682aaad1b155c5f0660ac3e2eb66b5bfe66f976ee52d1037647b72c88c5e"
-        }
-      },
-      "skillSelection": [
-        "archify"
-      ]
-    },
     "ast-grep/agent-skill": {
       "requestedRef": "main",
       "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
-      "resolvedAt": "2026-10-21T04:00:06.088Z",
+      "resolvedAt": "2026-10-21T04:03:10.670Z",
       "skills": {
         "ast-grep": {
           "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
@@ -340,10 +330,23 @@
         "outline"
       ]
     },
+    "tt-a1i/archify": {
+      "requestedRef": "main",
+      "resolvedRef": "25cf37080fc8b1dbe758a4efc3935b55f3327083",
+      "resolvedAt": "2026-10-21T04:04:10.005Z",
+      "skills": {
+        "archify": {
+          "integrity": "sha256-21c0682aaad1b155c5f0660ac3e2eb66b5bfe66f976ee52d1037647b72c88c5e"
+        }
+      },
+      "skillSelection": [
+        "archify"
+      ]
+    },
     "pbakaus/impeccable": {
       "requestedRef": "main",
       "resolvedRef": "dad8dbb3aac21ad1fa236c110315ef4abece23e8",
-      "resolvedAt": "2026-10-21T04:00:50.410Z",
+      "resolvedAt": "2026-10-21T04:04:29.399Z",
       "skills": {
         "impeccable": {
           "integrity": "sha256-6a246b330aa854abcbbb8c6f616f583b442794ddc22a66bd713a30ec8bd5bf4a"

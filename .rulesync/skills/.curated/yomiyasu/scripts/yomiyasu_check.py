@@ -12,7 +12,7 @@ mail（メール・チャット）と paper（論文・研究レポート）も�
 同じ権限で原稿と記録の両方を書き換えられる環境では、記録は実行漏れを見つけるためのもので、
 改ざんの防止や人の承認の証明にはならない。
 """
-__version__ = "2.0.2"
+__version__ = "2.1.1"
 
 import sys
 
@@ -987,10 +987,15 @@ def _split_material(item, first_index):
         blocks.append(block)
     return blocks, None
 
+_LINE_END = re.compile(b"\r\n|\r|\n")
+
+
 def _split_stdin(data, with_labels=False):
     """区切りの行で標準入力を分ける。([(役割, バイト列)], None) か (None, 理由)。
 
-    各部分は、区切りの行の次のバイトから、次の区切りの行の先頭まで（末尾の改行を含む）。先頭の BOM は1つ外す。"""
+    各部分は、区切りの行の次のバイトから、次の区切りの行の先頭まで（末尾の改行を含む）。先頭の BOM は1つ外す。
+    行の終わりは、ファイル入力の decode_source と同じく LF、CRLF、CR のどれでもよい。各部分のバイト列は書き換えない
+    （CRLF と LF の入力の記録は前と同じになり、CR だけの入力はファイルで渡したときと同じ eol "cr" になる）。"""
     if data.startswith(b"\xef\xbb\xbf"):
         data = data[3:]
     parts = []
@@ -998,12 +1003,10 @@ def _split_stdin(data, with_labels=False):
     position = 0
     number = 0
     while position < len(data):
-        end = data.find(b"\n", position)
-        following = len(data) if end < 0 else end + 1
+        match = _LINE_END.search(data, position)
+        following = len(data) if match is None else match.end()
         number += 1
-        bare = data[position:following].rstrip(b"\n")
-        if bare.endswith(b"\r"):
-            bare = bare[:-1]
+        bare = data[position:following if match is None else match.start()]
         role = _MARKERS.get(bare)
         label = None
         material = _material_marker(bare)
@@ -1697,7 +1700,8 @@ def _review_count(section):
 
 def _fail_on_hits(ctx, diff_module):
     """--fail-on に当たった値（指定した順）。meaning-risk は diff の FAIL_ON_KINDS（数値・否定・入れ替え・文の種類・引用の印・
-    確度の強まり・状態の語の消え・書き手の約束の足し）と、新規作成の資料にない数値、warn と error は lint の候補で決める。"""
+    確度の強まり・状態の語の消え・書き手の約束の足し・許可の言い方の変化・選ぶ範囲の入れ替え・関連から因果への強まり）と、新規作成の資料にない数値、warn と error は
+    lint の候補で決める。diff の数え方は --doc-type で変わる（事実や仕様を述べる種類では、確度の2つも数える）。"""
     hits = []
     counts = (ctx.lint_result or {}).get("counts") or {}
     for value in ctx.fail_on:
@@ -1892,6 +1896,147 @@ def _summary_line(ctx, diff_module=None):
         else:
             summary += "、事実の穴の候補{}件".format(ctx.fact_gaps["count"])
     return summary
+
+
+# 頭の一覧で、検査ごとに並べる候補の数の上限（残りは「ほかN件」）
+_HEAD_LIMIT = 3
+# 候補があるときに、頭の一覧のすぐ下に置く文（出力の頭だけを読んで、下の節を読まずに終えないため）
+_HEAD_NOTE = "候補の中身は下の節にあります。出力を切らずに読んでください。"
+# diff の規則の見直し候補の、頭の一覧での名前（行番号を持たない候補。同じ名前はまとめて件数を付ける）
+# 構造の文の中の行番号（「後3行目」を先に、なければ「元3行目」）
+_HEAD_STRUCTURE_LINE = (re.compile(r"(後)(\d+)行目"), re.compile(r"(元)(\d+)行目"))
+_HEAD_RULE_NAMES = (("structure", "構造"), ("logic", "つながり"), ("endings.changes", "文末の種類"),
+                    ("type_changes", "文の種類の印"), ("endings.flags", "文末の立場"), ("bold", "太字"))
+
+
+def _head_where(old_line, new_line):
+    """頭の一覧の行番号（最終稿の行があれば「後N行目」、消えた行なら「元N行目」）。行がなければ空。"""
+    if new_line is not None:
+        return "後{}行目 ".format(new_line)
+    if old_line is not None:
+        return "元{}行目 ".format(old_line)
+    return ""
+
+
+def _head_line_of(old_line, new_line):
+    """頭の一覧で並べる順に使う行（最終稿の行、なければ原文の行）。どちらもなければ None。"""
+    return new_line if new_line is not None else old_line
+
+
+def _head_part(label, entries, total):
+    """頭の一覧の1つの検査の分（「lint の候補: 」に「L」と行番号と規則の名前を並べ、残りを「（ほか2件）」とする形）。
+    entries は（表示、件数、行）の並び。行のある項目を行の順に先に並べ（同じ行と、行のない項目どうしは元の順のまま）、
+    上限で切る。前のほうの行が「ほかN件」に隠れないため。上限を超えた分と、並べられない候補は「ほかN件」にする。"""
+    entries = sorted(entries, key=lambda entry: (entry[2] is None, entry[2] if entry[2] is not None else 0))
+    shown = [(name, weight) for name, weight, _ in entries[:_HEAD_LIMIT]]
+    rest = total - sum(weight for _, weight in shown)
+    if not shown:
+        return "{}: {}件".format(label, total)
+    text = "{}: {}".format(label, "、".join(name for name, _ in shown))
+    if rest > 0:
+        text += "（ほか{}件）".format(rest)
+    return text
+
+
+def _materials_line_names(result):
+    """照合の candidate_count に数える、節の見直し候補の行の頭の一覧での名前（ground と同じ条件で、行の順に）。
+    新規作成の「資料にない語」、確度の語、推敲の「資料に基づく補足の候補」の3つ。「参考」の行は数えない。"""
+    items = result.get("items") or []
+    rewrite = result.get("mode") == "rewrite"
+    names = []
+    if any(item.get("classification") == "from_materials" for item in items) and rewrite:
+        names.append("資料に基づく補足")
+    if not rewrite and any(item.get("kind") == "word" and item.get("classification") == "not_in_sources"
+                           for item in items):
+        names.append("資料にない語")
+    if any(item.get("classification") == "dropped_certainty" for item in items):
+        names.append("最終稿にない確度の語")
+    return names
+
+
+def _head_lines(ctx, diff_module):
+    """run の3行目のすぐあとに足す行（候補の短い一覧と、下の節を読む案内の2行）。出力の頭だけを読んでも、どの行の
+    どの規則に当たったかが分かるようにする。候補がない、または途中で最終稿が変わったときは何も足さない。
+    lint、diff（意味が変わる恐れと規則の見直し候補）、文体の硬化などの見直し候補、資料との照合、事実の穴の順に並べ、
+    数え方は下の節と同じにする（diff の候補の数は3行目の「候補N件」と同じ）。"""
+    if ctx.final_changed:
+        return []
+    parts = []
+    lint = ctx.lint_result
+    if lint is not None and lint.get("candidate_count"):
+        entries = [("L{} {}".format(finding.get("line"), finding.get("rule")), 1,
+                    finding.get("line") if isinstance(finding.get("line"), int) else None)
+                   for finding in lint.get("findings") or []]
+        parts.append(_head_part("lint の候補", entries, lint["candidate_count"]))
+    result = ctx.diff_result
+    if result is not None and ctx.diff_parts is not None:
+        entries = []
+        risks = ctx.diff_risks if ctx.diff_risks is not None else result.get("meaning_risks") or []
+        for risk in risks:
+            if (risk.get("kind"), risk.get("subkind")) == ("sentence_type", "marks"):
+                continue
+            entries.append((_head_where(risk.get("old_line"), risk.get("new_line")) + str(risk.get("kind")), 1,
+                            _head_line_of(risk.get("old_line"), risk.get("new_line"))))
+        for marker in result.get("markers") or []:
+            entries.append(("{}の増減".format(marker.get("kind")), 1, None))
+        if result.get("new_words"):
+            entries.append(("元の文にない語", 1, None))
+        if result.get("lost_words"):
+            entries.append(("消えた語", 1, None))
+        rewritten_only = diff_module._shows_rewritten_only(result)
+        endings = result.get("endings") or {}
+        for key, name in _HEAD_RULE_NAMES:
+            if key in ("logic", "endings.flags", "bold") and not rewritten_only:
+                continue
+            items = endings.get(key.split(".")[1]) if key.startswith("endings.") else result.get(key)
+            if items and key == "structure":
+                # 見出しの変化の文は行番号を持つので、最初に挙げた行を添えて行の順に並べる。行のない文はまとめる
+                plain = []
+                for item in items:
+                    found = None
+                    if isinstance(item, str):
+                        found = _HEAD_STRUCTURE_LINE[0].search(item) or _HEAD_STRUCTURE_LINE[1].search(item)
+                    if found is None:
+                        plain.append(item)
+                        continue
+                    side, number = found.group(1), int(found.group(2))
+                    old_line, new_line = (number, None) if side == "元" else (None, number)
+                    entries.append((_head_where(old_line, new_line) + name, 1, number))
+                items = plain
+            if items:
+                entries.append((name + ("{}件".format(len(items)) if len(items) > 1 else ""), len(items), None))
+        total = sum(weight for _, weight, _ in entries)
+        if total:
+            parts.append(_head_part("diff の候補", entries, total))
+        entries = []
+        for key in ("stiffness", "tone", "hedges", "immutable", "politeness", "register"):
+            section = result.get(key)
+            if not isinstance(section, dict) or not isinstance(section.get("candidates"), list):
+                continue
+            for candidate in section["candidates"]:
+                if isinstance(candidate, dict) and candidate.get("level") == "review":
+                    entries.append((_head_where(candidate.get("old_line"), candidate.get("new_line")) + key, 1,
+                                    _head_line_of(candidate.get("old_line"), candidate.get("new_line"))))
+        if entries:
+            parts.append(_head_part("文体などの候補", entries, len(entries)))
+    materials = ctx.materials_result
+    if materials is not None and materials.get("candidate_count"):
+        names = {"number": "資料にない数値", "name": "資料にない名前"}
+        entries = [(_head_where(risk.get("old_line"), risk.get("new_line"))
+                    + names.get(risk.get("subkind"), str(risk.get("kind"))), 1,
+                    _head_line_of(risk.get("old_line"), risk.get("new_line")))
+                   for risk in materials.get("meaning_risks") or []]
+        # candidate_count の残りは照合の節の見直し候補の行（ground の数え方と同じ。1行を1件）。名前で並べる
+        entries.extend((name, 1, None) for name in _materials_line_names(materials))
+        parts.append(_head_part("資料との照合の候補", entries, materials["candidate_count"]))
+    gaps = ctx.fact_gaps
+    if gaps is not None and not gaps["skipped"] and gaps["count"]:
+        entries = [("後{}行目「{}」".format(item["line"], item["match"]), 1,
+                    item["line"] if isinstance(item.get("line"), int) else None) for item in gaps["items"]]
+        parts.append(_head_part("事実の穴の候補", entries, gaps["count"]))
+    if not parts:
+        return []
+    return ["。".join(parts), _HEAD_NOTE]
 
 
 def _detector_value(ctx, diff_module, key):
@@ -2558,9 +2703,11 @@ def _run_impl(args, parser):
         else:
             record_line = "記録: なし（{}）".format("--no-record" if ctx.no_record else write_problem)
         sections = changed_sections + _sections(ctx, lint_module, diff_module)
-        # 記録を書かないときの4行目は「この結果は」（記録がないため）
+        # 記録を書かないときの断りの行（候補がなければ4行目）は「この結果は」（記録がないため）
         disclaimer = _DISCLAIMER if recording else _UNRECORDED_DISCLAIMER
-        text = "\n".join([line, token, _summary_line(ctx, diff_module), disclaimer, record_line]
+        # 候補があるときは、3行目のすぐあとに候補の短い一覧と案内を足す（2行目の状態の行と3行目は動かさない）
+        text = "\n".join([line, token, _summary_line(ctx, diff_module)] + _head_lines(ctx, diff_module)
+                         + [disclaimer, record_line]
                          + _detector_lines(ctx, diff_module) + _candidate_lines(ctx, candidate_counts)) + "\n\n"
         if sections:
             text += "\n\n".join(sections) + "\n\n"
@@ -4048,8 +4195,9 @@ def start_run(state, source_path, final_path=None, run_id=None, session=None, ho
     record["record_digest"] = _record_digest(record)
     _ensure_state(state, default_place)
     _ensure_dir(state, "armed")
-    # 同じ原文の start を直列にする。登録用のロックも同じ方式で取得する。
-    source_lock = _sha256(_armed_place(source.path).encode("utf-8"))
+    # 同じ原文の start を直列にする。登録用のロックも同じ方式で取得する。UTF-8 で読めないバイトを含むファイル名
+    # （'\udcff' として届く）でも止まらないように、ほかのキーと同じく surrogateescape でバイト列にする
+    source_lock = _sha256(_armed_place(source.path).encode("utf-8", "surrogateescape"))
     with _ArmedLock(state, source_lock, source=True):
         with _ArmedLock(state, run_id):
             if os.path.lexists(os.path.join(state, "runs", run_id)) or os.path.lexists(os.path.join(state, "armed", run_id + ".json")):
@@ -4362,7 +4510,12 @@ _VERIFY_USAGE = ("yomiyasu_check.py verify --final 最終稿|- [--run-id ID] [--
 _FAIL_ON_HELP = ("指定した条件に当たれば、記録を残したうえで終了コード1で終わります。何度でも、カンマ区切りでも指定できます。"
                  "meaning-risk: 意味が変わる恐れのうち、数値、否定、主語と目的語の入れ替え、文の種類（問いと平叙、文の種類の印）の"
                  "変化、引用の印の変化、確度を強めた書き換え（見込み → 予定、と思われる → 断定など）、原文の状態の語（未定、未確認、"
-                 "調査中など）が消えた書き換え、原文にない書き手の約束・保証・再発防止の誓いの足し（ここまでは diff の "
+                 "調査中など）が消えた書き換え、原文にない書き手の約束・保証・再発防止の誓いの足し、許可の言い方（してよい、"
+                 "してもよい、構わない）が消えたか増えた書き換え、関連・相関を述べた原文の文に因果の言い方（因果、原因、引き起こす など）を"
+                 "足した書き換え、選ぶ範囲が入れ替わった書き換え（または・どちらか → 両方・すべて、またはその逆）、同じ数に付いた"
+                 "概数や範囲の印（約、ほど、以上、未満 など）が消えたか増えた書き換え、"
+                 "--doc-type が pr、article、incident、proposal、manual、formal、paper の"
+                 "ときは「場合がある」の言い切りと「必ず」などの足し（ここまでは diff の "
                  "--fail-on=meaning-risk と同じ）と、新規作成で資料にない数値。コード・URL・引用ブロックなど変えない箇所の変化と、資料にない名前は数えません。"
                  "否定対比の主張の逆転と、元にない気持ちの語も数えません。確度を弱めた書き換え、数えない語だけの確度の変化、予定の言い切り（する予定です → します）、"
                  "かぎかっこの中の言葉の変化も数えません。原文にない因果のつながりの足しと、書き手の行為と読む印（いたします、今後・改めて、"
@@ -4435,8 +4588,12 @@ def _build_parser():
                          help="文書の立場（diff と同じ）。勧め（読み手に勧める）、決まり（手順）、説明（報告、体験）のどれか。")
     options.add_argument("--doc-type", metavar="種類",
                          help="文書の種類。lint と diff に渡し、記録と状態の行に残します。lint は、その種類で普通な書き方を"
-                              "候補にする規則を外します（yomiyasu_lint.py -h の一覧）。差分（意味が変わる恐れと規則の見直し候補）と"
-                              "資料との照合の判定は変わりません。"
+                              "候補にする規則を外します（yomiyasu_lint.py -h の一覧）。差分（意味が変わる恐れと規則の見直し候補）の"
+                              "見つけ方と、資料との照合の判定は変わりません。"
+                              # yomiyasu_diff.py の _counted_doc_type_help() と同じ文（diff を読み込まずにヘルプを出すため、ここに書く）
+                              "pr、article、incident、proposal、manual、formal、paper（事実や仕様を述べる種類）では、"
+                              "「場合がある」「ことがある」を消した言い切りと、断定に「必ず」などを足した書き換えを --fail-on に数えます"
+                              "（意味の検査で種類によって変わるのはこの2つだけです）。"
                               # yomiyasu_diff.py の _detector_level_help() と同じ文（diff を読み込まずにヘルプを出すため、ここに書く。
                               # tests/test_v200_check_infra.py が一致を見張る。反証で見つけた例）
                               "文体の硬化の検査は incident、formal、paper のとき、勢いの検査は pr、article、incident、manual、formal、paper "
