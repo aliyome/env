@@ -313,23 +313,6 @@
         "explainer"
       ]
     },
-    "ast-grep/agent-skill": {
-      "requestedRef": "main",
-      "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
-      "resolvedAt": "2026-10-21T04:03:10.670Z",
-      "skills": {
-        "ast-grep": {
-          "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
-        },
-        "outline": {
-          "integrity": "sha256-1b62b2aafe78bc658f2aeb31d1d051dd25b1d62e84a8685ec1301679bf20f0fe"
-        }
-      },
-      "skillSelection": [
-        "ast-grep",
-        "outline"
-      ]
-    },
     "tt-a1i/archify": {
       "requestedRef": "main",
       "resolvedRef": "25cf37080fc8b1dbe758a4efc3935b55f3327083",
@@ -354,6 +337,23 @@
       },
       "skillSelection": [
         "impeccable"
+      ]
+    },
+    "ast-grep/agent-skill": {
+      "requestedRef": "main",
+      "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
+      "resolvedAt": "2026-10-23T11:44:09.992Z",
+      "skills": {
+        "ast-grep": {
+          "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
+        },
+        "outline": {
+          "integrity": "sha256-1b62b2aafe78bc658f2aeb31d1d051dd25b1d62e84a8685ec1301679bf20f0fe"
+        }
+      },
+      "skillSelection": [
+        "ast-grep",
+        "outline"
       ]
     }
   }

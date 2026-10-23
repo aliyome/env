@@ -10,12 +10,13 @@ run = [
     "mise install",
     "GH_TOKEN=$(gh auth token) rulesync install",
     # スキル名とフォルダ名が一致するようにフォルダ名を書き換える
-    "rm -rf .rulesync/skills/.curated/ast-grep-outline",
     "mv .rulesync/skills/.curated/outline .rulesync/skills/.curated/ast-grep-outline",
     # pstack のエージェントを取得する
     "mise tasks run update-subagents",
     "rulesync generate",
     "rulesync generate --targets antigravity-cli,opencode --features subagents",
+    # git で差分が出ないようにフォルダ名をもとに戻す
+    "mv .rulesync/skills/.curated/ast-grep-outline .rulesync/skills/.curated/outline",
     # pstack でハーネスごとにモデルの参照箇所を書き換える
     "sed -i '' -E 's@(~/.cursor/rules/)?pstack-models\\.mdc@~/.gemini/antigravity-cli/skills/pstack-mod-agy/SKILL.md@g' ~/.gemini/antigravity-cli/skills/*/SKILL.md",
     "sed -i '' -E 's@(~/.cursor/rules/)?pstack-models\\.mdc@~/.agents/skills/pstack-mod-opencode/SKILL.md@g' ~/.agents/skills/*/SKILL.md",
