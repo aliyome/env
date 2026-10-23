@@ -119,6 +119,12 @@ chmod 600 ~/.ssh/config
 # Homebrew でインストールできないツールのセットアップ
 sudo mkdir /opt/bin
 
+# [azu/quick-input-translator: Translate the line or entire input field you’re writing without leaving your app.](https://github.com/azu/quick-input-translator)
+curl -fL https://github.com/azu/quick-input-translator/releases/latest/download/quick-input-translator-macos-arm64.zip -o "$TMPDIR/quick-input-translator.zip" &&
+ditto -x -k "$TMPDIR/quick-input-translator.zip" /Applications &&
+xattr -dr com.apple.quarantine "/Applications/Quick Input Translator.app" &&
+open "/Applications/Quick Input Translator.app"
+
 # 手動でセットアップが必要
 echo "ScanSnap Home"
 echo "XP-Pen"
