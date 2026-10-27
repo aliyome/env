@@ -78,6 +78,9 @@ ln -s "$(pwd)/.bunfig.toml" ~/.bunfig.toml
 mkdir -p ~/.config/opencode
 ln -s "$(pwd)/.config/opencode/AGENTS.md" ~/.config/opencode/AGENTS.md
 
+mkdir -p ~/.gemini
+ln -s "$(pwd)/.config/opencode/AGENTS.md" ~/.gemini/GEMINI.md
+
 mkdir -p ~/.pi/agent
 ln -s "$(pwd)/.pi/agent/APPEND_SYSTEM.md" ~/.pi/agent/APPEND_SYSTEM.md
 ln -s "$(pwd)/.srt-settings.json" ~/.srt-settings.json
