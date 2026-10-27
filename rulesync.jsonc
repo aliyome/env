@@ -37,12 +37,6 @@
       "skills": ["yomiyasu"],
     },
     {
-      "source": "herdrdev/herdr",
-      "ref": "master",
-      "path": "skills",
-      "skills": ["herdr"],
-    },
-    {
       "source": "mizchi/explainer",
       "path": "skills",
       "skills": ["explainer"],

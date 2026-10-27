@@ -293,19 +293,6 @@
         "yomiyasu"
       ]
     },
-    "herdrdev/herdr": {
-      "requestedRef": "master",
-      "resolvedRef": "2713feb56e9c9db33992db0a262c68f7426d46dd",
-      "resolvedAt": "2026-10-27T00:51:39.506Z",
-      "skills": {
-        "herdr": {
-          "integrity": "sha256-07c8c14a16855d083c6cfc23b6658a544f751935fb836e1a007dc5f9a28a1ae2"
-        }
-      },
-      "skillSelection": [
-        "herdr"
-      ]
-    },
     "mizchi/explainer": {
       "requestedRef": "main",
       "resolvedRef": "ccdd7bacfb47451e38506d837af8a629504960b2",
