@@ -31,9 +31,10 @@ terraform = "latest"
 "npm:yarn" = "1.22.22"
 "npm:serve" = "latest"
 "npm:@anthropic-ai/sandbox-runtime" = "latest"
+"npm:@deepseek-ai/dsh" = { version = "latest", prerelease = true }
 
 [settings]
-lockfile=true
+lockfile = true
 pipx.uvx = true
 
 [settings.python]
