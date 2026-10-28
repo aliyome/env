@@ -1,15 +1,15 @@
 [hooks]
-enter = "mise tasks run setup"
+enter = "git pull && mise tasks run setup"
 
 [tools]
 "github:dyoshikawa/rulesync" = "latest"
 
 [tasks.setup]
 run = [
-    "git pull",
     "mise install",
     "GH_TOKEN=$(gh auth token) rulesync install",
     # スキル名とフォルダ名が一致するようにフォルダ名を書き換える
+    "rm -rf .rulesync/skills/.curated/ast-grep-outline",
     "mv .rulesync/skills/.curated/outline .rulesync/skills/.curated/ast-grep-outline",
     # pstack のエージェントを取得する
     "mise tasks run update-subagents",
@@ -26,9 +26,7 @@ run = [
 ]
 
 [tasks.update-skills]
-run = [
-    "GH_TOKEN=$(gh auth token) rulesync install --update",
-]
+run = ["GH_TOKEN=$(gh auth token) rulesync install --update", "mise setup"]
 
 [tasks.update-subagents]
 alias = ["update-agents", "fetch-subagents", "fetch-agents"]
