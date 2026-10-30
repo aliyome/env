@@ -56,5 +56,11 @@
       "path": ".agents/skills",
       "skills": ["impeccable"],
     },
+    {
+      "transport": "git",
+      "source": "https://github.com/herdrdev/herdr.git",
+      "path": "skills",
+      "skills": ["herdr"],
+    },
   ],
 }
