@@ -104,7 +104,95 @@
       ],
       "skillsPath": "skills/productivity"
     },
-    "cursor/plugins": {
+    "nanaism/yomiyasu": {
+      "requestedRef": "main",
+      "resolvedRef": "29d67ccb05e370b5958d72920a9cd1aa829dee80",
+      "resolvedAt": "2026-11-01T00:47:35.223Z",
+      "skills": {
+        "yomiyasu": {
+          "integrity": "sha256-8458f78609fdc8484287e40f873d86a1eb55b49e4c08e897611010144fc7706b"
+        }
+      },
+      "skillSelection": [
+        "yomiyasu"
+      ],
+      "skillsPath": "skills"
+    },
+    "mizchi/explainer": {
+      "requestedRef": "main",
+      "resolvedRef": "ccdd7bacfb47451e38506d837af8a629504960b2",
+      "resolvedAt": "2026-11-01T00:47:37.709Z",
+      "skills": {
+        "explainer": {
+          "integrity": "sha256-7beac9b35b841e4124d50943dd4ef89b04e9229cb9139d0213cd2907a933a616"
+        }
+      },
+      "skillSelection": [
+        "explainer"
+      ],
+      "skillsPath": "skills"
+    },
+    "ast-grep/agent-skill": {
+      "requestedRef": "main",
+      "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
+      "resolvedAt": "2026-11-01T00:47:40.153Z",
+      "skills": {
+        "ast-grep": {
+          "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
+        },
+        "outline": {
+          "integrity": "sha256-1b62b2aafe78bc658f2aeb31d1d051dd25b1d62e84a8685ec1301679bf20f0fe"
+        }
+      },
+      "skillSelection": [
+        "ast-grep",
+        "outline"
+      ],
+      "skillsPath": "ast-grep/skills"
+    },
+    "tt-a1i/archify": {
+      "requestedRef": "main",
+      "resolvedRef": "a4065941f12be7967436261d9934784e381d423c",
+      "resolvedAt": "2026-11-01T00:47:52.789Z",
+      "skills": {
+        "archify": {
+          "integrity": "sha256-fdf9e7a29679cd10ec89c3013ab96f27fed1f4c16656f7af5f5ee96245fd5544"
+        }
+      },
+      "skillSelection": [
+        "archify"
+      ],
+      "skillsPath": "."
+    },
+    "pbakaus/impeccable": {
+      "requestedRef": "main",
+      "resolvedRef": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "resolvedAt": "2026-11-01T00:47:55.775Z",
+      "skills": {
+        "impeccable": {
+          "integrity": "sha256-862db6cc73716bd8f96203721f16cc6a63dcf1f9310d60fdb1a84aa4bda74cc0"
+        }
+      },
+      "skillSelection": [
+        "impeccable"
+      ],
+      "skillsPath": ".agents/skills"
+    },
+    "herdrdev/herdr": {
+      "requestedRef": "master",
+      "resolvedRef": "ee5bfb5041bb3e4a49d591c72308aae3c81ecdde",
+      "resolvedAt": "2026-11-01T00:47:58.386Z",
+      "skills": {
+        "herdr": {
+          "integrity": "sha256-07c8c14a16855d083c6cfc23b6658a544f751935fb836e1a007dc5f9a28a1ae2"
+        }
+      },
+      "skillSelection": [
+        "herdr"
+      ],
+      "skillsPath": "skills"
+    },
+    "cursor/plugins#path=pstack/skills": {
       "requestedRef": "main",
       "resolvedRef": "ae5650febf4320793844c12c4adaa937f417f8da",
       "resolvedAt": "2026-11-01T00:47:32.615Z",
@@ -283,93 +371,19 @@
       ],
       "skillsPath": "pstack/skills"
     },
-    "nanaism/yomiyasu": {
+    "cursor/plugins#path=cursor-team-kit/skills": {
       "requestedRef": "main",
-      "resolvedRef": "29d67ccb05e370b5958d72920a9cd1aa829dee80",
-      "resolvedAt": "2026-11-01T00:47:35.223Z",
+      "resolvedRef": "ae5650febf4320793844c12c4adaa937f417f8da",
+      "resolvedAt": "2026-11-02T01:21:59.985Z",
       "skills": {
-        "yomiyasu": {
-          "integrity": "sha256-8458f78609fdc8484287e40f873d86a1eb55b49e4c08e897611010144fc7706b"
+        "deslop": {
+          "integrity": "sha256-740038c614fc7fdef772806e59f7bd901d7b7184cf0a74022f7de8a6462d35e5"
         }
       },
       "skillSelection": [
-        "yomiyasu"
+        "deslop"
       ],
-      "skillsPath": "skills"
-    },
-    "mizchi/explainer": {
-      "requestedRef": "main",
-      "resolvedRef": "ccdd7bacfb47451e38506d837af8a629504960b2",
-      "resolvedAt": "2026-11-01T00:47:37.709Z",
-      "skills": {
-        "explainer": {
-          "integrity": "sha256-7beac9b35b841e4124d50943dd4ef89b04e9229cb9139d0213cd2907a933a616"
-        }
-      },
-      "skillSelection": [
-        "explainer"
-      ],
-      "skillsPath": "skills"
-    },
-    "ast-grep/agent-skill": {
-      "requestedRef": "main",
-      "resolvedRef": "f2175aff21f20cfb8e2db30c28febeb3a2d42b61",
-      "resolvedAt": "2026-11-01T00:47:40.153Z",
-      "skills": {
-        "ast-grep": {
-          "integrity": "sha256-cde59fd01bd02156b235b045a848ae630df3897465179f79668002d2b9b4228d"
-        },
-        "outline": {
-          "integrity": "sha256-1b62b2aafe78bc658f2aeb31d1d051dd25b1d62e84a8685ec1301679bf20f0fe"
-        }
-      },
-      "skillSelection": [
-        "ast-grep",
-        "outline"
-      ],
-      "skillsPath": "ast-grep/skills"
-    },
-    "tt-a1i/archify": {
-      "requestedRef": "main",
-      "resolvedRef": "a4065941f12be7967436261d9934784e381d423c",
-      "resolvedAt": "2026-11-01T00:47:52.789Z",
-      "skills": {
-        "archify": {
-          "integrity": "sha256-fdf9e7a29679cd10ec89c3013ab96f27fed1f4c16656f7af5f5ee96245fd5544"
-        }
-      },
-      "skillSelection": [
-        "archify"
-      ],
-      "skillsPath": "."
-    },
-    "pbakaus/impeccable": {
-      "requestedRef": "main",
-      "resolvedRef": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
-      "resolvedAt": "2026-11-01T00:47:55.775Z",
-      "skills": {
-        "impeccable": {
-          "integrity": "sha256-862db6cc73716bd8f96203721f16cc6a63dcf1f9310d60fdb1a84aa4bda74cc0"
-        }
-      },
-      "skillSelection": [
-        "impeccable"
-      ],
-      "skillsPath": ".agents/skills"
-    },
-    "herdrdev/herdr": {
-      "requestedRef": "master",
-      "resolvedRef": "ee5bfb5041bb3e4a49d591c72308aae3c81ecdde",
-      "resolvedAt": "2026-11-01T00:47:58.386Z",
-      "skills": {
-        "herdr": {
-          "integrity": "sha256-07c8c14a16855d083c6cfc23b6658a544f751935fb836e1a007dc5f9a28a1ae2"
-        }
-      },
-      "skillSelection": [
-        "herdr"
-      ],
-      "skillsPath": "skills"
+      "skillsPath": "cursor-team-kit/skills"
     }
   }
 }

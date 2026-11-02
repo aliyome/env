@@ -32,6 +32,12 @@
       "skills": ["*"],
     },
     {
+      "transport": "github",
+      "source": "cursor/plugins",
+      "path": "cursor-team-kit/skills",
+      "skills": ["deslop"],
+    },
+    {
       "transport": "git",
       "source": "https://github.com/nanaism/yomiyasu",
       "path": "skills",
