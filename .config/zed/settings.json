@@ -32,27 +32,6 @@
   },
   // AI
   "agent_servers": {
-    "antigravity-acp": {
-      "default_config_options": {
-        "model": "gemini-3.8-flash-high",
-        "mode": "yolo"
-      },
-      "type": "registry",
-    },
-    "opencode": {
-      "default_config_options": {
-        "effort": "high",
-        "model": "opencode-go/deepseek-v4-pro",
-      },
-      "favorite_config_option_values": {
-        "model": [
-          "opencode-go/deepseek-v4-pro",
-          "opencode-go/kimi-k2.6",
-          "opencode-go/deepseek-v4-flash",
-        ],
-      },
-      "type": "registry",
-    },
     "github-copilot-cli": {
       "favorite_config_option_values": {
         "model": ["gpt-5.4-mini", "gpt-5-mini"],
