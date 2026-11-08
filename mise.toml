@@ -15,6 +15,9 @@ run = [
     "mise tasks run update-subagents",
     "rulesync generate",
     "rulesync generate --targets antigravity-cli,opencode --features subagents",
+    # ~/.dsh のみで利用するスキルを ~/.dsh/skills にコピーする
+    "mkdir -p ~/.dsh/skills",
+    "cp -r .rulesync/skills/herdr-for-dsh ~/.dsh/skills/",
     # git で差分が出ないようにフォルダ名をもとに戻す
     "mv .rulesync/skills/.curated/ast-grep-outline .rulesync/skills/.curated/outline",
     # pstack でハーネスごとにモデルの参照箇所を書き換える
