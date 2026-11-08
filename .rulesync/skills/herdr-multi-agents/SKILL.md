@@ -5,13 +5,34 @@ description: How to use herdr to run multiple agents with different models and e
 
 ## エージェントの起動方法
 
-`herdr` で `agy` を起動する場合は以下のコマンドを使ってモデルを指定して起動します。
+### `herdr` で `agy` を起動する場合
 
 ```sh
-herdr agent start <agent_name> --kind agy --pane <pane_id> -- --model gemini-3.8-flash-high --mode auto
+herdr agent start <agent_name> --kind agy --pane <pane_id> -- --model gemini-3.8-flash-high --dangerously-skip-permissions
 ```
 
-`herdr` で `opencode` を起動する場合は以下のコマンドを使います。モデルとeffortの指定は、起動後に `herdr agent prompt` で行います。
+以下のようなエラーが出る場合があります。これは `agy` 起動時に作業ディレクトリが trusted でないためです
+
+```json
+{"error":{"code":"agent_not_ready","message":"agent <agent_name> is blocked during startup and is not ready for prompts"},"id":"cli:agent:start"}
+```
+
+その場合は、以下のコマンドを使ってエージェントの内容を信頼する必要があります。
+
+```sh
+# 信頼待ち状態であることを確認する
+herdr agent read <agent_name>
+
+# Return を入力して信頼する
+herdr agent send-keys <agent_name> return
+
+# agent_status が `block` ではなく `idle` になっていることを以下のコマンドで確認する
+herdr agent get <agent_name>
+```
+
+### `herdr` で `opencode` を起動する場合
+
+モデルとeffortの指定は、起動後に `herdr agent prompt` で行います。
 
 ```sh
 # DeepSeek V4.1 Flash を使う場合
@@ -37,4 +58,4 @@ herdr agent prompt <agent_name> "xhigh"
 
 - gemini-3.8-flash-high: 高速だが思い込みやハルシネーションが多い。ハルシネーションを減らすために強い制約や前提条件をコンテキストとして与えた方が良い。現環境ではトークンコストが安いので積極的に使うと良い。
 - DeepSeek V4.1 Flash: 思考が長いため、最終的な結果を得るまで時間がかかる。アウトプットが長くなる傾向があるので、必要に応じて要約や分割を行うと良い。
-- Muse Spark 1.3 Contributor: 高速で思考が短い。
+- Muse Spark 1.3 Contributor: 高速で思考が短い。DeepSeek V4.1 Flash とは異なる視点でのアウトプットが得られる。
