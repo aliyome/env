@@ -36,6 +36,7 @@ terraform = "latest"
 [settings]
 lockfile = true
 pipx.uvx = true
+lockfile_platforms = ["macos-arm64"]
 
 [settings.python]
 uv_venv_auto = "create|source" # .venv がなければ作成して有効化
