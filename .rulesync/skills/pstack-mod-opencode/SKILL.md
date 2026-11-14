@@ -10,16 +10,16 @@ feature, refactoring: opencode-go/deepseek-v4.1-flash#max
 bug-fix: opencode-go/deepseek-v4.1-flash#max
 perf-issue: opencode-go/deepseek-v4.1-flash#max
 hillclimb: opencode-go/deepseek-v4.1-flash#max
-judgment and prose: opencode-go/deepseek-v4.1-flash#max
-hardest tasks: opencode-go/deepseek-v4.1-flash#max
+judgment and prose: gemini-4-hydrogen-xhigh
+hardest tasks: gemini-4-hydrogen-xhigh
 how explorer: opencode-go/deepseek-v4.1-flash#max
-how explainer: opencode-go/deepseek-v4.1-flash#max
+how explainer: gemini-4-hydrogen-xhigh
 why investigators: opencode-go/deepseek-v4.1-flash#max
-why synthesizer: opencode-go/deepseek-v4.1-flash#max
+why synthesizer: gemini-4-hydrogen-xhigh
 reflect tooling: opencode-go/deepseek-v4.1-flash#max
-reflect judgment, divergent, synthesizer: opencode-go/deepseek-v4.1-flash#max
-arena runners: opencode-go/deepseek-v4.1-flash#max, gemini-3.8-flash-high
-arena cross-judge pool: opencode-go/deepseek-v4.1-flash#max, gemini-3.8-flash-high
+reflect judgment, divergent, synthesizer: gemini-4-hydrogen-xhigh
+arena runners: opencode-go/deepseek-v4.1-flash#max, gemini-4-hydrogen-xhigh
+arena cross-judge pool: opencode-go/deepseek-v4.1-flash#max, gemini-4-hydrogen-xhigh
 swarm workers: opencode-go/deepseek-v4.1-flash#max
-architect runners: opencode-go/deepseek-v4.1-flash#max, gemini-3.8-flash-high
-interrogate reviewers: opencode-go/deepseek-v4.1-flash#max, gemini-3.8-flash-high
+architect runners: opencode-go/deepseek-v4.1-flash#max, gemini-4-hydrogen-xhigh
+interrogate reviewers: opencode-go/deepseek-v4.1-flash#max, gemini-4-hydrogen-xhigh
