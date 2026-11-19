@@ -3,12 +3,12 @@
 lockfile_version = 4
 
 [[tools."github:dyoshikawa/rulesync"]]
-version = "43.8.0"
+version = "43.9.1"
 backend = "github:dyoshikawa/rulesync"
 specifiers = ["latest"]
 
 [tools."github:dyoshikawa/rulesync"."platforms.macos-arm64"]
-checksum = "sha256:3f58ebb9cf081496ddf2bcd3cce4dc627eb601ee9ccc7a7bf5446644c813e627"
-url = "https://github.com/dyoshikawa/rulesync/releases/download/v43.8.0/rulesync-darwin-arm64"
-url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/724052334"
+checksum = "sha256:1d561e81cb11299be20d1f72066f75fdc5b81c4c6add5cf06092491ea4705815"
+url = "https://github.com/dyoshikawa/rulesync/releases/download/v43.9.1/rulesync-darwin-arm64"
+url_api = "https://api.github.com/repos/dyoshikawa/rulesync/releases/assets/759203242"
 provenance = "github-attestations"
