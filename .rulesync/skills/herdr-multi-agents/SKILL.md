@@ -20,7 +20,13 @@ herdr agent start <agent_name> --kind agy --pane <pane_id> -- --model gemini-4-h
 以下のようなエラーが出る場合があります。これは `agy` 起動時に作業ディレクトリが trusted でないためです
 
 ```json
-{"error":{"code":"agent_not_ready","message":"agent <agent_name> is blocked during startup and is not ready for prompts"},"id":"cli:agent:start"}
+{
+  "error": {
+    "code": "agent_not_ready",
+    "message": "agent <agent_name> is blocked during startup and is not ready for prompts"
+  },
+  "id": "cli:agent:start"
+}
 ```
 
 その場合は、以下のコマンドを使ってエージェントの内容を信頼する必要があります。
@@ -65,8 +71,8 @@ herdr agent prompt <agent_name> "xhigh"
 | model                            | 賢さ | 時間 | コスト     | 特徴                             |
 | -------------------------------- | ---- | ---- | ---------- | -------------------------------- |
 | gemini-4-hydrogen-high           | 51   | 速い | 安い       | 高速で安くて賢いので第一選択肢。 |
-| gemini-pro-orchestrator-g1-pro   | 52   | 速い | 普通       | 複雑なタスクに使う。             |
-| claude-opus-5-5-high             | 57   | 普通 | 非常に高い | 非常に高度なタスクに使う。       |
+| gemini-pro-orchestrator-neon     | 60   | 普通 | 普通       | 高度なタスクに使う。             |
+| claude-opus-5-5-high             | 57   | 普通 | 高い       | 高度なタスクに使う。             |
 | DeepSeek V4.1 Flash#max          | 33   | 遅い | 非常に安い | 遅いが安い。                     |
 | Muse Spark 1.3 Contributor#xhigh | 37   | 速い | 非常に安い | 高速で安い。                     |
 
