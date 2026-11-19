@@ -4,7 +4,7 @@
     "mattpocock/skills": {
       "requestedRef": "main",
       "resolvedRef": "5863806dd4e15c63174bee4e7515a4256792ecfa",
-      "resolvedAt": "2026-11-16T10:58:37.589Z",
+      "resolvedAt": "2026-11-19T04:06:58.800Z",
       "skills": {
         "research": {
           "integrity": "sha256-df131984eac7a34957991e521cadaf314c63fa9a87656997df44d49b635d0526"
@@ -75,7 +75,7 @@
     "mattpocock/skills@main:.": {
       "requestedRef": "main",
       "resolvedRef": "5863806dd4e15c63174bee4e7515a4256792ecfa",
-      "resolvedAt": "2026-11-16T10:58:45.916Z",
+      "resolvedAt": "2026-11-19T04:07:08.851Z",
       "skills": {
         "grill-me": {
           "integrity": "sha256-5a13e157f85835632b132390a162d234822658b6a544f31cc2578280062bd044"
@@ -106,11 +106,11 @@
     },
     "cursor/plugins#path=pstack/skills": {
       "requestedRef": "main",
-      "resolvedRef": "bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7",
-      "resolvedAt": "2026-11-16T10:58:48.981Z",
+      "resolvedRef": "35a90942a7f02e1ebbc2443643179815f2147954",
+      "resolvedAt": "2026-11-19T04:07:13.660Z",
       "skills": {
         "figure-it-out": {
-          "integrity": "sha256-e0b8daee7524f146866616d66eb82e3321595a083a06ce809d86f28faec66934"
+          "integrity": "sha256-10ed2112e1f502cb1ad1d4ce891b6b2321eb65eab1c51e99fd0409f7e99e2d22"
         },
         "bro": {
           "integrity": "sha256-a333dd2281770dcc9fb2317b066bd0dbefd780aa9abfd6b19f7d31db3ad3f007"
@@ -119,28 +119,28 @@
           "integrity": "sha256-d28a1a8c57d7fe11f1adeafee59641c344730a3f1cb50eef548e27ead9ae8791"
         },
         "benchmark-checklist": {
-          "integrity": "sha256-77f6adce1b8785c7e26d762992365b466d3e7d09d61edbd670f2bceccf649146"
+          "integrity": "sha256-3aebce401509c6c2d3192e4b74088cebe95ff80e7d67ab4ecb3b4b644cb0264d"
         },
         "principle-boundary-discipline": {
-          "integrity": "sha256-55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44"
+          "integrity": "sha256-0c2421f392c89e520d268b41ee06d8e2d939f031a2ca471fac9d355d9f8b4507"
         },
         "setup-pstack": {
-          "integrity": "sha256-1f11fd3107260ee1c92fcba811cabb2807bf4b55e22779c47bd4464789f2361c"
+          "integrity": "sha256-75c5cd9d544575c963c7cb3d65e723a653f8cbc7ec1732df14f476276d0bd770"
         },
         "swarm": {
-          "integrity": "sha256-bcc7e0c3afb30029a319eecdd48f13462c39940b9ad038a9ef402fdefc65d830"
+          "integrity": "sha256-e58a19cfd8f9c4ec992ca210924b007a99435af9235b285af71868f50572c501"
         },
         "principle-model-the-domain": {
-          "integrity": "sha256-c55ec4d5f4a15bfcef681feec8e924d4afcc91caf6cd2d83acc56e9cb43e71c1"
+          "integrity": "sha256-f40d8a21b7418a35a3c9d8ecb72989d72334f1f9f64b1fd40e5c4c3e9794549c"
         },
         "correct": {
           "integrity": "sha256-e86f41b862349cc7019815c374a21074e3e2087618cf0fe8f2f869059f4d9937"
         },
         "technical-writing": {
-          "integrity": "sha256-f726f6d06c9969cecafc57c7bda1cd189f10947c54807089f7d134fd10fda378"
+          "integrity": "sha256-57477da8a130ef56b0791882f366d87c82b6c584f59232a1134ba26eed81c1cd"
         },
         "principle-fix-root-causes": {
-          "integrity": "sha256-86388a2a6a21e4834da03d9d0bb483465f40124f3b164b6070380d5e85f55957"
+          "integrity": "sha256-c808b77e9e4f266c5ad89057b1f5c6701d220d60f3e3ae9d404cab7463eeadb1"
         },
         "why": {
           "integrity": "sha256-79926868e8042c1844cae9c5a6242b266b1aca0cbf30f00e8cc28e50c2331711"
@@ -173,43 +173,43 @@
           "integrity": "sha256-ac374f21de2ea831366fccdc114a9d55afa88fa86c6980f069d54a381d2aaacf"
         },
         "reflect": {
-          "integrity": "sha256-778110e87683bb097fe326155e5df9316a0c2602d8e4898d1341022d42923ebe"
+          "integrity": "sha256-f9cf3e7819b2e2f79ea64427a43f3d7b2c44aa7ea7fbef0eea7d029d8d40b535"
         },
         "principle-foundational-thinking": {
-          "integrity": "sha256-1d23c9a69f71d4b49a77cff4f3460faf589a0822a44f163ddabbe70fc3815a79"
+          "integrity": "sha256-4c073ccef73fef6e978cfaf681dfceb4712c39804d81041313ad35a5af8494a1"
         },
         "show-me-your-work": {
-          "integrity": "sha256-ba517aeb238e7a3d4018cb6d21a40c5afe6a280ef8aaf2b103847d7bcb7c335f"
+          "integrity": "sha256-c83d7189c2bdbceb43da529db01ffc9b9bdd61ca371648404e2a0cc4ff2421c4"
         },
         "principle-build-the-lever": {
-          "integrity": "sha256-fb9a78644ecef92490324b805db63a6813509d19991dbd1bfa2f794a95cfd262"
+          "integrity": "sha256-83df31d707172f327a87888bd429c04f998ae26da34071fa6171c7c22ab42237"
         },
         "ketchup-video": {
           "integrity": "sha256-c7a76236bfa1f7cd1b8d87e5c2bb8e08f8ba02e1c2aa4900c4e8cbc57a962bf4"
         },
         "poteto-mode": {
-          "integrity": "sha256-87d48ba0a5e65b43eed7f1715435789400c92987d267de67c2edec8fee5fbf8f"
+          "integrity": "sha256-aba3190feb04160bd31d2d5cb1641dbe160d7337dbd3f26d97d41f5ca577fe0d"
         },
         "principle-make-operations-idempotent": {
-          "integrity": "sha256-47c79e3166f30c4d3bf26125c8ea529b127fc468ecf94809ab5aba1ebe79aed0"
+          "integrity": "sha256-71c6e8948c823d41860e845a844bd7a94ea697717f36023e15f76c55b9b4144f"
         },
         "statechart": {
           "integrity": "sha256-8990d6be7c46102d3effe7d84895ea60899e63bf2cbd9b93cc3dfa9e447e5ec1"
         },
         "recall": {
-          "integrity": "sha256-66867caec7ea511f0f165349165fa6fcb30265ac69fd364c8c197424aa254230"
+          "integrity": "sha256-c5124db4632664025a16888541b41a042ab65a2ea2e55c91dbf72d01dd4eb67c"
         },
         "ketchup": {
           "integrity": "sha256-db3c52396100cae768660706cdcf1cf0d4a92f2aa5db582834fcab3e068ad5c9"
         },
         "principle-sequence-verifiable-units": {
-          "integrity": "sha256-d1719c7e3d8b4b9a2fd0a8561ca36a5d7c708f8d248b8b02dca664b59bfc74c4"
+          "integrity": "sha256-8acf9a511afe63277a5bec0c218b5c54b10c36ea6fb45f1fd6be7e4cf24e620d"
         },
         "principle-test-behavior-not-implementation": {
-          "integrity": "sha256-c8b25ca3336056109d6eaf5a973e676945b389ab3d03a12ae8c8ba360869ee21"
+          "integrity": "sha256-3781f4d3f383c62a3eb02c655120acd6824d312cc45a748261f8fb67b2c887c9"
         },
         "principle-explain-the-number": {
-          "integrity": "sha256-0000a3e34badb21f104774780386e1b0b80671cff3697ae9ab599f771c2c43cb"
+          "integrity": "sha256-7537e3d60b37d202e1977db3df2eb996e55fda401b85398074cb43a8609a1585"
         },
         "make-bot-ui": {
           "integrity": "sha256-32020fd5b3f968d997aa3c4f7b979ae7bc41ba01958ccb93c9a386cf45c7499c"
@@ -224,10 +224,10 @@
           "integrity": "sha256-06bff9e87ccb45ed1b843b5b428a94ed3699193709b241e91d891f43dfd77edc"
         },
         "poteto-help": {
-          "integrity": "sha256-9f0b582b5811f7501ec124d67e04153c42130754a8af3ffd002429820bb209da"
+          "integrity": "sha256-92251b6769a18efdbd0a82311a20397a8a29e13bc3c0b79cb1d3f3824b372d04"
         },
         "architect": {
-          "integrity": "sha256-85d3bbfe68c3357d731187b92f24277600a3173157d9c3f7a4621b12179ede4a"
+          "integrity": "sha256-03a99fd5880e986f1d8ae4b2ba87c18a4f4365bfe3b54f61eae69a765ce1359c"
         },
         "principle-never-block-on-the-human": {
           "integrity": "sha256-7c81b7559df6cbe1594a6bac2433e063105b1ffa58676fae7c912a41a35852e1"
@@ -236,7 +236,7 @@
           "integrity": "sha256-94567cfdc4cf35c3fb0eca0cbf4eb998eb6236b041d266a336768e79a757d2cd"
         },
         "principle-minimize-reader-load": {
-          "integrity": "sha256-b0b560e53f6a4b44a125437925dbe1202a000a20703cff3b8280e438b5cf95ac"
+          "integrity": "sha256-c9100100a3817a4c087dc1e597fb2be69487aa715ee65fe95e042b830ea5a864"
         },
         "principle-exhaust-the-design-space": {
           "integrity": "sha256-eeb910839e9847405f32a6c751d20370934c681a895958c105d079873bd35013"
@@ -245,19 +245,19 @@
           "integrity": "sha256-b38b42c5a972a39c64795afb8eea1be5f7715f023f93cdf444b5f88af8f7f2fe"
         },
         "automate-me": {
-          "integrity": "sha256-093e06a092c5535ff783965831498587ff0ccc2d753c43c1fb7c5057f2e5e09f"
+          "integrity": "sha256-bfe1d6e74f16aa99da2a6cdadd17883b17635deea8b81e0611e11d4551fadc91"
         },
         "arena": {
-          "integrity": "sha256-c4259f4d1739db20ebb889c457ec787276c890ffcd0937f77cc3b99fa9ef15dc"
+          "integrity": "sha256-142d2d81c41cf5728ee1694c60ff97de4abf420658dd839396dc69168c91811f"
         },
         "principle-attack-the-premise": {
-          "integrity": "sha256-c61a6fabdec7954f4c5565056e659f8947d4a1f6ea29161f973e5d95c2359b0a"
+          "integrity": "sha256-e68f0e9d444a50ac624fdbf172a71aaeafa51d9f5090baff73718b92007fd9e2"
         },
         "create-verification-skill": {
           "integrity": "sha256-c65dc833fc03c78a124ae7ba70b41b7378d6af725c6502823e4ae56497b332dc"
         },
         "no-comments": {
-          "integrity": "sha256-fcb46b6b0fca96e8673e14cf6ccdfc5bce99f9a7ec1bacf06ca5bbb50e3fc17a"
+          "integrity": "sha256-9fb937ec6710ea4a3caab28af5ce14ab09ae6d74e803a89597e1770ea8fee737"
         },
         "principle-laziness-protocol": {
           "integrity": "sha256-9c35100a4c9a1c36b9b9d69c4abcbef2bbb783132799b8fc1e5831c7b0bc7313"
@@ -266,16 +266,16 @@
           "integrity": "sha256-3755ab3288a053dd3bf42f4851a605f8ab4a734ca37ac8345148bdff67fba511"
         },
         "unslop": {
-          "integrity": "sha256-e7713c9212c094596766638b2faf63036b26cfa2fb485802eb9e954ffacde372"
+          "integrity": "sha256-aa5f3897981c35714c84be065492f321f3e9b00bdbb0286712c17e3b70cf34a4"
         },
         "principle-prove-it-works": {
-          "integrity": "sha256-e411e390703f8dfa987dc8a19ecde9b4dc14a623b5543d76f65b6c4a94bde1e1"
+          "integrity": "sha256-34453832d192e14596729bae7e0deb936bb4e5cc01e79bbb475d1e366d92b4a8"
         },
         "principle-separate-before-serializing-shared-state": {
-          "integrity": "sha256-d44b58f1b770b1855326864a5502ce8e627de278ac2f65edabea5aa1d14b5ba9"
+          "integrity": "sha256-b9d87a5b5ca746744e0a44c9f0941ca0382080b1eb219904218cf26e6974d24f"
         },
         "principle-type-system-discipline": {
-          "integrity": "sha256-098982c080f2fcdaf857ef2946a37eefe0ba01c4b7959d42b3910d611643d58f"
+          "integrity": "sha256-2f2315a78a7fb735b871c56d1413f8a9c410c5938b01a45e19d824231a39330a"
         }
       },
       "skillSelection": [
@@ -285,8 +285,8 @@
     },
     "cursor/plugins#path=cursor-team-kit/skills": {
       "requestedRef": "main",
-      "resolvedRef": "bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7",
-      "resolvedAt": "2026-11-16T10:58:49.587Z",
+      "resolvedRef": "35a90942a7f02e1ebbc2443643179815f2147954",
+      "resolvedAt": "2026-11-19T04:07:14.391Z",
       "skills": {
         "deslop": {
           "integrity": "sha256-740038c614fc7fdef772806e59f7bd901d7b7184cf0a74022f7de8a6462d35e5"
@@ -299,11 +299,11 @@
     },
     "nanaism/yomiyasu": {
       "requestedRef": "main",
-      "resolvedRef": "db78b9bc5e868549b517a037df7a4d1c93edac23",
-      "resolvedAt": "2026-11-16T10:58:52.374Z",
+      "resolvedRef": "3042154ee537c1b7093eefed00a97b40aae9446d",
+      "resolvedAt": "2026-11-19T04:07:18.563Z",
       "skills": {
         "yomiyasu": {
-          "integrity": "sha256-5f65bd9fdc79435d784ed40ba74bc5d05c6c555d9f4c6de5b8f8b42fccb0b341"
+          "integrity": "sha256-5b673429aa6bb9333bf6732549b4a646bf58ad23837a9866fcea9cbbe6e89b8b"
         }
       },
       "skillSelection": [
@@ -314,7 +314,7 @@
     "mizchi/explainer": {
       "requestedRef": "main",
       "resolvedRef": "752da7c687e767c3efd8ea79f63c5f4f3d76e7b5",
-      "resolvedAt": "2026-11-16T10:58:55.050Z",
+      "resolvedAt": "2026-11-19T04:07:22.477Z",
       "skills": {
         "explainer": {
           "integrity": "sha256-7beac9b35b841e4124d50943dd4ef89b04e9229cb9139d0213cd2907a933a616"
@@ -328,7 +328,7 @@
     "ast-grep/agent-skill": {
       "requestedRef": "main",
       "resolvedRef": "0613dc7f82bbfb3b557380b54726b92f73358460",
-      "resolvedAt": "2026-11-16T10:58:57.610Z",
+      "resolvedAt": "2026-11-19T04:07:26.205Z",
       "skills": {
         "ast-grep": {
           "integrity": "sha256-0912907f55fd6be4c6b9cd905622a9688240a30811d2c413bfaab70ce387a224"
@@ -345,8 +345,8 @@
     },
     "tt-a1i/archify": {
       "requestedRef": "main",
-      "resolvedRef": "a7ed6fd6657da90414831d1d42cf95987188750c",
-      "resolvedAt": "2026-11-16T10:59:18.076Z",
+      "resolvedRef": "44781293f38728baf04dbad33ce1a0cef8c39cca",
+      "resolvedAt": "2026-11-19T04:08:05.814Z",
       "skills": {
         "archify": {
           "integrity": "sha256-fa8ff38c216846429a371636eca461f3d350025dcaae890a591498ee7a926c64"
@@ -359,11 +359,11 @@
     },
     "pbakaus/impeccable": {
       "requestedRef": "main",
-      "resolvedRef": "d41d9860b0094dcb68030657da63461212835aaa",
-      "resolvedAt": "2026-11-16T10:59:21.508Z",
+      "resolvedRef": "b49177d32788f2dc585c42831d845dacf1ebed2c",
+      "resolvedAt": "2026-11-19T04:08:10.647Z",
       "skills": {
         "impeccable": {
-          "integrity": "sha256-a0da7596c1fd3f8f313222da94a788ebb7ff7916985e2664d06680442b8c5642"
+          "integrity": "sha256-d9779c6113dd72f0b8e1435eb29509d34308835b8b63df9b3a07036d95545dc0"
         }
       },
       "skillSelection": [
@@ -374,7 +374,7 @@
     "herdrdev/herdr": {
       "requestedRef": "master",
       "resolvedRef": "ee5bfb5041bb3e4a49d591c72308aae3c81ecdde",
-      "resolvedAt": "2026-11-16T10:59:24.794Z",
+      "resolvedAt": "2026-11-19T04:08:14.886Z",
       "skills": {
         "herdr": {
           "integrity": "sha256-07c8c14a16855d083c6cfc23b6658a544f751935fb836e1a007dc5f9a28a1ae2"
