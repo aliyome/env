@@ -1,20 +1,6 @@
 {
   "lockfileVersion": 1,
   "sources": {
-    "cursor/plugins#path=cursor-team-kit/skills": {
-      "requestedRef": "main",
-      "resolvedRef": "aaeb0ea3a0584995aa8f55ce44c6c5259414b896",
-      "resolvedAt": "2026-11-20T06:11:55.409Z",
-      "skills": {
-        "deslop": {
-          "integrity": "sha256-740038c614fc7fdef772806e59f7bd901d7b7184cf0a74022f7de8a6462d35e5"
-        }
-      },
-      "skillSelection": [
-        "deslop"
-      ],
-      "skillsPath": "cursor-team-kit/skills"
-    },
     "tt-a1i/archify": {
       "requestedRef": "main",
       "resolvedRef": "44781293f38728baf04dbad33ce1a0cef8c39cca",
@@ -387,6 +373,28 @@
         "herdr"
       ],
       "skillsPath": "skills"
+    },
+    "cursor/plugins#path=cursor-team-kit/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "aaeb0ea3a0584995aa8f55ce44c6c5259414b896",
+      "resolvedAt": "2026-11-24T10:57:44.757Z",
+      "skills": {
+        "control-cli": {
+          "integrity": "sha256-3e0e7327e452ed4540e1e3e131b1657eb1dad517f5398b59ad9d80f3b9b7c609"
+        },
+        "control-ui": {
+          "integrity": "sha256-7f26f17516af8ca3485cefb0771f4f9ed314d19494b57f268dc06279234a248f"
+        },
+        "deslop": {
+          "integrity": "sha256-740038c614fc7fdef772806e59f7bd901d7b7184cf0a74022f7de8a6462d35e5"
+        }
+      },
+      "skillSelection": [
+        "control-cli",
+        "control-ui",
+        "deslop"
+      ],
+      "skillsPath": "cursor-team-kit/skills"
     }
   }
 }
