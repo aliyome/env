@@ -35,7 +35,7 @@
       "transport": "github",
       "source": "cursor/plugins",
       "path": "cursor-team-kit/skills",
-      "skills": ["deslop"],
+      "skills": ["deslop", "control-cli", "control-ui"],
     },
     {
       "transport": "git",
