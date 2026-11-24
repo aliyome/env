@@ -3,12 +3,18 @@ name: herdr-multi-agents
 description: How to use herdr to run multiple agents with different models and effort levels.
 ---
 
+前提・基本操作（`agent start` / `agent prompt --wait` / `agent get` / `agent send-keys`・命名規則 `[a-z][a-z0-9_-]{0,31}`）は `herdr` スキルに従う。
+
+- 開始前に `test "${HERDR_ENV:-}" = 1` を確認する。
+- `herdr` バイナリとソケット（`$HERDR_SOCKET_PATH`）はワークスペース外にあるため、サンドボックス環境では最初からサンドボックス外実行（`BypassSandbox: true`）で呼び出す。
+
 ## エージェントの起動方法
 
-エージェントが作業する用の `herdr` のワークスペースを作成します。
+`herdr` スキル既定の「同一タブで `pane split`」ではなく、マルチエージェント用途では作業分離のため専用ワークスペースを作成する。
 
 ```sh
 herdr workspace create --cwd <workspace_dir> --label <workspace_name> --no-focus
+# JSON の .result.root_pane.pane_id を <pane_id> として使う
 ```
 
 ### `agy` を起動する場合
@@ -17,34 +23,18 @@ herdr workspace create --cwd <workspace_dir> --label <workspace_name> --no-focus
 herdr agent start <agent_name> --kind agy --pane <pane_id> -- --model gemini-4-hydrogen-high --dangerously-skip-permissions
 ```
 
-以下のようなエラーが出る場合があります。これは `agy` 起動時に作業ディレクトリが trusted でないためです
-
-```json
-{
-  "error": {
-    "code": "agent_not_ready",
-    "message": "agent <agent_name> is blocked during startup and is not ready for prompts"
-  },
-  "id": "cli:agent:start"
-}
-```
-
-その場合は、以下のコマンドを使ってエージェントの内容を信頼する必要があります。
+作業ディレクトリが trusted でない場合、`agent_not_ready` エラーになる。
 
 ```sh
-# 信頼待ち状態であることを確認する
+# 信頼待ち状態を確認し、Return を送って idle を確認する
 herdr agent read <agent_name>
-
-# Return を入力して信頼する
 herdr agent send-keys <agent_name> return
-
-# agent_status が `block` ではなく `idle` になっていることを以下のコマンドで確認する
 herdr agent get <agent_name>
 ```
 
 ### `opencode` を起動する場合
 
-モデルとeffortの指定は、起動後に `herdr agent prompt` で行います。
+モデルと effort の指定は、起動後に `herdr agent prompt` で行う。
 
 ```sh
 # DeepSeek V4.1 Flash を使う場合
@@ -54,7 +44,7 @@ herdr agent prompt <agent_name> "DeepSeek V4.1 Flash"
 herdr agent prompt <agent_name> "/variants"
 herdr agent prompt <agent_name> "max"
 
-## Muse Spark 1.3 Contributor を使う場合
+# Muse Spark 1.3 Contributor を使う場合
 herdr agent start <agent_name> --kind opencode --pane <pane_id>
 herdr agent prompt <agent_name> "/models"
 herdr agent prompt <agent_name> "Muse Spark 1.3 Contributor"
@@ -62,9 +52,15 @@ herdr agent prompt <agent_name> "/variants"
 herdr agent prompt <agent_name> "xhigh"
 ```
 
-## エージェントの出力の読み取り方法
+## プロンプト送信と出力の読み取り方法
 
-`herdr agent prompt` と `herdr agent read` を使うが、 `herdr agent read` を利用すると結果行を部分的に読み取ることになり、信頼性とトークン効率が悪いので、 `/tmp/<agent_name>_out.md` などに出力させてからファイル単位で読み取る方が良いです。
+実行時は `--wait --timeout <ms>` を付けて完了を待つ。
+
+```sh
+herdr agent prompt <agent_name> "<prompt>" --wait --timeout 120000
+```
+
+`herdr` スキル既定の「初回プロンプトでファイル出力を指示しない」ルールは本スキルでは上書きする。OpenCode 等の TUI はサイドバーや空行が混入して `herdr agent read` の視認性・トークン効率が落ちるため、長文出力を得るタスクでは最初から `/tmp/<agent_name>_out.md` 等へ書き出させてファイル単位で読む（疎通確認などの短文のみ `herdr agent read <agent_name> --source recent-unwrapped --lines 120` を使う）。
 
 ## 各モデルの特徴
 
