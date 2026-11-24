@@ -1,6 +1,7 @@
 ---
 name: herdr-multi-agents
 description: How to use herdr to run multiple agents with different models and effort levels.
+disable-model-invocation: true
 ---
 
 前提・基本操作（`agent start` / `agent prompt --wait` / `agent get` / `agent send-keys`・命名規則 `[a-z][a-z0-9_-]{0,31}`）は `herdr` スキルに従う。
@@ -38,18 +39,28 @@ herdr agent get <agent_name>
 
 ```sh
 # DeepSeek V4.1 Flash を使う場合
-herdr agent start <agent_name> --kind opencode --pane <pane_id>
+herdr agent start <agent_name> --kind opencode --pane <pane_id> -- --auto
+sleep 1
 herdr agent prompt <agent_name> "/models"
+sleep 1
 herdr agent prompt <agent_name> "DeepSeek V4.1 Flash"
+sleep 1
 herdr agent prompt <agent_name> "/variants"
+sleep 1
 herdr agent prompt <agent_name> "max"
+sleep 1
 
 # Muse Spark 1.3 Contributor を使う場合
 herdr agent start <agent_name> --kind opencode --pane <pane_id>
+sleep 1
 herdr agent prompt <agent_name> "/models"
+sleep 1
 herdr agent prompt <agent_name> "Muse Spark 1.3 Contributor"
+sleep 1
 herdr agent prompt <agent_name> "/variants"
+sleep 1
 herdr agent prompt <agent_name> "xhigh"
+sleep 1
 ```
 
 ## プロンプト送信と出力の読み取り方法

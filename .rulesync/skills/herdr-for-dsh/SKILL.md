@@ -1,6 +1,7 @@
 ---
 name: herdr-for-dsh
 description: How to use herdr with DeepSeek Harness (dsh).
+disable-model-invocation: true
 targets: ["dsh"]
 ---
 
