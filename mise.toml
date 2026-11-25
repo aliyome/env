@@ -14,7 +14,8 @@ run = [
     # pstack のエージェントを取得する
     "mise tasks run update-subagents",
     "rulesync generate",
-    "rulesync generate --targets antigravity-cli,opencode --features subagents",
+    "rulesync generate --targets opencode --features subagents",
+    "rulesync generate --targets antigravity-cli --features rules",
     # ~/.dsh のみで利用するスキルを ~/.dsh/skills にコピーする
     "mkdir -p ~/.dsh/skills",
     "cp -r .rulesync/skills/herdr-for-dsh ~/.dsh/skills/",
