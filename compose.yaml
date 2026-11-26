@@ -1,0 +1,55 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: agentsview-pg
+    restart: unless-stopped
+    shm_size: 256mb
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-agentsview}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
+      POSTGRES_DB: ${POSTGRES_DB:-agentsview}
+      TZ: Asia/Tokyo
+    ports:
+      - "15432:5432"
+    volumes:
+      - agentsview_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER:-agentsview} -d ${POSTGRES_DB:-agentsview}",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  agentsview-ui:
+    image: ghcr.io/kenn-io/agentsview:latest
+    container_name: agentsview-ui
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+    environment:
+      AGENTSVIEW_MODE: pg-serve
+      AGENTSVIEW_PG_URL: postgres://${POSTGRES_USER:-agentsview}:${POSTGRES_PASSWORD_URLENC}@postgres:5432/${POSTGRES_DB:-agentsview}?sslmode=disable
+      AGENTSVIEW_PG_ALLOW_INSECURE: "true"
+      AGENTSVIEW_AUTH_TOKEN: ${AGENTSVIEW_AUTH_TOKEN:?AGENTSVIEW_AUTH_TOKEN is required}
+    volumes:
+      - agentsview_ui_data:/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  agentsview_pgdata:
+  agentsview_ui_data:
