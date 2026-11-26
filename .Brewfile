@@ -11,7 +11,7 @@ cask "karabiner-elements"
 cask "logi-options+"
 cask "mas" # App Store のアプリを CLI で管理できる
 cask "obs"
-cask "raycast"
+cask "tinycast"
 cask "slack"
 cask "vlc"
 cask "onlyoffice" # 仕事でたまに使う
