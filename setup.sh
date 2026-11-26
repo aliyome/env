@@ -143,7 +143,6 @@ echo "キーボードで、スマート引用符とスマートダッシュを�
 echo "テキスト入力で、「Windows風のキー操作」をオンにする"
 echo "トラックパッドで、「タップでクリック」をオンにする"
 echo "Karabiner-Elements で .config/karabiner を上書きする"
-echo "Raycast で *.rayconfig をインポートする"
 echo "Warp のログインを行う"
 echo "DMMブックスアプリをインストールする<https://book.dmm.com/info_bookviewer.html>"
 echo "VSCode の設定ファイルをコピーする"

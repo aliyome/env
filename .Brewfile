@@ -14,7 +14,6 @@ cask "obs"
 cask "tinycast"
 cask "slack"
 cask "vlc"
-cask "onlyoffice" # 仕事でたまに使う
 cask "zoom"
 cask "handy" # ASR
 cask "agentsview" # 横断的なエージェントログの検索
