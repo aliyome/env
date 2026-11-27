@@ -75,13 +75,13 @@ herdr agent prompt <agent_name> "<prompt>" --wait --timeout 120000
 
 ## 各モデルの特徴
 
-| model                            | 賢さ | 時間 | コスト     | 特徴                             |
-| -------------------------------- | ---- | ---- | ---------- | -------------------------------- |
-| gemini-4-hydrogen-high           | 51   | 速い | 安い       | 高速で安くて賢いので第一選択肢。 |
-| gemini-pro-orchestrator-neon     | 60   | 普通 | 普通       | 高度なタスクに使う。             |
-| claude-opus-5-5-high             | 57   | 普通 | 高い       | 高度なタスクに使う。             |
-| DeepSeek V4.1 Flash#max          | 33   | 遅い | 非常に安い | 遅いが安い。                     |
-| Muse Spark 1.3 Contributor#xhigh | 37   | 速い | 非常に安い | 高速で安い。                     |
+| model                            | 賢さ | 時間 | コスト     | 特徴                                             |
+| -------------------------------- | ---- | ---- | ---------- | ------------------------------------------------ |
+| gemini-4-hydrogen-high           | 51   | 速い | 安い       | 高速で安くて賢いので第一選択肢。                 |
+| gemini-4-neon-high               | 60   | 普通 | 普通       | 高度なタスクに使う。                             |
+| claude-opus-5-5-high             | 57   | 普通 | 高い       | 高度なタスクに使う。                             |
+| DeepSeek V4.1 Flash#max          | 33   | 遅い | 非常に安い | 遅いが安い。                                     |
+| Muse Spark 1.3 Contributor#xhigh | 37   | 速い | 非常に安い | 高速で安いが、プライベートリポジトリでは使用禁止 |
 
 賢さは Artificial Analysis Intelligence Index のスコアで、数値が高いほど賢い。
 
