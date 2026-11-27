@@ -26,6 +26,7 @@ terraform = "latest"
 "pi" = "latest"
 # "github:pocketbase/pocketbase" = "latest"
 "github:quint-co/quint" = "latest"
+"github:nyosegawa/speech.cpp" = "latest"
 
 # packages
 "npm:yarn" = "1.22.22"
