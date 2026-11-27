@@ -1,0 +1,90 @@
+/*
+ * Theme. Every color, font, radius and size lives here; base.css only reads these variables.
+ * To change the look, edit this file and keep the variable names and the .tone-* classes.
+ */
+
+@font-face {
+  font-family: "Theme Sans";
+  font-weight: 400;
+  src: local("HiraginoSans-W3"), local("Hiragino Sans");
+}
+@font-face {
+  font-family: "Theme Sans";
+  font-weight: 700;
+  src: local("HiraginoSans-W6"), local("Hiragino Sans");
+}
+@font-face {
+  font-family: "Theme Mono";
+  src: local("Menlo-Regular"), local("SFMono-Regular");
+}
+
+:root {
+  --font: "Theme Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  --font-mono: "Theme Mono", monospace;
+
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --text: #1c2330;
+  --muted: #5a6475;
+  --border: #dfe3ea;
+  --accent: #2f5fd0; /* the one accent hue: tone-blue and the focus ring */
+  --line: rgb(28 35 48 / 10%); /* card and image borders */
+  --tint: #eef1f5; /* fill of neutral tones and notes */
+  --caption-bg: rgb(28 35 48 / 90%);
+  --caption-text: #ffffff;
+  --code-bg: #1e2430;
+  --code-text: #e5e9f0;
+  /* Syntax colors on --code-bg: light versions of the tones. Contrast is 5:1 or more (comment is the most muted). */
+  --code-keyword: #b3a2f2; /* purple */
+  --code-string: #86d1a8; /* green */
+  --code-comment: #8a94a6;
+  --code-number: #e8b866; /* orange */
+  --code-function: #8db0f2; /* blue */
+  --code-type: #f0a39a; /* red */
+  --code-punct: #aeb7c4;
+
+  --radius-card: 20px;
+  --radius-panel: 16px;
+  --radius-full: 9999px;
+  --space-xs: 16px;
+  --space-sm: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+
+  --line-heading: 1.3;
+  --line-body: 1.6;
+  --size-title: 64px;
+  --size-head: 44px;
+  --size-body: 36px;
+  --size-big: 84px;
+  --size-caption: 44px;
+  --size-small: 26px;
+  --weight-bold: 700;
+  --weight-regular: 400;
+
+  --shadow: 0 2px 8px rgb(28 35 48 / 5%);
+  --shadow-lift: 0 12px 28px rgb(28 35 48 / 10%);
+}
+
+/*
+ * Tones used by script.json "tone". One accent hue: tone-blue marks the item to emphasize
+ * (about one per scene); every other tone is neutral, so a scene never turns multicolored.
+ * --tone = heading text, --tone-line = border, --tone-bg = fill, --tone-strong = focus ring.
+ */
+.tone-blue {
+  --tone: var(--accent);
+  --tone-line: var(--line);
+  --tone-bg: #e9effb;
+  --tone-strong: var(--accent);
+}
+.tone-purple,
+.tone-green,
+.tone-orange,
+.tone-red,
+.tone-pink,
+.tone-gray {
+  --tone: var(--text);
+  --tone-line: var(--line);
+  --tone-bg: var(--tint);
+  --tone-strong: var(--accent);
+}

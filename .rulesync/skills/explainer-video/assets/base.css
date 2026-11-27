@@ -1,0 +1,316 @@
+/* Layout for 1920x1080. Colors, fonts, radius and sizes come from theme.css variables. */
+body {
+  margin: 0;
+  background: var(--bg);
+}
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+}
+.scene {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: var(--weight-regular);
+  font-feature-settings: "palt" 1;
+}
+.content,
+.inner {
+  position: absolute;
+  inset: 0;
+}
+.head {
+  position: absolute;
+  left: 100px;
+  top: 64px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.title {
+  font-size: var(--size-title);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-heading);
+}
+.board {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  top: 190px;
+  bottom: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  container-type: size;
+}
+.steps {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+.steps > .slot {
+  flex: 1;
+  min-width: 0;
+}
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  color: var(--muted);
+}
+.arrow svg {
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+.grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-auto-rows: minmax(0, 1fr);
+  gap: var(--space-sm);
+}
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.split,
+.stack {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: var(--space-md);
+}
+.split-left {
+  flex: 1.2;
+  min-width: 0;
+  position: relative;
+}
+/* An image column as wide as the image is at full height (104px = label + source). */
+.split.fit > .split-left {
+  flex: 0 0 clamp(36%, calc(var(--ar) * (100cqh - 104px)), 62%);
+}
+.stack {
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.stack-media {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+.stack-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+.stack-row > * {
+  flex: 1;
+  min-width: 0;
+}
+.split-left > .slot,
+.stack-media > .slot {
+  position: absolute;
+  inset: 0;
+}
+.split-right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+.fill,
+.fill > .item {
+  height: 100%;
+  min-height: 0;
+}
+.item {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  background: var(--surface);
+  border: 2px solid var(--tone-line);
+  border-radius: var(--radius-card);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+.card.filled {
+  background: var(--tone-bg);
+}
+.card.step {
+  justify-content: flex-start;
+}
+.ring {
+  position: absolute;
+  inset: -2px;
+  border: 3px solid var(--tone-strong);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-lift);
+  opacity: 0;
+  pointer-events: none;
+}
+.ch {
+  font-size: var(--size-head);
+  font-weight: var(--weight-bold);
+  color: var(--tone);
+  line-height: var(--line-heading);
+}
+.cb {
+  font-size: var(--size-body);
+  margin-top: 8px;
+  line-height: var(--line-body);
+  white-space: pre-line;
+}
+.bh {
+  font-size: 34px;
+  font-weight: var(--weight-bold);
+  color: var(--tone);
+}
+.bv {
+  font-size: var(--size-big);
+  font-weight: var(--weight-bold);
+  line-height: 1.15;
+  color: var(--tone);
+  font-variant-numeric: tabular-nums;
+}
+.bb {
+  font-size: 34px;
+  line-height: var(--line-body);
+  white-space: pre-line;
+}
+.note {
+  background: var(--tone-bg);
+  border-radius: var(--radius-panel);
+  padding: 16px 28px;
+  font-size: 38px;
+  color: var(--muted);
+  line-height: var(--line-body);
+}
+
+.code {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+.code-head {
+  font-size: var(--size-small);
+  font-weight: var(--weight-bold);
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+.code-panel {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+.code-panel .ring {
+  border-radius: var(--radius-panel);
+}
+.code-body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--code-bg);
+  color: var(--code-text);
+  border-radius: var(--radius-panel);
+  padding: 16px 24px;
+  line-height: 1.45;
+  font-family: var(--font-mono);
+}
+/* Lines too long even at the smallest size wrap, continuing 2ch right of their own indent. */
+.code-body.wrap {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.code-body.wrap .ln {
+  display: block;
+  padding-left: var(--in);
+  text-indent: calc(-1 * var(--in));
+}
+.tok-keyword {
+  color: var(--code-keyword);
+}
+.tok-string {
+  color: var(--code-string);
+}
+.tok-comment {
+  color: var(--code-comment);
+}
+.tok-number {
+  color: var(--code-number);
+}
+.tok-function {
+  color: var(--code-function);
+}
+.tok-type {
+  color: var(--code-type);
+}
+.tok-punct {
+  color: var(--code-punct);
+}
+
+.shot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+.shot-label {
+  font-size: 34px;
+  font-weight: var(--weight-bold);
+}
+.shot-frame {
+  flex: 1;
+  min-height: 0;
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+  border: 2px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--surface);
+}
+.shot-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.shot-source {
+  font-size: 24px;
+  color: var(--muted);
+}
+
+.caption {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  bottom: 56px;
+  display: flex;
+  justify-content: center;
+}
+.capbox {
+  background: var(--caption-bg);
+  color: var(--caption-text);
+  font-size: var(--size-caption);
+  line-height: var(--line-body);
+  font-weight: var(--weight-bold);
+  padding: 16px 40px;
+  border-radius: var(--radius-panel);
+  text-align: center;
+}

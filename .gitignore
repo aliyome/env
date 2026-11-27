@@ -1,3 +1,4 @@
 .config/mise/mise.lock
 .config/mise/locks
 .env
+__pycache__/

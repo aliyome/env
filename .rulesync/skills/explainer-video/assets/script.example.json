@@ -1,0 +1,135 @@
+{
+  "voice": "narrator",
+  "speed": 1.4,
+  "readings": {
+    "SaaS": "サース"
+  },
+  "scenes": [
+    {
+      "id": "s01-opening",
+      "title": "この動画でわかること",
+      "sentences": [
+        "この動画では、〇〇を、はじめての方向けに説明します。",
+        "前半は〇〇、後半は〇〇です。"
+      ],
+      "visual": {
+        "layout": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "at": 1,
+            "kind": "card",
+            "head": "前半",
+            "body": "〇〇",
+            "tone": "blue"
+          },
+          {
+            "at": 1,
+            "kind": "card",
+            "head": "後半",
+            "body": "〇〇",
+            "tone": "green"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02-steps",
+      "title": "手順の例",
+      "sentences": [
+        "最初に〇〇をします。",
+        "次に〇〇をします。",
+        "最後に〇〇です。"
+      ],
+      "visual": {
+        "layout": "steps",
+        "items": [
+          {
+            "at": 0,
+            "kind": "step",
+            "head": "1 〇〇",
+            "body": "説明"
+          },
+          {
+            "at": 1,
+            "kind": "step",
+            "head": "2 〇〇",
+            "body": "説明",
+            "tone": "purple"
+          },
+          {
+            "at": 2,
+            "kind": "step",
+            "head": "3 〇〇",
+            "body": "説明",
+            "tone": "green"
+          },
+          {
+            "at": 2,
+            "kind": "note",
+            "body": "補足の一文",
+            "tone": "orange"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s03-screen",
+      "title": "画面で見る",
+      "sentences": ["これが〇〇の画面です。", "ここで〇〇を確認します。"],
+      "visual": {
+        "layout": "split",
+        "items": [
+          {
+            "at": 0,
+            "kind": "img",
+            "src": "assets/shots/example.png",
+            "head": "〇〇の画面",
+            "source": "出典の資料名"
+          },
+          {
+            "at": 1,
+            "kind": "card",
+            "head": "ポイント",
+            "body": "〇〇",
+            "tone": "orange"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04-code",
+      "title": "コードで見る",
+      "sentences": [
+        "この処理は、注文の一覧から、発送する注文を選んでいます。",
+        "支払いが済んだ注文だけを見ている点がポイントです。"
+      ],
+      "visual": {
+        "layout": "split",
+        "items": [
+          {
+            "at": 0,
+            "kind": "code",
+            "head": "example/shop/src/orders.ts:76-84",
+            "lang": "typescript",
+            "body": "export function toShip(orders: Order[]) {\n  return orders.filter(\n    (o) => o.status === \"paid\" &&\n      !o.shippedAt,\n  );\n}"
+          },
+          {
+            "at": 0,
+            "kind": "card",
+            "head": "何をしているか",
+            "body": "注文の一覧から発送する注文を選ぶ",
+            "tone": "blue"
+          },
+          {
+            "at": 1,
+            "kind": "card",
+            "head": "ポイント",
+            "body": "支払い済み（paid）の注文だけを見る",
+            "tone": "orange"
+          }
+        ]
+      }
+    }
+  ]
+}
