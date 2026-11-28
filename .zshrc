@@ -82,3 +82,6 @@ export PATH="/Users/aliyome/.antigravity-ide/antigravity-ide/bin:$PATH"
 
 # opencode
 export PATH=/Users/aliyome/.opencode/bin:$PATH
+
+# moonbit
+export PATH="$HOME/.moon/bin:$PATH"
